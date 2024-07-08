@@ -1,0 +1,171 @@
+{
+"desafios": [
+    {
+      "etapa": 0,
+      "desafios": [
+        {
+          "link_casos_de_teste": " ",
+          "link_resolucao": " ",
+          "link_codigo": " "
+        },
+        {
+          "link_casos_de_teste": " ",
+          "link_resolucao": " ",
+          "link_codigo": " "
+        },
+        {
+          "link_casos_de_teste": " ",
+          "link_resolucao": " ",
+          "link_codigo": " "
+        },
+        {
+          "link_casos_de_teste": " ",
+          "link_resolucao": " ",
+          "link_codigo": " "
+        },
+        {
+          "link_casos_de_teste": " ",
+          "link_resolucao": " ",
+          "link_codigo": " "
+        }
+      ]
+    },
+
+    {
+        "etapa": 1,
+        "desafios": [
+          {
+            "link_casos_de_teste": " ",
+            "link_resolucao": " ",
+            "link_codigo": " "
+          },
+          {
+            "link_casos_de_teste": " ",
+            "link_resolucao": " ",
+            "link_codigo": " "
+          },
+          {
+            "link_casos_de_teste": " ",
+            "link_resolucao": " ",
+            "link_codigo": " "
+          },
+          {
+            "link_casos_de_teste": " ",
+            "link_resolucao": " ",
+            "link_codigo": " "
+          },
+          {
+            "link_casos_de_teste": " ",
+            "link_resolucao": " ",
+            "link_codigo": " "
+          }
+        ]
+      },
+
+      {
+        "etapa": 2,
+        "desafios": [
+          {
+            "link_casos_de_teste": "",
+            "link_resolucao": " ",
+            "link_codigo": " "
+          },
+          {
+            "link_casos_de_teste": " ",
+            "link_resolucao": " ",
+            "link_codigo": " "
+          },
+          {
+            "link_casos_de_teste": " ",
+            "link_resolucao": " ",
+            "link_codigo": " "
+          },
+          {
+            "link_casos_de_teste": " ",
+            "link_resolucao": " ",
+            "link_codigo": " "
+          },
+          {
+            "link_casos_de_teste": " ",
+            "link_resolucao": " ",
+            "link_codigo": " "
+          }
+        ]
+      },
+
+      {
+        "etapa": 3,
+        "desafios": [
+          {
+            "link_casos_de_teste": " ",
+            "link_resolucao": " ",
+            "link_codigo": " "
+          },
+          {
+            "link_casos_de_teste": " ",
+            "link_resolucao": " ",
+            "link_codigo": " "
+          },
+          {
+            "link_casos_de_teste": " ",
+            "link_resolucao": " ",
+            "link_codigo": " "
+          },
+          {
+            "link_casos_de_teste": " ",
+            "link_resolucao": " ",
+            "link_codigo": " "
+          },
+          {
+            "link_casos_de_teste": " ",
+            "link_resolucao": " ",
+            "link_codigo": " "
+          }
+        ]
+      },
+
+      {
+        "etapa": 4,
+        "desafios": [
+          {
+            "link_casos_de_teste": " ",
+            "link_resolucao": " ",
+            "link_codigo": " "
+          },
+          {
+            "link_casos_de_teste": " ",
+            "link_resolucao": " ",
+            "link_codigo": " "
+          },
+          {
+            "link_casos_de_teste": " ",
+            "link_resolucao": " ",
+            "link_codigo": " "
+          },
+          {
+            "link_casos_de_teste": " ",
+            "link_resolucao": " ",
+            "link_codigo": " "
+          },
+          {
+            "link_casos_de_teste": " ",
+            "link_resolucao": " ",
+            "link_codigo": " "
+          }
+        ]
+      }
+    ], 
+
+    "grupos": [
+    {
+      "nome_do_grupo": "Grupo A",
+      "participantes": ["Participante 1", "Participante 2", "Participante 3", "Participante 4"],
+      "logo": "Link_Logo"
+    },
+    {
+      "nome_do_grupo": "Grupo B",
+      "participantes": ["Participante 1", "Participante 2", "Participante 3", "Participante 4"],
+      "logo": "Link_logo"
+    }
+  ]
+}
