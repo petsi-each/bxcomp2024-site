@@ -16,6 +16,12 @@ export default function Home() {
       iconPath: "/equipe_icons/example.png"
     },
     {
+      title: "Equipea",
+      members: ["eu", "vc", "ele"],
+      points: 0,
+      iconPath: "/equipe_icons/example.png"
+    },
+    {
       title: "Equipeb",
       members: ["eu", "vc", "ele"],
       points: 7,

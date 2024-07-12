@@ -52,12 +52,17 @@ const Ranking: React.FC<RankingProps> = ({ equipes, displayQuantity = -1 }) => {
 
 
         <section className="p-16">
+            <div className="grid grid-rows-1 gap-2">
             
             {
                 displayEquipes.map((equipe, index) => (
+                    <div>
                     <PointBar key={index} equipe={equipe} topScore={topScore} />
+                    </div>
                 ))
             }
+            
+            </div>
             
         </section>
 
