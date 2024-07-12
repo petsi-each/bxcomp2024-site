@@ -1,14 +1,14 @@
-'use client'
+
 
 interface Equipe {
-    title:string,
-    members:string[],
+    title: string,
+    members: string[],
     points: number,
     iconPath: string
 }
 
 interface RankingProps {
-    
+    equipes: Equipe[]
 }
 
 interface PointBarProps {
@@ -17,13 +17,13 @@ interface PointBarProps {
 }
 
 
-const PointBar : React.FC<PointBarProps> = ({ equipe, topScore }) => {
-    
-    const size = `w-[${(equipe.points/topScore)*100}%]`
-    
+const PointBar: React.FC<PointBarProps> = ({ equipe, topScore }) => {
+    const percentage = (equipe.points / topScore) * 100
+    const size = `w-[${percentage}%]`
+
     return (
-        
-        <div className={`flex items-center ${size}`} onClick={()=>console.log(size)}>
+
+        <div className={`flex items-center ${size}`}>
             <div className="flex flex-grow h-10 relative drop-shadow-lg bg-white rounded-full flex items-center justify-center">
                 <div className="w-full drop-shadow rounded-full m-2 h-6 bg-laranjaBX"></div>
             </div>
@@ -40,19 +40,20 @@ const PointBar : React.FC<PointBarProps> = ({ equipe, topScore }) => {
     );
 }
 
-const Ranking: React.FC<RankingProps> = () => {
+const Ranking: React.FC<RankingProps> = ({ equipes }) => {
 
-    const equipe = {
-        title: "Equipe",
-        members: ["eu", "vc", "ele"],
-        points: 6,
-        iconPath: "nayet"
-    }
-    
+
+
     return (
-        <section className="w-full">
-        <PointBar equipe={equipe} topScore={10} />
+
+        <section>
+
+            {
+                equipes.map((equipe, index) => (
+                    <PointBar key={index} equipe={equipe} topScore={10} />
+                ))}
         </section>
+        
     );
 };
 
