@@ -32,9 +32,9 @@ const PointBar: React.FC<PointBarProps> = ({ equipe, topScore }) => {
                     <ImageG src={equipe.iconPath} fill={true} alt={""} />
                 </div>
             </div>
-            <div className="p-4 w-52 max-w-52 min-w-52">
-                <h2 className="text-3xl w-full truncate overflow-hidden">{equipe.title}</h2>
-                <p className="text-xl">{equipe.points} pontos</p>
+            <div className="p-4 w-28 max-w-28 min-w-28">
+                <h2 className="text-2xl w-full truncate overflow-hidden">{equipe.title}</h2>
+                <p className="text-md">{equipe.points} pontos</p>
             </div>
             
         </div>
