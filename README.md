@@ -20,10 +20,16 @@
     cd bxcomp2024/
     ```
 
-4) Rode o projeto next
+4) Instale as dependências do projeto (só é necessário uma vez ou quando adicionarem um pacote novo)
+
+    ```
+    npm i
+    ```
+
+5) Rode o projeto next
 
     ```
     npm run dev
     ```
 
-5) Entre no link mencionado no output, geralmente será [esse](http://localhost:3000/)
+6) Entre no link mencionado no output, geralmente será http://localhost:3000/
