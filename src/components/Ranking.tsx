@@ -9,7 +9,8 @@ interface Equipe {
 }
 
 interface RankingProps {
-    equipes: Equipe[]
+    equipes: Equipe[],
+    displayQuantity?: number
 }
 
 interface PointBarProps {
@@ -41,9 +42,10 @@ const PointBar: React.FC<PointBarProps> = ({ equipe, topScore }) => {
     );
 }
 
-const Ranking: React.FC<RankingProps> = ({ equipes }) => {
+const Ranking: React.FC<RankingProps> = ({ equipes, displayQuantity = -1 }) => {
 
     equipes.sort((a, b) => b.points - a.points);
+    const displayEquipes = displayQuantity < 0 ? equipes : equipes.slice(0,displayQuantity)
     const topScore = equipes[0].points
 
     return (
@@ -53,7 +55,7 @@ const Ranking: React.FC<RankingProps> = ({ equipes }) => {
         <section>
 
             {
-                equipes.map((equipe, index) => (
+                displayEquipes.map((equipe, index) => (
                     <PointBar key={index} equipe={equipe} topScore={topScore} />
                 ))
             }
@@ -61,5 +63,6 @@ const Ranking: React.FC<RankingProps> = ({ equipes }) => {
 
     );
 };
+
 
 export default Ranking;
