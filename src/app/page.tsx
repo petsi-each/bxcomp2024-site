@@ -4,45 +4,45 @@ export default function Home() {
 
   const equipes = [
     {
-      title: "Equipe",
-      members: ["eu", "vc", "ele"],
-      points: 1,
+      nome: "Equipe",
+      membros: ["eu", "vc", "ele"],
+      pontos: 1,
       iconPath: "/equipe_icons/example.png"
     },
     {
-      title: "Equipea",
-      members: ["eu", "vc", "ele"],
-      points: 2,
+      nome: "Equipea",
+      membros: ["eu", "vc", "ele"],
+      pontos: 2,
       iconPath: "/equipe_icons/example.png"
     },
     {
-      title: "Equipea",
-      members: ["eu", "vc", "ele"],
-      points: 0,
+      nome: "Equipea",
+      membros: ["eu", "vc", "ele"],
+      pontos: 0,
       iconPath: "/equipe_icons/example.png"
     },
     {
-      title: "Equipeb",
-      members: ["eu", "vc", "ele"],
-      points: 7,
+      nome: "Equipeb",
+      membros: ["eu", "vc", "ele"],
+      pontos: 7,
       iconPath: "/equipe_icons/example.png"
     },
     {
-      title: "Equipec",
-      members: ["eu", "vc", "ele"],
-      points: 5,
+      nome: "Equipec",
+      membros: ["eu", "vc", "ele"],
+      pontos: 5,
       iconPath: "/equipe_icons/example.png"
     },
     {
-      title: "Equiped",
-      members: ["eu", "vc", "ele"],
-      points: 8,
+      nome: "Equiped",
+      membros: ["eu", "vc", "ele"],
+      pontos: 8,
       iconPath: "/equipe_icons/example.png"
     },
     {
-      title: "Equipeeaaaaaaa",
-      members: ["eu", "vc", "ele"],
-      points: 7,
+      nome: "Equipeeaaaaaaaaaaaaaaaaaaasdkljasodkoasjdoiaosjdioaaaaa",
+      membros: ["eu", "vc", "ele"],
+      pontos: 7,
       iconPath: "/equipe_icons/example.png"
     },
 
