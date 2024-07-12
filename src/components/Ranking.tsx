@@ -1,6 +1,5 @@
 import ImageG from "./ImageG"
 
-
 interface Equipe {
     title: string,
     members: string[],
@@ -21,11 +20,10 @@ interface PointBarProps {
 
 const PointBar: React.FC<PointBarProps> = ({ equipe, topScore }) => {
     const percentage = (equipe.points / topScore) * 100
-    const size = `w-[${percentage}%]`
 
     return (
 
-        <div className={`flex items-center ${size}`}>
+        <div style={{ width: percentage+'%'}} className={`flex items-center`}>
             <div className="flex flex-grow h-10 relative drop-shadow-lg bg-white rounded-full flex items-center justify-center">
                 <div className="w-full drop-shadow rounded-full m-2 h-6 bg-laranjaBX"></div>
             </div>
@@ -38,6 +36,7 @@ const PointBar: React.FC<PointBarProps> = ({ equipe, topScore }) => {
                 <h2 className="text-3xl w-full truncate overflow-hidden">{equipe.title}</h2>
                 <p className="text-xl">{equipe.points} pontos</p>
             </div>
+            
         </div>
     );
 }
@@ -52,13 +51,14 @@ const Ranking: React.FC<RankingProps> = ({ equipes, displayQuantity = -1 }) => {
 
 
 
-        <section>
-
+        <section className="p-16">
+            
             {
                 displayEquipes.map((equipe, index) => (
                     <PointBar key={index} equipe={equipe} topScore={topScore} />
                 ))
             }
+            
         </section>
 
     );
