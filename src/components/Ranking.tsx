@@ -18,6 +18,13 @@ interface PointBarProps {
 }
 
 
+/**
+ * Componente que representa uma barra de pontos para uma equipe.
+ *
+ * @param {Equipe} equipe - Informações da equipe incluindo nome, membros, pontos e ícone.
+ * @param {number} topScore - O maior número de pontos entre todas as equipes, usado para calcular a largura da barra.
+ */
+
 const PointBar: React.FC<PointBarProps> = ({ equipe, topScore }) => {
     
     const percentage = (equipe.pontos / topScore) * 100
@@ -56,6 +63,16 @@ const PointBar: React.FC<PointBarProps> = ({ equipe, topScore }) => {
 
     );
 }
+
+
+
+/**
+ * Apresenta um *Ranking* de equipes com base nos pontos.
+ *
+ * @param {RankingProps} equipes - Lista de equipes a serem exibidas no ranking.
+ * @param {number} [displayQuantity] - OPCIONAL: Quantidade de equipes a serem exibidas. Se não especificado, exibe todas as equipes.
+ * 
+ */
 
 const Ranking: React.FC<RankingProps> = ({ equipes, displayQuantity = -1 }) => {
 
