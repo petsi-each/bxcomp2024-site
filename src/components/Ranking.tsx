@@ -76,6 +76,8 @@ const PointBar: React.FC<PointBarProps> = ({ equipe, topScore }) => {
 
 const Ranking: React.FC<RankingProps> = ({ equipes, displayQuantity = -1 }) => {
 
+    displayQuantity = displayQuantity >= equipes.length ? -1 : displayQuantity; 
+
     equipes.sort((a, b) => b.pontos - a.pontos); // Ordena o array a partir dos pontos
     const topScore = equipes[0].pontos // Pega a maior quantidade de pontos (representa 100%)
     const displayEquipes = displayQuantity < 0 ? equipes : equipes.slice(0, displayQuantity) // Apresenta displayQuantity itens do array caso um valor seja determinado
