@@ -1,3 +1,4 @@
+import ImageG from "./ImageG"
 
 
 interface Equipe {
@@ -28,11 +29,11 @@ const PointBar: React.FC<PointBarProps> = ({ equipe, topScore }) => {
                 <div className="w-full drop-shadow rounded-full m-2 h-6 bg-laranjaBX"></div>
             </div>
             <div className="flex items-center -ml-8">
-                <div className="h-20 w-20 drop-shadow-lg rounded-full bg-white drop-shadow-lg">
-
+                <div className="h-20 w-20 relative flex items-center justify-center drop-shadow-lg rounded-full bg-white drop-shadow-lg">
+                    <ImageG src={equipe.iconPath} fill={true} alt={""} />
                 </div>
             </div>
-            <div className="p-4 w-24 min-w-24 max-w-24">
+            <div className="p-4 w-52 max-w-52 min-w-52">
                 <h2 className="text-3xl w-full truncate overflow-hidden">{equipe.title}</h2>
                 <p className="text-xl">{equipe.points} pontos</p>
             </div>
