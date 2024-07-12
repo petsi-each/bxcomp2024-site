@@ -42,18 +42,22 @@ const PointBar: React.FC<PointBarProps> = ({ equipe, topScore }) => {
 
 const Ranking: React.FC<RankingProps> = ({ equipes }) => {
 
-
+    equipes.sort((a, b) => b.points - a.points);
+    const topScore = equipes[0].points
 
     return (
+
+
 
         <section>
 
             {
                 equipes.map((equipe, index) => (
-                    <PointBar key={index} equipe={equipe} topScore={10} />
-                ))}
+                    <PointBar key={index} equipe={equipe} topScore={topScore} />
+                ))
+            }
         </section>
-        
+
     );
 };
 
