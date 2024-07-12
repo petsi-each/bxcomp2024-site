@@ -7,37 +7,37 @@ export default function Home() {
       title: "Equipe",
       members: ["eu", "vc", "ele"],
       points: 1,
-      iconPath: "nayet"
+      iconPath: "/equipe_icons/example.png"
     },
     {
       title: "Equipea",
       members: ["eu", "vc", "ele"],
       points: 2,
-      iconPath: "nayet"
+      iconPath: "/equipe_icons/example.png"
     },
     {
       title: "Equipeb",
       members: ["eu", "vc", "ele"],
       points: 7,
-      iconPath: "nayet"
+      iconPath: "/equipe_icons/example.png"
     },
     {
       title: "Equipec",
       members: ["eu", "vc", "ele"],
       points: 5,
-      iconPath: "nayet"
+      iconPath: "/equipe_icons/example.png"
     },
     {
       title: "Equiped",
       members: ["eu", "vc", "ele"],
       points: 8,
-      iconPath: "nayet"
+      iconPath: "/equipe_icons/example.png"
     },
     {
-      title: "Equipee",
+      title: "Equipeeaaaaaaa",
       members: ["eu", "vc", "ele"],
       points: 7,
-      iconPath: "nayet"
+      iconPath: "/equipe_icons/example.png"
     },
 
   ]
