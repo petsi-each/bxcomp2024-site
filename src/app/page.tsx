@@ -5,8 +5,7 @@ export default function Home() {
 
   return (
     <main>
-      {/* Add components from Landing Page here */}
-
+      
       {/* Ranking section using ranking component */}
       <section className="flex flex-col my-12 lg:px-16 gap-12">
         <h1 className="text-7xl px-8">Ranking</h1>
