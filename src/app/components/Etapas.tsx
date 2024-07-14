@@ -9,15 +9,18 @@ interface EtapaCardProps {
 
 function EtapaCard(props: EtapaCardProps) {
     return (
-        <div className="grid grid-cols-5 w-full bg-blue-500">
-            <figure className="col-span-1">
-                <img src={props.img}/>
+        <div className="grid grid-cols-5 w-full rounded-lg bg-blue-500">
+            <figure className="col-span-1 flex items-center justify-center">
+                <img 
+                    className="rounded-lg" 
+                    src={props.img}
+                />
             </figure>
-            <header className="col-span-2">
+            <header className="col-span-2 flex flex-col justify-center items-center">
                 <h1>Etapa {props.num}</h1>
                 <h2>{props.title}</h2>
             </header>
-            <a className="col-span-2 flex flex-row" href="props.link">
+            <a className="col-span-2 flex flex-row items-center" href={props.link}>
                 <FiExternalLink />
                 Ver detalhes
             </a>
@@ -34,7 +37,7 @@ export default function Etapas() {
                 <h2 className="text-md">Estude ao rever os temas, desafios e resoluções já apresentadas nesta edição do BXCOMP!</h2>
                 <a>*jhonny bravo img*</a>
             </header>
-            <aside>
+            <aside className="grid grid-rows-5 gap-4">
                 <EtapaCard 
                     num={0}
                     title="Nickelodeon"
