@@ -3,8 +3,8 @@ import EtapaCard from "src/components/EtapaCard"
 export default function Etapas() {
     return (
         <section className="grid grid-cols-2 bg-brancoBX">
-            <header>
-                <h1 className="text-verdeBX text-2xl">Etapas</h1>
+            <header className="m-16">
+                <h1 className="text-verdeBX text-6xl mb-4">Etapas</h1>
                 <h2 className="font-poppins text-black text-thin">Estude ao rever os temas, desafios e resoluções já apresentadas nesta edição do BXCOMP!</h2>
                 <figure>
                     <img src="/etapas/jhonny_bravo.png" />
