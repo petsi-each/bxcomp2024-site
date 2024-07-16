@@ -1,5 +1,5 @@
 import ImageG from "@/components/ImageG"
-import EtapaCard from "src/components/EtapaCard"
+import EtapaCard from "@/app/components/EtapaCard"
 
 export default function Etapas() {
     return (
