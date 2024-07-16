@@ -1,3 +1,4 @@
+import ImageG from "@/components/ImageG"
 import EtapaCard from "src/components/EtapaCard"
 
 export default function Etapas() {
@@ -7,7 +8,10 @@ export default function Etapas() {
                 <h1 className="text-verdeBX text-6xl mb-4">Etapas</h1>
                 <h2 className="font-poppins text-black text-thin">Estude ao rever os temas, desafios e resoluções já apresentadas nesta edição do BXCOMP!</h2>
                 <figure>
-                    <img src="/etapas/jhonny_bravo.png" />
+                    <ImageG 
+                        src="/etapas/jhonny_bravo.png" 
+                        alt="Jhonny Bravo"
+                    />
                 </figure>
             </header>
             <aside className="grid grid-rows-5 gap-4 my-4 mx-4">

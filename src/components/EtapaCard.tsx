@@ -1,4 +1,5 @@
 import { PiRocketLaunch } from "react-icons/pi";
+import ImageG from "@/components/ImageG"
 
 interface EtapaCardProps {
     num: number;
@@ -12,9 +13,10 @@ export default function EtapaCard(props: EtapaCardProps) {
         <div className="grid grid-cols-5 w-full rounded-lg bg-azulBX">
             <div className="col-span-1 flex items-center justify-center p-4">
                 <figure className="bg-white rounded-lg">
-                    <img
+                    <ImageG
                         className="rounded-lg size-full"
-                        src={props.img}
+                        src={props.img} 
+                        alt={`Imagem da etapa ${props.num}: ${props.title}`}
                     />
                 </figure>
             </div>
