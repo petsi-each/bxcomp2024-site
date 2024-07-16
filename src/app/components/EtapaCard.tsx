@@ -16,7 +16,7 @@ export default function EtapaCard(props: EtapaCardProps) {
             <div className="col-span-1 flex items-center justify-center p-4">
                 <figure className="bg-white rounded-lg">
                     <ImageG
-                        className="rounded-lg size-full"
+                        className="rounded-lg"
                         src={props.img}
                         alt={`Imagem da etapa ${props.num}: ${props.title}`}
                         width={400}
