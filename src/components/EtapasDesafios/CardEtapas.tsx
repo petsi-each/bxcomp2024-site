@@ -25,7 +25,7 @@ export default function CardEtapas(props : etapaList) {
                     <button className='flex-col justify-center size-48'>
                         {/*trablhar nas alterações*/}
                         <ImageG className="size-fit rounded-3xl" src="staticTV.gif" alt="TV estática" width="2" height="2" />
-                        {/*if(state && {etapasEdesafios.estado}) ==> carddesafios({etapasEdesafios.desafios}) , <ImageG classname="etapasEdesafios.icon"/>, <h2>Etapa {etapasEdesafios.desafios}</h2>*/}
+                        {/*if(state && {etapa.estado}) ==> carddesafios({etapa.desafios}) , <ImageG classname="etapa.icon"/>, <h2>Etapa {etapa.desafios}</h2>*/}
                         {/*if(!state)  as coisas precisariam se recolher se clicar uma segunda vez*/}
                     </button>
                 ))

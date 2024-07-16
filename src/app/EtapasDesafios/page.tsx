@@ -1,5 +1,5 @@
 import etapasDesafios from '../../../etapasDesafios.json';
-import CardEtapas from './CardEtapas';
+import CardEtapas from '../../components/EtapasDesafios/CardEtapas';
 
 export default function EtapasDesafios() {
     return (
