@@ -22,8 +22,7 @@ export default function CardEtapas(props : etapaList) {
         <div className="grid grid-cols-5 gap-x-5">
             {
                 props.etapas.map((etapa) => (
-                    <button className='flex-col justify-center size-48'>
-                        {/*trablhar nas alterações*/}
+                    <button onClick={() => setState(state => !state)} title={etapa.etapa} className='flex-col justify-center size-48 rounded-3xl'>
                         <ImageG className="size-fit rounded-3xl" src="staticTV.gif" alt="TV estática" width="2" height="2" />
                         {/*if(state && {etapa.estado}) ==> carddesafios({etapa.desafios}) , <ImageG classname="etapa.icon"/>, <h2>Etapa {etapa.desafios}</h2>*/}
                         {/*if(!state)  as coisas precisariam se recolher se clicar uma segunda vez*/}
