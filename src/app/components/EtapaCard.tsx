@@ -1,5 +1,7 @@
-import { PiRocketLaunch } from "react-icons/pi";
+'use client'
+
 import ImageG from "@/components/ImageG"
+import PrimaryButton from "@/components/PrimaryButton";
 
 interface EtapaCardProps {
     num: number;
@@ -15,8 +17,10 @@ export default function EtapaCard(props: EtapaCardProps) {
                 <figure className="bg-white rounded-lg">
                     <ImageG
                         className="rounded-lg size-full"
-                        src={props.img} 
+                        src={props.img}
                         alt={`Imagem da etapa ${props.num}: ${props.title}`}
+                        width={400}
+                        height={400}
                     />
                 </figure>
             </div>
@@ -25,12 +29,7 @@ export default function EtapaCard(props: EtapaCardProps) {
                 <h2 className="font-poppins">{props.title}</h2>
             </header>
             <div className="col-span-2 flex justify-center items-center">
-                <div className="bg-verdeBX w-fit max-w-xs flex items-center rounded-3xl">
-                    <a className="flex flex-row justify-center items-center w-full m-4" href={props.link}>
-                        <PiRocketLaunch className="text-3xl mr-4" />
-                        Ver detalhes
-                    </a>
-                </div>
+                <PrimaryButton title="Ver detalhes" onClick={() => { }} />
             </div>
         </div>
     )

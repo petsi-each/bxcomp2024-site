@@ -11,6 +11,8 @@ export default function Etapas() {
                     <ImageG 
                         src="/etapas/jhonny_bravo.png" 
                         alt="Jhonny Bravo"
+                        width={419}
+                        height={456}
                     />
                 </figure>
             </header>
@@ -18,31 +20,31 @@ export default function Etapas() {
                 <EtapaCard 
                     num={0}
                     title="Nickelodeon"
-                    img="etapas/em_breve.png"
+                    img="/etapas/em_breve.png"
                     link="#"
                 />
                 <EtapaCard 
                     num={1}
                     title="Dream Works"
-                    img="etapas/em_breve.png"
+                    img="/etapas/em_breve.png"
                     link="#"
                 />
                 <EtapaCard 
                     num={3}
                     title="Warner Bros."
-                    img="etapas/em_breve.png"
+                    img="/etapas/em_breve.png"
                     link="#"
                 />
                 <EtapaCard 
                     num={3}
                     title="Disney"
-                    img="etapas/em_breve.png"
+                    img="/etapas/em_breve.png"
                     link="#"
                 />
                 <EtapaCard 
                     num={4}
                     title="Estúdios PET"
-                    img="etapas/em_breve.png"
+                    img="/etapas/em_breve.png"
                     link="#"
                 />
             </aside>
