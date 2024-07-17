@@ -1,5 +1,8 @@
 import ImageG from "@/components/ImageG"
 import EtapaCard from "@/app/components/EtapaCard"
+import { Poppins } from 'next/font/google'
+
+const poppins = Poppins({ weight: '400', subsets: ['latin'] })
 
 export interface Etapa {
     numero: number;
@@ -16,7 +19,7 @@ export default function Etapas() {
         <section className="grid grid-cols-2 bg-brancoBX">
             <header className="m-16">
                 <h1 className="text-verdeBX text-6xl mb-4">Etapas</h1>
-                <h2 className="font-poppins text-black text-thin">Estude ao rever os temas, desafios e resoluções já apresentadas nesta edição do BXCOMP!</h2>
+                <h2 className={`${poppins.className} text-black text-thin`}>Estude ao rever os temas, desafios e resoluções já apresentadas nesta edição do BXCOMP!</h2>
                 <figure>
                     <ImageG 
                         src="/etapas/jhonny_bravo.png" 

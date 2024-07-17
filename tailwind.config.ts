@@ -20,9 +20,6 @@ const config: Config = {
         'brancoBX': '#E6E4E0',
         'pretoBX': '#031621'
       },
-      fontFamily: {
-        poppins: ['Poppins', 'sans-serif']
-      }
     },
   },
   plugins: [],
