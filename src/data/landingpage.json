@@ -1,0 +1,68 @@
+{
+  "etapas": [
+    {
+      "numero": 0,
+      "tema": "titulo da etapa",
+      "imagem": "path da imagem",
+      "link": "link",
+      "visivel": true
+    },
+    {
+      "numero": 1,
+      "tema": "titulo da etapa",
+      "imagem": "path da imagem",
+      "link": "link",
+      "visivel": true
+    },
+    {
+      "numero": 2,
+      "tema": "titulo da etapa",
+      "imagem": "path da imagem",
+      "link": "link",
+      "visivel": true
+    },
+    {
+      "numero": 3,
+      "tema": "titulo da etapa",
+      "imagem": "path da imagem",
+      "link": "link",
+      "visivel": true
+    },
+    {
+      "numero": 4,
+      "tema": "titulo da etapa",
+      "imagem": "path da imagem",
+      "link": "link",
+      "visivel": true
+    },
+    {
+      "numero": 5,
+      "tema": "titulo da etapa",
+      "imagem": "path da imagem",
+      "link": "link",
+      "visivel": true
+    }
+  ],
+  "equipes": [
+    {
+      "nome": "Equipe",
+      "membros": [
+        "eu",
+        "vc",
+        "ele"
+      ],
+      "pontos": 1,
+      "iconPath": "/equipe_icons/example.png"
+    },
+    {
+      "nome": "Equipea",
+      "membros": [
+        "eu",
+        "vc",
+        "ele"
+      ],
+      "pontos": 2,
+      "iconPath": "/equipe_icons/example.png"
+    }
+  ]
+}
