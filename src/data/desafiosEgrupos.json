@@ -156,16 +156,26 @@
           }
         ], 
     
-        "grupos": [
-        {
-          "nome_do_grupo": "Grupo A",
-          "participantes": ["Participante 1", "Participante 2", "Participante 3", "Participante 4"],
-          "logo": "Link_Logo"
-        },
-        {
-          "nome_do_grupo": "Grupo B",
-          "participantes": ["Participante 1", "Participante 2", "Participante 3", "Participante 4"],
-          "logo": "Link_logo"
-        }
+        "equipes": [
+          {
+              "nome": "Equipe",
+              "membros": [
+                  "eu",
+                  "vc",
+                  "ele"
+              ],
+              "pontos": 1,
+              "iconPath": "/equipe_icons/example.png"
+          },
+          {
+              "nome": "Equipea",
+              "membros": [
+                  "eu",
+                  "vc",
+                  "ele"
+              ],
+              "pontos": 2,
+              "iconPath": "/equipe_icons/example.png"
+          }
       ]
     }
