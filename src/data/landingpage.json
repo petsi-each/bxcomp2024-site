@@ -30,9 +30,9 @@
     },
     {
       "numero": 4,
-      "tema": "Estudios PET",
-      "visivel": false,
-      "imagem": "/EtapasDesafios/E4-EstudiosPET.png",
+      "tema": "Estudio PET",
+      "visivel": true,
+      "imagem": "/EtapasDesafios/E4-EstudioPET.png",
       "link": "#"
     }
   ],
