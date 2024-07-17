@@ -13,24 +13,24 @@ interface etapa {
     altIcon: string,
     desafios: desafioList
 }
-
-interface etapaList {
+//testando
+{/*interface etapaList {
     etapas: etapa[]
 }
-
+*/}
 export default function EtapasDesafios() {
-    const props: etapaList = etapasDesafios as unknown as etapaList; //check 
+    const props: etapa[] = etapasDesafios as unknown as etapa[]; //check 
     const [indice, setIndice] = useState(-1);
     return (
         <main>
             <h1 className="px-60 py-32 text-right text-brancoBX text-6xl"> Etapas <br></br> <span className="text-laranjaBX">&</span> Desafios</h1> {/*whitespace-pre-line não funcionou*/}
             <div className="grid grid-cols-5 gap-x-5">
                 {
-                    props.etapas.map((etapa) => (
+                    props.map((etapa) => (
                         <button onClick={() => setIndice(etapa.etapa)} disabled={etapa.estado == false} title={'Etapa ${etapa.etapa'} className='flex justify-center size-48 rounded-3xl'> {/*definir função para onClick, para que que um segundo clique recolha os balões de desafios*/}
                             {
                                 etapa.estado == false ?
-                                    <ImageG className="size-fit rounded-3xl" src="staticTV.gif" alt="TV estática" width="2" height="2" />
+                                    <ImageG className="size-fit rounded-3xl" src="/staticTV.gif" alt="TV estática" width="2" height="2" />
                                     :
                                     <div>
                                         <ImageG className="size-fit rounded-3xl opacity-80" src={etapa.icon} alt={etapa.altIcon} width="2" height="2" />
