@@ -1,7 +1,17 @@
 import ImageG from "@/components/ImageG"
 import EtapaCard from "@/app/components/EtapaCard"
 
+interface Etapa {
+    numero: number;
+    tema: string;
+    visivel: boolean;
+    imagem: string; 
+    link: string;
+}
+
 export default function Etapas() {
+    const etapas_data: { etapas: Etapa[] } = require('@/data/etapas.json') 
+
     return (
         <section className="grid grid-cols-2 bg-brancoBX">
             <header className="m-16">
@@ -18,34 +28,39 @@ export default function Etapas() {
             </header>
             <aside className="grid grid-rows-5 gap-4 my-4 mx-4">
                 <EtapaCard 
-                    num={0}
-                    title="Nickelodeon"
-                    img="/etapas/em_breve.png"
-                    link="#"
+                    num={etapas_data.etapas[0].numero}
+                    title={etapas_data.etapas[0].tema}
+                    img={etapas_data.etapas[0].imagem}
+                    link={etapas_data.etapas[0].link}
+                    visible={etapas_data.etapas[0].visivel}
                 />
-                <EtapaCard 
-                    num={1}
-                    title="Dream Works"
-                    img="/etapas/em_breve.png"
-                    link="#"
+                <EtapaCard
+                    num={etapas_data.etapas[1].numero}
+                    title={etapas_data.etapas[1].tema}
+                    img={etapas_data.etapas[1].imagem}
+                    link={etapas_data.etapas[1].link}
+                    visible={etapas_data.etapas[1].visivel}
                 />
-                <EtapaCard 
-                    num={3}
-                    title="Warner Bros."
-                    img="/etapas/em_breve.png"
-                    link="#"
+                <EtapaCard
+                    num={etapas_data.etapas[2].numero}
+                    title={etapas_data.etapas[2].tema}
+                    img={etapas_data.etapas[2].imagem}
+                    link={etapas_data.etapas[2].link}
+                    visible={etapas_data.etapas[2].visivel}
                 />
-                <EtapaCard 
-                    num={3}
-                    title="Disney"
-                    img="/etapas/em_breve.png"
-                    link="#"
+                <EtapaCard
+                    num={etapas_data.etapas[3].numero}
+                    title={etapas_data.etapas[3].tema}
+                    img={etapas_data.etapas[3].imagem}
+                    link={etapas_data.etapas[3].link}
+                    visible={etapas_data.etapas[3].visivel}
                 />
-                <EtapaCard 
-                    num={4}
-                    title="Estúdios PET"
-                    img="/etapas/em_breve.png"
-                    link="#"
+                <EtapaCard
+                    num={etapas_data.etapas[4].numero}
+                    title={etapas_data.etapas[4].tema}
+                    img={etapas_data.etapas[4].imagem}
+                    link={etapas_data.etapas[4].link}
+                    visible={etapas_data.etapas[4].visivel}
                 />
             </aside>
         </section>

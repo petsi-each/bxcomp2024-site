@@ -1,0 +1,39 @@
+{
+    "etapas": [
+        {
+            "numero": 0,
+            "tema": "Nickelodeon",
+            "visivel": false,
+            "imagem": "/etapas/nickelodeon.png",
+            "link": "#"
+        },
+        {
+            "numero": 1,
+            "tema": "DreamWorks",
+            "visivel": false,
+            "imagem": "/etapas/dream_works.png",
+            "link": "#"
+        },
+        {
+            "numero": 2,
+            "tema": "Warner Bros.",
+            "visivel": false,
+            "imagem": "/etapas/warner_bros.png",
+            "link": "#"
+        },
+        {
+            "numero": 3,
+            "tema": "Disney",
+            "visivel": false,
+            "imagem": "/etapas/disney.png",
+            "link": "#"
+        },
+        {
+            "numero": 4,
+            "tema": "Estudios PET",
+            "visivel": false,
+            "imagem": "/etapas/estudios_pet.png",
+            "link": "#"
+        }
+    ]
+}
