@@ -15,7 +15,7 @@ interface etapa {
 }
 
 export default function EtapasDesafios() {
-    etapasDesafios as unknown as etapa[]; 
+    etapasDesafios as unknown as etapa[];
     const [indice, setIndice] = useState(-1);
     return (
         <main>
@@ -38,7 +38,11 @@ export default function EtapasDesafios() {
                     ))
                 }
             </div>
-            {/*<CardDesafios desafios={(props.etapas[indice]).desafios} />*/}
+            {
+                indice !== -1 &&(
+                    <CardDesafios desafios={(etapasDesafios[indice]).desafios} />
+                )
+            }
         </main>
     );
 }
