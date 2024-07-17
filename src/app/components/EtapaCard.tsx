@@ -3,6 +3,9 @@
 import ImageG from "@/components/ImageG"
 import PrimaryButton from "@/components/PrimaryButton";
 import { Etapa } from "@/app/components/Etapas";
+import { Poppins } from 'next/font/google'
+
+const poppins = Poppins({ weight: '300', subsets: ['latin'] })
 
 export default function EtapaCard(props: Etapa) {
     let cond_props = {
@@ -31,8 +34,8 @@ export default function EtapaCard(props: Etapa) {
                 </figure>
             </div>
             <header className="col-span-2 flex flex-col justify-center items-center">
-                <h1>Etapa {props.numero}</h1>
-                <h2 className="font-poppins">{cond_props.tema}</h2>
+                <h1 className="text-2xl mb-4">Etapa {props.numero}</h1>
+                <h2 className={`text-3xl ${poppins.className}`}>{cond_props.tema}</h2>
             </header>
             <div className="col-span-2 flex justify-center items-center">
                 <PrimaryButton title="Ver detalhes" onClick={() => { }} />
