@@ -16,7 +16,7 @@ export default function EtapaCard(props: Etapa) {
 
     if(!props.visivel) {
         cond_props.tema = "Em breve..."
-        cond_props.img = "/etapas/em_breve.png"
+        cond_props.img = "/home/staticTV.gif"
         cond_props.link = "#"
     }
     
