@@ -13,8 +13,8 @@ export default function Hero() {
                     src="/home/logobxcomp.png" 
                     priority 
                     alt="Logo do BXCOMP"
-                    width={725} // ajuste para a largura desejada
-                    height={490} // ajuste para a altura desejada
+                    width={725} 
+                    height={490} 
                 />
             </div>
         </section>

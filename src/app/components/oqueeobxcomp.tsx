@@ -8,22 +8,22 @@ export default function oqueeobxcomp() {
     return (
         <section className="relative min-h-screen flex items-center justify-center">
             {/* Background Image */}
-            <div className="absolute inset-0">
+            <div className="absolute inset-0 z-0">
                 <ImageG 
                     className="w-112 md:w-192 h-fit" 
-                    src="/home/sobrebx.png" // Replace with your image path
+                    src="/home/sobrebx.png" 
                     alt="Background Image"
                     quality={100}
                     priority
-                    width={1154} // ajuste para a largura desejada
-                    height={875} // ajuste para a altura desejada
+                    width={1154}
+                    height={875} 
                 />
             </div>
 
             {/* Text Balloon */}
             <div className="relative z-10 max-w-lg p-8 bg-white bg-opacity-80 rounded-2xl shadow-lg backdrop-blur-sm text-center">
-                <h2 className="text-2xl font-bold text-orange-600 mb-4">O que é BXCOMP?</h2>
-                <p className="text-gray-700 mb-6">
+                <h2 className="text-2xl text-orange-600 mb-4">O que é BXCOMP?</h2>
+                <p className="text-black mb-6">
                     O BXComp é o Campeonato de Programação para Calouros do Curso de Sistemas de Informação organizado pelo PET-SI. Seu objetivo é criar um ambiente divertido e desafiador, composto por atividades de resolução de problemas usando programação.
                 </p>
                 <div className="flex justify-center space-x-4">
