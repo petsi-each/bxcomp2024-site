@@ -10,7 +10,7 @@ export interface Etapa {
 }
 
 export default function Etapas() {
-    const etapas_data: { etapas: Etapa[] } = require('@/data/etapas.json') 
+    const etapas_data: { etapas: Etapa[] } = require('@/data/landingpage.json') 
 
     return (
         <section className="grid grid-cols-2 bg-brancoBX">
