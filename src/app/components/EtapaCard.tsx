@@ -2,24 +2,17 @@
 
 import ImageG from "@/components/ImageG"
 import PrimaryButton from "@/components/PrimaryButton";
+import { Etapa } from "@/app/components/Etapas";
 
-interface EtapaCardProps {
-    num: number;
-    title: string;
-    img: string;
-    link: string;
-    visible: boolean;
-}
-
-export default function EtapaCard(props: EtapaCardProps) {
+export default function EtapaCard(props: Etapa) {
     let cond_props = {
-        title: props.title,
-        img: props.img,
+        tema: props.tema,
+        img: props.imagem,
         link: props.link,
     }
 
-    if(!props.visible) {
-        cond_props.title = "Em breve..."
+    if(!props.visivel) {
+        cond_props.tema = "Em breve..."
         cond_props.img = "/etapas/em_breve.png"
         cond_props.link = "#"
     }
@@ -31,15 +24,15 @@ export default function EtapaCard(props: EtapaCardProps) {
                     <ImageG
                         className="rounded-lg"
                         src={cond_props.img}
-                        alt={`Imagem da etapa ${props.num}: ${cond_props.title}`}
+                        alt={`Imagem da etapa ${props.numero}: ${cond_props.tema}`}
                         width={400}
                         height={400}
                     />
                 </figure>
             </div>
             <header className="col-span-2 flex flex-col justify-center items-center">
-                <h1>Etapa {props.num}</h1>
-                <h2 className="font-poppins">{cond_props.title}</h2>
+                <h1>Etapa {props.numero}</h1>
+                <h2 className="font-poppins">{cond_props.tema}</h2>
             </header>
             <div className="col-span-2 flex justify-center items-center">
                 <PrimaryButton title="Ver detalhes" onClick={() => { }} />
