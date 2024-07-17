@@ -15,7 +15,7 @@ export default function CardDesafios(props: desafioList) {
         <div className="grid grid-cols-1 gap-y-8 py-32">
             {
                 props.desafios.map((desafio) => (
-                    <article className="flex-col w-[500px] h-28 bg-brancoBX rounded-e-full text-center text-pretoBX">
+                    <article className="flex-col w-[500px] h-28 bg-[#FBF3AD] rounded-e-full text-center text-pretoBX">
                         <h3 className="text-2xl">{desafio.desafio}</h3>
                         <p className="font-Poppins text-base">
                             <a href={desafio.enunciado} target="_blank">Enunciado</a>
