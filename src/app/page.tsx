@@ -2,7 +2,7 @@
 import Ranking from "@/components/Ranking";
 import PrimaryButton from "@/components/PrimaryButton";
 
-import data from '../data/exampleLanding.json';
+import data from '../data/landingpage.json';
 
 export default function Home() {
 
