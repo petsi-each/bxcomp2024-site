@@ -1,6 +1,6 @@
 [
     {
-        "etapa": "0",
+        "etapaIndice": 0,
         "estado": false,
         "tema": "Nickelodion",
         "icon": "/EtapasDesafios/E0-Nickelodion.png",
@@ -39,7 +39,7 @@
         ]
     },
     {
-        "etapa": "1",
+        "etapaIndice": 1,
         "estado": false,
         "tema": "DreamWorks",
         "icon": "/EtapasDesafios/E1-DreamWorks.png",
@@ -78,7 +78,7 @@
         ]
     },
     {
-        "etapa": "2",
+        "etapaIndice": 2,
         "estado": false,
         "tema": "Warner Bros",
         "icon": "/EtapasDesafios/E2-WarnerBros.png",
@@ -117,7 +117,7 @@
         ]
     },
     {
-        "etapa": "3",
+        "etapaIndice": 3,
         "estado": false,
         "tema": "Disney",
         "icon": "/EtapasDesafios/E3-Disney.png",
@@ -156,7 +156,7 @@
         ]
     },
     {
-        "etapa": "4",
+        "etapaIndice": 4,
         "estado": false,
         "tema": "Estúdio PET",
         "icon": "/EtapasDesafios/E4-EstudioPET.png",
