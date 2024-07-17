@@ -4,35 +4,35 @@
       "numero": 0,
       "tema": "Nickelodeon",
       "visivel": false,
-      "imagem": "/etapas/nickelodeon.png",
+      "imagem": "/EtapasDesafios/E0-Nickelodeon.png",
       "link": "#"
     },
     {
       "numero": 1,
       "tema": "DreamWorks",
       "visivel": false,
-      "imagem": "/etapas/dream_works.png",
+      "imagem": "/EtapasDesafios/E1-DreamWorks.png",
       "link": "#"
     },
     {
       "numero": 2,
       "tema": "Warner Bros.",
       "visivel": false,
-      "imagem": "/etapas/warner_bros.png",
+      "imagem": "/EtapasDesafios/E2-WarnerBros.png",
       "link": "#"
     },
     {
       "numero": 3,
       "tema": "Disney",
       "visivel": false,
-      "imagem": "/etapas/disney.png",
+      "imagem": "/EtapasDesafios/E3-Disney.png",
       "link": "#"
     },
     {
       "numero": 4,
       "tema": "Estudios PET",
       "visivel": false,
-      "imagem": "/etapas/estudios_pet.png",
+      "imagem": "/EtapasDesafios/E4-EstudiosPET.png",
       "link": "#"
     }
   ],
