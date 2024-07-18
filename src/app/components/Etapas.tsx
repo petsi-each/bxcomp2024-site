@@ -23,6 +23,7 @@ export default function Etapas() {
                 <figure>
                     <ImageG 
                         src="/home/jhonny_bravo_dancando.gif" 
+                        unoptimized={true}
                         alt="Jhonny Bravo"
                         width={419}
                         height={456}

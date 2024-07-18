@@ -27,6 +27,7 @@ export default function EtapaCard(props: Etapa) {
                     <ImageG
                         className="rounded-lg"
                         src={cond_props.img}
+                        unoptimized={cond_props.img.split('.')[1] == 'gif' ? true : false}
                         alt={`Imagem da etapa ${props.numero}: ${cond_props.tema}`}
                         width={400}
                         height={400}
