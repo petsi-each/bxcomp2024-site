@@ -22,7 +22,7 @@ export default function Etapas() {
                 <h2 className={`${poppins.className} text-black text-thin`}>Estude ao rever os temas, desafios e resoluções já apresentadas nesta edição do BXCOMP!</h2>
                 <figure>
                     <ImageG 
-                        src="/home/jhonny_bravo.png" 
+                        src="/home/jhonny_bravo_dancando.gif" 
                         alt="Jhonny Bravo"
                         width={419}
                         height={456}
