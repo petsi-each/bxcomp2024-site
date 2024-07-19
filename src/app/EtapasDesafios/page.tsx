@@ -35,8 +35,8 @@ export default function EtapasDesafios() {
                                         :
                                         <div>
                                             <ImageG className="rounded-3xl opacity-80" src={etapa.icon} alt={etapa.altIcon} fill={true} />
-                                            <h2 className="mt-32 font-poppins text-white text-2xl"><b>Etapa {etapa.etapaIndice}</b></h2> {/*TODO: o texto está sendo renderizado por baixo da imagem*/}
-                                            <h3 className="font-poppins text-white text-base">{etapa.tema}</h3>
+                                            <h2 className="font-poppins text-white mt-28 text-2xl"><b>Etapa {etapa.etapaIndice}</b></h2> {/*TODO: o texto está sendo renderizado por baixo da imagem*/}
+                                            <h3 className="-mt-1 font-poppins text-white test-base">{etapa.tema}</h3>
                                         </div>
                                 }
                             </button>
