@@ -12,7 +12,7 @@ export interface desafioList {
 
 export default function CardDesafios(props: desafioList) {
     return (
-        <div className="mb-32 grid grid-cols-1 gap-y-8">
+        <div className="mb-28 grid grid-cols-1 gap-y-8">
             {
                 props.desafios.map((desafio) => (
                     <article className="p-2 w-[600px] h-32 bg-[#FF9C46] rounded-full text-center text-pretoBX hover:ring-8 hover:ring-azulBX hover:ring-opacity-20">

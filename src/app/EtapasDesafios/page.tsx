@@ -18,13 +18,13 @@ export default function EtapasDesafios() {
     
     return (
         <main>
-            <h1 className="mx-60 mt-32 text-right text-6xl text-brancoBX"> Etapas <br></br> <span className="text-laranjaBX">&</span> Desafios</h1> {/*whitespace-pre-line não funcionou*/}
+            <h1 className="mx-60 mt-28 text-right text-6xl text-brancoBX"> Etapas <br></br> <span className="text-laranjaBX">&</span> Desafios</h1> {/*whitespace-pre-line não funcionou*/}
             <div className="flex items-center flex-col">
-                <div className="my-32 grid grid-cols-5 gap-x-5 w-fit"> {/*TODO:no clique do botão de cada Etapa o gap está mudando*/}
+                <div className="my-24 grid grid-cols-5 gap-x-5 w-fit"> {/*TODO:no clique do botão de cada Etapa o gap está mudando*/}
                     {
                         etapasDesafios.map((etapa) => (
                             <button onClick={() => handleOnClick(etapa.etapaIndice)} disabled={etapa.estado == false} title={'Etapa ${etapa.etapaIndice}'} 
-                            className={`relative size-48 rounded-3xl ${etapa.estado == true ? 'hover:ring-8 hover:ring-azulBX hover:ring-opacity-20 hover:underline hover:decoration-verdeBX hover:decoration-2 hover:bg-blue-600 active:ring-8 active:ring-laranjaBX active:ring-opacity-70' : ''} ${indice == etapa.etapaIndice ? 'size-60 ring-4 ring-azulBX ring-opacity-30' : ''}`}> 
+                            className={`relative size-48 rounded-3xl ${etapa.estado == true ? 'hover:ring-8 hover:ring-azulBX hover:ring-opacity-20 hover:underline hover:decoration-verdeBX hover:decoration-2 hover:bg-blue-600 active:ring-8 active:ring-laranjaBX active:ring-opacity-70' : ''} ${indice == etapa.etapaIndice ? 'size-56 ring-4 ring-azulBX ring-opacity-30' : ''}`}> 
                              {/*procurar por uma forma mais concisa de usar hover,etc */}
                                 {
                                     etapa.estado == false ?
