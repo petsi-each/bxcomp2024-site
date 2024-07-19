@@ -20,8 +20,18 @@ const config: Config = {
         'brancoBX': '#E6E4E0',
         'pretoBX': '#031621'
       },
+      keyframes: {
+        appear: {
+          "0%": { opacity: '0' },
+          "100%": { opacity: '0.4' },
+        },
+      },
+      animation: {
+        appear: "appear 0.3s ease-out",
+      },
     },
   },
   plugins: [],
 };
 export default config;
+

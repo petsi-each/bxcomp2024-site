@@ -26,8 +26,8 @@ export default function Header() {
                     <PiList />
                 </button>
             </div>
-            {openMenu && <div className="fixed left-0 top-0 h-screen w-full bg-brancoBX opacity-40 z-0 lg:hidden" />}
-            <nav className={`${!openMenu ? 'hidden lg:inline-block' : ''} z-10 bg-pretoBX p-8 flex flex-col rounded-bl-lg text-verdeBX fixed w-80 h-screen right-0 top-0 space-y-4 border-l border-b lg:space-x-8 lg:justify-end lg:static lg:flex-row lg:bg-transparent lg:h-min lg:w-max lg:border-none`}>
+            {openMenu && <div className="fixed left-0 top-0 h-screen w-full bg-brancoBX opacity-40 z-0 animate-appear lg:hidden" />}
+            <nav className={`${!openMenu ? 'translate-x-full lg:translate-x-0 lg:inline-block' : 'translate-x-0'} transform transition-transform duration-300 ease-out z-10 bg-pretoBX p-8 flex flex-col rounded-bl-lg text-verdeBX fixed w-80 h-screen right-0 top-0 space-y-4 border-l border-b lg:space-x-8 lg:justify-end lg:static lg:flex-row lg:bg-transparent lg:h-min lg:w-max lg:border-none`}>
                 <button type="button" className="mt-4 text-4xl text-brancoBX self-end lg:hidden" onClick={() => setOpenMenu(false)}>
                     <PiX/>
                 </button>
