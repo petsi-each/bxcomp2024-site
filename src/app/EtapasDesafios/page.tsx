@@ -19,7 +19,7 @@ export default function EtapasDesafios() {
     
     return (
         <main>
-            <h1 className="mx-60 mt-28 text-right text-6xl text-brancoBX"> Etapas <br></br> <span className="text-laranjaBX">&</span> Desafios</h1> {/*whitespace-pre-line não funcionou*/}
+            <h1 className="mx-60 mt-28 text-right text-5xl text-brancoBX"> Etapas <br></br> <span className="text-laranjaBX">&</span> Desafios</h1> {/*whitespace-pre-line não funcionou*/}
             <div className="flex items-center flex-col">
                 <div className="my-24 grid grid-cols-5 gap-x-5 w-fit"> {/*TODO:no clique do botão de cada Etapa o gap está mudando*/}
                     {
