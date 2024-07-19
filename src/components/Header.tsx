@@ -27,7 +27,7 @@ export default function Header() {
                 </button>
             </div>
             {openMenu && <div className="absolute left-0 top-0 h-screen w-full bg-brancoBX opacity-40 z-0" />}
-            <nav className={`${!openMenu ? 'hidden' : ''} z-10 bg-pretoBX p-8 flex flex-col rounded-bl-lg text-verdeBX absolute w-80 h-screen right-0 top-0 space-y-4 border-l border-b lg:space-x-8 lg:justify-end lg:static lg:flex-row lg:bg-transparent lg:h-min lg:w-max lg:border-none`}>
+            <nav className={`${!openMenu ? 'hidden lg:inline-block' : ''} z-10 bg-pretoBX p-8 flex flex-col rounded-bl-lg text-verdeBX absolute w-80 h-screen right-0 top-0 space-y-4 border-l border-b lg:space-x-8 lg:justify-end lg:static lg:flex-row lg:bg-transparent lg:h-min lg:w-max lg:border-none`}>
                 <button type="button" className="text-4xl text-brancoBX self-end lg:hidden" onClick={() => setOpenMenu(false)}>
                     <PiX/>
                 </button>
