@@ -20,7 +20,7 @@ export default function Etapas() {
             <header className="m-16">
                 <h1 className="text-verdeBX text-6xl mb-4">Etapas</h1>
                 <h2 className={`${poppins.className} text-black text-thin`}>Estude ao rever os temas, desafios e resoluções já apresentadas nesta edição do BXCOMP!</h2>
-                <figure>
+                <figure className="hidden sm:block">
                     <ImageG 
                         src="/home/jhonny_bravo_dancando.gif" 
                         unoptimized={true}
