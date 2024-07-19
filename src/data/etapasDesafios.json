@@ -1,8 +1,8 @@
 [
     {
         "etapaIndice": 0,
-        "estado": false,
-        "tema": "Nickelodion",
+        "estado": true,
+        "tema": "Nickelodeon",
         "icon": "/EtapasDesafios/E0-Nickelodion.png",
         "altIcon": "Bob Esponja e Patrick Estrela",
         "desafios": [
@@ -40,7 +40,7 @@
     },
     {
         "etapaIndice": 1,
-        "estado": false,
+        "estado": true,
         "tema": "DreamWorks",
         "icon": "/EtapasDesafios/E1-DreamWorks.png",
         "altIcon": "Shrek",
@@ -79,7 +79,7 @@
     },
     {
         "etapaIndice": 2,
-        "estado": false,
+        "estado": true,
         "tema": "Warner Bros",
         "icon": "/EtapasDesafios/E2-WarnerBros.png",
         "altIcon": "Frajola salgando Piu-Piu",
@@ -118,7 +118,7 @@
     },
     {
         "etapaIndice": 3,
-        "estado": false,
+        "estado": true,
         "tema": "Disney",
         "icon": "/EtapasDesafios/E3-Disney.png",
         "altIcon": "Mike Wazowski",
