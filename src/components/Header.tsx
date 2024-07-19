@@ -17,8 +17,8 @@ export default function Header() {
     const [openMenu, setOpenMenu] = useState(false);
 
     return (
-        <header className="px-8 m-4 flex flex-col lg:items-center justify-between lg:flex-row">
-            <div className="flex justify-between">
+        <header className="fixed top-0 left-0 w-full px-8 mt-4 flex flex-col lg:items-center justify-between lg:flex-row">
+            <div className="flex  justify-between">
                 <a href="/">
                     <ImageG src="/logoBxcomp.svg" alt="Logo do BXComp 2024" width="142" height="96" />
                 </a>
@@ -26,9 +26,9 @@ export default function Header() {
                     <PiList />
                 </button>
             </div>
-            {openMenu && <div className="absolute left-0 top-0 h-screen w-full bg-brancoBX opacity-40 z-0" />}
-            <nav className={`${!openMenu ? 'hidden lg:inline-block' : ''} z-10 bg-pretoBX p-8 flex flex-col rounded-bl-lg text-verdeBX absolute w-80 h-screen right-0 top-0 space-y-4 border-l border-b lg:space-x-8 lg:justify-end lg:static lg:flex-row lg:bg-transparent lg:h-min lg:w-max lg:border-none`}>
-                <button type="button" className="text-4xl text-brancoBX self-end lg:hidden" onClick={() => setOpenMenu(false)}>
+            {openMenu && <div className="fixed left-0 top-0 h-screen w-full bg-brancoBX opacity-40 z-0 lg:hidden" />}
+            <nav className={`${!openMenu ? 'hidden lg:inline-block' : ''} z-10 bg-pretoBX p-8 flex flex-col rounded-bl-lg text-verdeBX fixed w-80 h-screen right-0 top-0 space-y-4 border-l border-b lg:space-x-8 lg:justify-end lg:static lg:flex-row lg:bg-transparent lg:h-min lg:w-max lg:border-none`}>
+                <button type="button" className="mt-4 text-4xl text-brancoBX self-end lg:hidden" onClick={() => setOpenMenu(false)}>
                     <PiX/>
                 </button>
                 {navLinks.map(link => (
