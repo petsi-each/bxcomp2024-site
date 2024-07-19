@@ -3,18 +3,21 @@
 import { PiList, PiX } from "react-icons/pi";
 import ImageG from "./ImageG";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
     const navLinks = [
         { title: 'Início', path: '/' },
-        { title: 'Regulamento', path: '/' }, // TODO: Add path
-        { title: 'Etapas & Desafios', path: '/' }, // TODO: Add path
-        { title: 'Ranking & Grupos', path: '/' }, // TODO: Add path
-        { title: 'O que é o BXComp?', path: '/' }, // TODO: Add path
-        { title: 'Anos Anteriores', path: '/' }, // TODO: Add path
+        { title: 'Regulamento', path: '/regulamento' }, // TODO: Add path
+        { title: 'Etapas & Desafios', path: '/etapas-e-desafios' }, // TODO: Add path
+        { title: 'Ranking & Grupos', path: '/ranking-e-grupos' }, // TODO: Add path
+        { title: 'O que é o BXComp?', path: '/o-que-e-bxcomp' }, // TODO: Add path
+        { title: 'Anos Anteriores', path: '/anos-anteriores' }, // TODO: Add path
     ]
 
     const [openMenu, setOpenMenu] = useState(false);
+
+    const pathname = usePathname();
 
     return (
         <header className="fixed top-0 left-0 w-full px-8 mt-4 flex flex-col lg:items-center justify-between lg:flex-row">
@@ -32,7 +35,7 @@ export default function Header() {
                     <PiX/>
                 </button>
                 {navLinks.map(link => (
-                    <a key={link.path} href={link.path} className="border-b border-brancoBX text-2xl lg:text-sm lg:border-none">{link.title}</a>
+                    <a key={link.path} href={link.path} className={`border-b border-brancoBX text-2xl hover:font-bold ${pathname == link.path ? 'text-brancoBX' : ''} lg:text-sm lg:border-none`}>{link.title}</a>
                 ))}
             </nav>
         </header>
