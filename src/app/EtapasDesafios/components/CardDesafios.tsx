@@ -12,15 +12,15 @@ export interface desafioList {
 
 export default function CardDesafios(props: desafioList) {
     return (
-        <div className="grid grid-cols-1 gap-y-8 py-32 flex justify-center">
+        <div className="mb-32 grid grid-cols-1 gap-y-8">
             {
                 props.desafios.map((desafio) => (
-                    <article className="flex-col w-[500px] h-28 bg-[#FBF3AD] rounded-e-full text-center text-pretoBX">
+                    <article className="p-2 w-[600px] h-32 bg-[#FF9C46] rounded-full text-center text-pretoBX hover:ring-8 hover:ring-azulBX hover:ring-opacity-20">
                         <h3 className="text-2xl">{desafio.desafio}</h3>
-                        <p className="font-Poppins text-base flex-col">
-                            <a href={desafio.enunciado} target="_blank">Enunciado</a>
-                            <a href={desafio.testes} target="_blank">Casos Teste</a>
-                            <a href={desafio.resolucao} target="_blank">Exemplo de Gabarito</a>
+                        <p className="flex flex-col font-poppins text-base underline">
+                            <a href={desafio.enunciado} target="_blank" className="hover:font-extrabold hover:text-white">Enunciado</a>
+                            <a href={desafio.testes} target="_blank" className="hover:font-extrabold hover:text-white">Casos Teste</a>
+                            <a href={desafio.resolucao} target="_blank" className="hover:font-extrabold hover:text-white">Exemplo de Gabarito</a>
                         </p>
                     </article>
                 ))
