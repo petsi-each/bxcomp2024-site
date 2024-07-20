@@ -32,7 +32,7 @@ export default function Footer() {
                 </a>
             </li>
             <li>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="flex items-center px-1">
+                <a href="mailto:pet.si.each@gmail.com" target="_blank" rel="noopener noreferrer" className="flex items-center px-1">
                             <FiMail size={26} color='black' />
                         
                 </a>
