@@ -13,7 +13,7 @@ export default function PrimaryButton(props: PrimaryButtonProps) {
 
         <button onClick={props.onClick} className="w-full bg-verdeBX text-white rounded-full px-8 py-4 flex flex-row place-content-center items-center text-xl hover:bg-[#369434] active:translate-y-0.5">
 
-            <PiRocketLaunchDuotone className="hidden sm:block" size={28} />
+            <PiRocketLaunchDuotone size={28} />
 
             <div className="px-4">
                 {props.title}
