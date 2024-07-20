@@ -22,16 +22,24 @@ export default function Header() {
     return (
         <header className="fixed top-0 left-0 w-full px-8 mt-4 flex flex-col lg:items-center justify-between lg:flex-row">
             <div className="flex  justify-between">
-                <a href="/">
+                <a href="/" aria-label="Ir para página inicial">
                     <ImageG src="/logoBxcomp.svg" alt="Logo do BXComp 2024" width="142" height="96" />
                 </a>
-                <button type="button" className={`${openMenu ? 'hidden' : ''} text-4xl text-brancoBX lg:hidden`} onClick={() => setOpenMenu(true)}>
+                <button type="button"
+                    className={`${openMenu ? 'hidden' : ''} text-4xl text-brancoBX lg:hidden`}
+                    onClick={() => setOpenMenu(true)}
+                    arial-label="Abrir menu"
+                >
                     <PiList />
                 </button>
             </div>
             {openMenu && <div className="fixed left-0 top-0 h-screen w-full bg-brancoBX opacity-40 z-0 animate-appear lg:hidden" />}
             <nav className={`${!openMenu ? 'translate-x-full lg:translate-x-0 lg:inline-block' : 'translate-x-0'} transform transition-transform duration-300 ease-out z-10 bg-pretoBX p-8 flex flex-col rounded-bl-lg text-verdeBX fixed w-80 h-screen right-0 top-0 space-y-4 border-l border-b lg:space-x-8 lg:justify-end lg:static lg:flex-row lg:bg-transparent lg:h-min lg:w-max lg:border-none`}>
-                <button type="button" className="mt-4 text-4xl text-brancoBX self-end lg:hidden" onClick={() => setOpenMenu(false)}>
+                <button type="button"
+                    className="mt-4 text-4xl text-brancoBX self-end lg:hidden"
+                    onClick={() => setOpenMenu(false)}
+                    aria-label="Fechar menu"
+                >
                     <PiX/>
                 </button>
                 {navLinks.map(link => (
