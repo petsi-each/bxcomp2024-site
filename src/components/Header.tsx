@@ -28,7 +28,7 @@ export default function Header() {
                 <button type="button"
                     className={`${openMenu ? 'hidden' : ''} text-4xl text-brancoBX lg:hidden`}
                     onClick={() => setOpenMenu(true)}
-                    arial-label="Abrir menu"
+                    aria-label="Abrir menu"
                 >
                     <PiList />
                 </button>
