@@ -43,7 +43,12 @@ export default function Header() {
                     <PiX/>
                 </button>
                 {navLinks.map(link => (
-                    <a key={link.path} href={link.path} className={`border-b border-brancoBX text-2xl hover:font-bold ${pathname == link.path ? 'text-brancoBX' : ''} lg:text-sm lg:border-none`}>{link.title}</a>
+                    <a key={link.path} 
+                        href={link.path} 
+                        className={`border-b border-brancoBX text-2xl hover:font-bold ${pathname == link.path ? 'text-brancoBX' : ''} lg:text-sm lg:border-none ${!openMenu ? 'hidden lg:inline-block' : ''}`}
+                        >
+                            {link.title}
+                        </a>
                 ))}
             </nav>
         </header>
