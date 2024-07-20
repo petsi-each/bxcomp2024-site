@@ -22,7 +22,7 @@ export default function EtapaCard(props: Etapa) {
 
     return (
         <div className="grid grid-cols-5 rounded-lg bg-azulBX">
-            <div className="hidden md:block col-span-1 flex items-center justify-center p-4">
+            <div className="col-span-1 flex items-center justify-center p-4">
                 <figure className="rounded-lg flex items-center justify-center w-full h-full">
                     <ImageG
                         className="rounded-lg"
@@ -34,11 +34,11 @@ export default function EtapaCard(props: Etapa) {
                     />
                 </figure>
             </div>
-            <header className="col-span-5 md:col-span-2 flex flex-col justify-center items-center p-4 mx-4">
+            <header className="col-span-2 flex flex-col justify-center items-center p-4 mx-4">
                 <h1 className="text-2xl mb-4">Etapa {props.numero}</h1>
                 <h2 className={`text-3xl text-center ${poppins.className}`}>{cond_props.tema}</h2>
             </header>
-            <div className="col-span-5 md:col-span-2 flex justify-center items-center pb-4 md:pb-0 px-4">
+            <div className="col-span-2 flex justify-center items-center pb-4 md:pb-0 px-4">
                 <div className="w-full max-w-xs flex justify-center items-center">
                     <PrimaryButton title="Ver detalhes" onClick={() => { }} />
                 </div>
