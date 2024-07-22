@@ -12,12 +12,14 @@ export default function EtapaCard(props: Etapa) {
         tema: props.tema,
         img: props.imagem,
         link: props.link,
+        texto_botao: "Ver detalhes"
     }
 
     if (!props.visivel) {
         cond_props.tema = "Em breve..."
         cond_props.img = "/home/staticTV.gif"
         cond_props.link = "#"
+        cond_props.texto_botao = "Em breve..."
     }
 
     return (
@@ -40,7 +42,7 @@ export default function EtapaCard(props: Etapa) {
             </header>
             <div className="col-span-2 flex justify-center items-center pb-4 md:pb-0 px-4">
                 <div className="w-full max-w-xs flex justify-center items-center">
-                    <PrimaryButton title="Ver detalhes" onClick={() => { }} />
+                    <PrimaryButton title={cond_props.texto_botao} onClick={() => { }} />
                 </div>
             </div>
         </div>
