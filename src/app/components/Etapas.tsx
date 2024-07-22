@@ -1,6 +1,7 @@
 import ImageG from "@/components/ImageG"
 import EtapaCard from "@/app/components/EtapaCard"
 import { Poppins } from 'next/font/google'
+import etapas_data from '@/data/landingpage.json'
 
 const poppins = Poppins({ weight: '400', subsets: ['latin'] })
 
@@ -13,7 +14,7 @@ export interface Etapa {
 }
 
 export default function Etapas() {
-    const etapas_data: { etapas: Etapa[] } = require('@/data/landingpage.json') 
+    // const etapas_data: { etapas: Etapa[] } = require('@/data/landingpage.json') 
 
     return (
         <section className="grid grid-cols-1 sm:grid-cols-2 bg-brancoBX">
