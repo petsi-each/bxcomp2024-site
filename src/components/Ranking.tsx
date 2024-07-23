@@ -3,7 +3,7 @@ import ImageG from "./ImageG"
 interface Equipe {
     nome: string,
     membros: string[],
-    pontos: number,
+    pontos: number[],
     iconPath: string
 }
 
@@ -27,7 +27,9 @@ interface PointBarProps {
 
 const PointBar: React.FC<PointBarProps> = ({ equipe, topScore }) => {
     
-    const percentage = (equipe.pontos / topScore) * 100
+    const totalPontos = equipe.pontos.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    
+    const percentage = (totalPontos / topScore) * 100
 
     return (
 
@@ -36,7 +38,7 @@ const PointBar: React.FC<PointBarProps> = ({ equipe, topScore }) => {
             {/* Descrição da equipe no mobile */}
             <div className="md:hidden w-screen px-8">
                 <h2 className="text-2xl truncate">{equipe.nome}</h2>
-                <p className="text-md">{equipe.pontos} pontos</p>
+                <p className="text-md">{totalPontos} pontos</p>
             </div>
 
             <div style={{ width: percentage + '%' }} className={`flex items-center pl-8 pr-2`}>
@@ -54,7 +56,7 @@ const PointBar: React.FC<PointBarProps> = ({ equipe, topScore }) => {
                 {/* Descrição da equipe no desktop */}
                 <div className="px-4 max-w-10 min-w-10 md:max-w-28 md:min-w-28 hidden md:block">
                     <h2 className="text-2xl w-full truncate">{equipe.nome}</h2>
-                    <p className="text-md w-full">{equipe.pontos} pontos</p>
+                    <p className="text-md w-full">{totalPontos} pontos</p>
                 </div>
 
             </div>
@@ -79,8 +81,15 @@ const Ranking: React.FC<RankingProps> = ({ equipes, displayQuantity = -1 }) => {
     const sortedEquipes = [...equipes];
     displayQuantity = displayQuantity >= equipes.length ? -1 : displayQuantity; 
 
-    sortedEquipes.sort((a, b) => b.pontos - a.pontos); // Ordena o array a partir dos pontos
-    const topScore = sortedEquipes[0].pontos // Pega a maior quantidade de pontos (representa 100%)
+
+    const sumPoints = (points: number[]): number => {
+        return points.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    };
+
+    sortedEquipes.sort((a, b) => sumPoints(b.pontos) - sumPoints(a.pontos));
+
+    // sortedEquipes.sort((a, b) => b.pontos - a.pontos); // Ordena o array a partir dos pontos
+    const topScore = sumPoints(sortedEquipes[0].pontos) // Pega a maior quantidade de pontos (representa 100%)
     const displayEquipes = displayQuantity < 0 ? sortedEquipes : sortedEquipes.slice(0, displayQuantity) // Apresenta displayQuantity itens do array caso um valor seja determinado
 
     return (
