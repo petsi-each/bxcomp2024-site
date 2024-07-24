@@ -51,7 +51,7 @@
         "vc",
         "ele"
       ],
-      "pontos": 1,
+      "pontos": [1,6,2],
       "iconPath": "/equipe_icons/example.png"
     },
     {
@@ -61,7 +61,7 @@
         "vc",
         "ele"
       ],
-      "pontos": 2,
+      "pontos": [1,2,3],
       "iconPath": "/equipe_icons/example.png"
     }
   ]
