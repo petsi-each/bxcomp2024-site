@@ -33,7 +33,7 @@ const PointBar: React.FC<PointBarProps> = ({ equipe, topScore }) => {
 
     return (
 
-        <article>
+        <section>
 
             {/* Descrição da equipe no mobile */}
             <div className="md:hidden w-screen px-8">
@@ -61,7 +61,7 @@ const PointBar: React.FC<PointBarProps> = ({ equipe, topScore }) => {
 
             </div>
 
-        </article>
+        </section>
 
     );
 }
