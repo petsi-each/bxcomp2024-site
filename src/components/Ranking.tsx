@@ -94,7 +94,7 @@ const Ranking: React.FC<RankingProps> = ({ equipes, displayQuantity = -1 }) => {
 
     return (
 
-        <section className="grid grid-rows-1 gap-8 md:gap-2">
+        <article className="grid grid-rows-1 gap-8 md:gap-2">
 
             {
                 displayEquipes.map((equipe, index) => (
@@ -102,7 +102,7 @@ const Ranking: React.FC<RankingProps> = ({ equipes, displayQuantity = -1 }) => {
                 ))
             }
 
-        </section>
+        </article>
 
     );
 };
