@@ -1,5 +1,13 @@
 import type { Metadata } from "next";
 import { Bubblegum_Sans } from "next/font/google";
+import { Poppins } from "next/font/google";
+
+const pop = Poppins(
+    {
+      subsets: ["latin"],
+      weight: "400"
+    }
+  );
 import "./globals.css";
 
 const bubblegum = Bubblegum_Sans(

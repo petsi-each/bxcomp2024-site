@@ -1,15 +1,12 @@
 'use client'
-
-import PrimaryButton from "@/components/PrimaryButton";
-import SecondaryButton from "@/components/SecondaryButton";
 import ImageG from "@/components/ImageG";
 
 export default function Hero() {
     return (
-        <section className="flex place-content-center relative overflow-hidden min-h-[calc(100vh-74px)] pb-16">
-            <div className="lg:col-span-3 w-full flex justify-center">
+        <section className="flex items-center justify-center relative overflow-hidden min-h-[calc(100vh-74px)] pb-16 px-4 md:px-8 lg:px-16">
+            <div className="w-full max-w-3xl flex justify-center">
                 <ImageG 
-                    className="w-112 md:w-192 h-fit" 
+                    className="w-full h-auto max-w-full" 
                     src="/home/logobxcomp.png" 
                     priority 
                     alt="Logo do BXCOMP"
