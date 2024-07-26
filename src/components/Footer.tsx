@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { PiLinkedinLogoFill } from "react-icons/pi";
+import { PiLinkedinLogoFill, PiInstagramLogoBold } from "react-icons/pi";
 import { FiMail } from "react-icons/fi";
-import { PiInstagramLogoBold } from 'react-icons/pi';
-import { PiFacebookLogo } from "react-icons/pi";
+import { BiLogoFacebookSquare } from "react-icons/bi";
+
 
 export default function Footer() {
     return (
@@ -18,10 +18,10 @@ export default function Footer() {
             </div>
             
             {/* Botões interativos */}
-            <ul className="flex h-4 space-x-4 m-2 m-10">
+            <ul className="flex h-4 space-x-2 m-10">
                 <li>
                     <a href="https://www.facebook.com/petsieach" target="_blank" rel="noopener noreferrer" className="flex items-center">
-                        <PiFacebookLogo size={26} color='black' />
+                        <BiLogoFacebookSquare size={26} color='black' />
                     </a>
                 </li>
                 <li>
