@@ -10,13 +10,18 @@ const poppins = Poppins({
 
 export default function Regulamento() {
 
-    
+    const datas = regulamento.modificacoes.map(mod => {
+        const [day, month, year] = mod.data.split('/').map(Number);
+        return new Date(year, month - 1, day); 
+    });
+    const latestDate = new Date(Math.max(...datas.map(data => data.getTime())));
+
   return (
     <main className='flex flex-col items-center justify-center min-h-screen pt-12'>
       
         <h1 className='text-laranjaBX text-6xl md:text-7xl p-16'>Regulamento</h1>
 
-        <p className={`${poppins.className}`}><b>Última atualização em:</b> 12/06/2024</p>
+        <p className={`${poppins.className}`}><b>Última atualização em:</b> {latestDate.toLocaleDateString()}</p>
 
         <iframe 
                 src={getFileFromPublic(regulamento.arquivo)}
