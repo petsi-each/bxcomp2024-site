@@ -22,11 +22,8 @@ const config: Config = {
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif']
-      },
-      textDecorationColor: { //teste
-        'verdeBX': '#52CC50' 
-      },
-    },
+      }
+    }
   },
   plugins: [],
 };
