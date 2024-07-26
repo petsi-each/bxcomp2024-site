@@ -1,6 +1,8 @@
 import { getFileFromPublic } from '@/lib/Files'
 import { Poppins } from 'next/font/google'
 
+import regulamento from '@/data/regulamento.json';
+
 const poppins = Poppins({
     subsets: ["latin"],
     weight: ["100","200","300","400","500","600","700","800","900"]
@@ -8,6 +10,7 @@ const poppins = Poppins({
 
 export default function Regulamento() {
 
+    
   return (
     <main className='flex flex-col items-center justify-center min-h-screen pt-12'>
       
@@ -16,15 +19,19 @@ export default function Regulamento() {
         <p className={`${poppins.className}`}><b>Última atualização em:</b> 12/06/2024</p>
 
         <iframe 
-                src={getFileFromPublic("/regulamento/regulamento.pdf")}
+                src={getFileFromPublic(regulamento.arquivo)}
                 title="Regulamento" 
                 className="px-6 md:px-16 py-4 w-full h-[36rem] lg:h-[64rem]"
                 > 
         </iframe> 
 
         <ul className={`flex flex-col items-center ${poppins.className}`}>
-            <li><b>Publicado</b> em 12/06/2024 </li>
-            <li><b>Atualizado</b> em 17/06/2024</li>
+            {
+                regulamento.modificacoes.map((atualizacao,idx) => {
+                    return <li key={idx}><b>{atualizacao.verbo_tipo}</b> em {atualizacao.data}</li>
+                })
+            }
+            
         </ul>
         
     </main>
