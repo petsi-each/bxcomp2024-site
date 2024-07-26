@@ -1,7 +1,7 @@
 [
     {
         "etapaIndice": 0,
-        "estado": false,
+        "estado": true,
         "tema": "Nickelodeon",
         "icon": "/EtapasDesafios/E0-Nickelodion.png",
         "altIcon": "Bob Esponja e Patrick Estrela",
