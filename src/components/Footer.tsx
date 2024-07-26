@@ -1,9 +1,7 @@
 import React from 'react';
 
 import { PiLinkedinLogoFill, PiInstagramLogoBold } from "react-icons/pi";
-import { FiMail } from "react-icons/fi";
-import { BiLogoFacebookSquare } from "react-icons/bi";
-
+import { BiLogoFacebookSquare, BiSolidEnvelope, BiLogoLinkedinSquare, BiLogoInstagramAlt} from "react-icons/bi";
 
 export default function Footer() {
     return (
@@ -26,17 +24,17 @@ export default function Footer() {
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/company/pet-si-each-usp/" target="_blank" rel="noopener noreferrer" className="flex items-center">
-                        <PiLinkedinLogoFill size={26} color='black' />
+                        <BiLogoLinkedinSquare size={26} color='black' />
                     </a>
                 </li>
                 <li>
                     <a href="mailto:pet.si.each@gmail.com" target="_blank" rel="noopener noreferrer" className="flex items-center">
-                        <FiMail size={26} color='black' />
+                        <BiSolidEnvelope size={26} color='black' />
                     </a>
                 </li>
                 <li>
                     <a href="https://www.instagram.com/petsieach/?hl=pt-br" target="_blank" rel="noopener noreferrer" className="flex items-center">
-                        <PiInstagramLogoBold size={26} color='black' />
+                        <BiLogoInstagramAlt  size={26} color='black' />
                     </a>
                 </li>
             </ul>
