@@ -20,9 +20,9 @@ export default function Header() {
     const pathname = usePathname();
 
     return (
-        <header className="fixed top-0 left-0 w-full px-8 mt-4 flex flex-col lg:items-center justify-between lg:flex-row">
+        <header className="fixed top-0 left-0 w-screen px-8 mt-4 flex flex-col lg:items-center justify-between lg:flex-row">
             <div className="flex  justify-between">
-                <a href="/" aria-label="Ir para página inicial" className="mr-64">
+                <a href="/" aria-label="Ir para página inicial" className="lg:mr-64">
                     <ImageG src="/logoBxcomp.svg" alt="Logo do BXComp 2024" width="174" height="118" />
                 </a>
                 <button type="button"
