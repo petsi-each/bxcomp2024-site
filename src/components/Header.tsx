@@ -33,8 +33,8 @@ export default function Header() {
                     <PiList />
                 </button>
             </div>
-            {openMenu && <div className="fixed left-0 top-0 h-screen w-full bg-brancoBX opacity-40 z-0 animate-appear 2xl:hidden" onClick={() => setOpenMenu(false)}/>}
-            <nav className={`${!openMenu ? 'translate-x-full 2xl:translate-x-0' : 'translate-x-0'} transform transition-transform duration-300 ease-out z-10 bg-pretoBX p-8 flex flex-col rounded-bl-lg text-verdeBX fixed w-80 h-screen right-0 top-0 space-y-4 border-l border-b 2xl:w-max 2xl:flex-row 2xl:justify-between 2xl:space-y-0 2xl:grow 2xl:relative 2xl:bg-transparent 2xl:h-min 2xl:p-0 2xl:border-none`}>
+            {openMenu && <div className="fixed left-0 top-0 h-screen w-full bg-brancoBX opacity-40 z-40 animate-appear 2xl:hidden" onClick={() => setOpenMenu(false)}/>}
+            <nav className={`${!openMenu ? 'translate-x-full 2xl:translate-x-0' : 'translate-x-0'} transform transition-transform duration-300 ease-out z-40 bg-pretoBX p-8 flex flex-col rounded-bl-lg text-verdeBX fixed w-80 h-screen right-0 top-0 space-y-4 border-l border-b 2xl:w-max 2xl:flex-row 2xl:justify-between 2xl:space-y-0 2xl:grow 2xl:relative 2xl:bg-transparent 2xl:h-min 2xl:p-0 2xl:border-none`}>
                 <button type="button"
                     className="mt-4 text-4xl text-brancoBX self-end 2xl:hidden"
                     onClick={() => setOpenMenu(false)}
