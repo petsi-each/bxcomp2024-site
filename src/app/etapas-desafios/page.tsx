@@ -26,7 +26,7 @@ export default function EtapasDesafios() {
                         etapasDesafios.map((etapa) => (
                             <button onClick={() => handleOnClick(etapa.etapaIndice)} disabled={etapa.estado == false} title={`Etapa ${etapa.etapaIndice}`} 
                             className={`relative size-48 rounded-3xl ${etapa.estado == true ? 'hover:underline hover:underline-offset-4 hover:decoration-verdeBX hover:ring-8 hover:ring-azulBX hover:ring-opacity-20 hover:bg-blue-600 hover:bg-opacity-20 active:ring-8 active:ring-laranjaBX active:ring-opacity-70' : ''} ${indice == etapa.etapaIndice ? 'scale-110 shadow-sky-900 shadow-lg ' : ''} ${indice != -1 && indice != etapa.etapaIndice ? 'scale-90':''}`}> 
-                             {/*procurar por uma forma mais concisa de usar hover,etc */} {/*bg em azul começou a sumir quando há um card em destaque */}
+                             {/*bg em azul começou a sumir quando há um card em destaque */}
                              {/*gostaria de adicionar um hover que escale apenas os elementos textuais/headers*/}
                                 {
                                     etapa.estado == false ?
@@ -35,7 +35,7 @@ export default function EtapasDesafios() {
                                         </div>
                                         :
                                         <div>
-                                            <ImageG className="-z-10 rounded-3xl opacity-90" src={etapa.icon} alt={etapa.altIcon} fill={true} />
+                                            <ImageG className="-z-10 rounded-3xl opacity-[0.95]" src={etapa.icon} alt={etapa.altIcon} fill={true} />
                                             <h2 className="mt-28 font-poppins text-white text-2xl drop-shadow-lg underline underline-offset-4 decoration-verdeBX"><b>Etapa {etapa.etapaIndice}</b></h2>
                                             <h3 className="-mt-1.5 font-poppins text-white text-lg drop-shadow-lg">{etapa.tema}</h3>
                                         </div>
