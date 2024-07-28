@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Bubblegum_Sans } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
 
 const bubblegum = Bubblegum_Sans(
   {
@@ -21,7 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={bubblegum.className}>{children}</body>
+      <body className={bubblegum.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
