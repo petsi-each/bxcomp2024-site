@@ -35,8 +35,8 @@ export default function EtapaCard(props: Etapa) {
                 />
             </figure>
             <header className="flex flex-col justify-center items-center grow p-4 mx-4">
-                <h1 className="text-2xl mb-4">Etapa {props.numero}</h1>
-                <h2 className={`text-3xl text-center ${poppins.className}`}>{cond_props.tema}</h2>
+                <h1 className="text-lg md:text-2xl md:mb-4">Etapa {props.numero}</h1>
+                <h2 className={`text-xl md:text-3xl text-center ${poppins.className}`}>{cond_props.tema}</h2>
             </header>
             <div className="flex justify-center items-center pb-4 md:pb-0 px-4">
                 <div className="w-full max-w-xs flex justify-center items-center">
