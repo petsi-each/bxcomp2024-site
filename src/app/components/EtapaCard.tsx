@@ -26,7 +26,7 @@ export default function EtapaCard(props: Etapa) {
         <div className="flex flex-col sm:flex-row justify-between rounded-lg w-full bg-azulBX">
             <figure className="flex items-center justify-center p-4">
                 <ImageG
-                    className="w-1/2 rounded-lg"
+                    className="w-1/2 min-w-24 rounded-lg"
                     src={cond_props.img}
                     unoptimized={cond_props.img.split('.')[1] == 'gif' ? true : false}
                     alt={`Imagem da etapa ${props.numero}: ${cond_props.tema}`}
