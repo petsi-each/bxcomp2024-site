@@ -23,26 +23,27 @@ export default function EtapaCard(props: Etapa) {
     }
 
     return (
-        <div className="grid grid-cols-5 rounded-lg bg-azulBX">
-            <div className="col-span-5 sm:col-span-1 flex items-center justify-center p-4">
-                <figure className="rounded-lg flex items-center justify-center w-full h-full">
-                    <ImageG
-                        className="rounded-lg"
-                        src={cond_props.img}
-                        unoptimized={cond_props.img.split('.')[1] == 'gif' ? true : false}
-                        alt={`Imagem da etapa ${props.numero}: ${cond_props.tema}`}
-                        width={400}
-                        height={400}
-                    />
-                </figure>
-            </div>
-            <header className="col-span-5 sm:col-span-2 flex flex-col justify-center items-center p-4 mx-4">
+        <div className="flex flex-col sm:flex-row justify-between rounded-lg w-full bg-azulBX">
+            <figure className="flex items-center justify-center p-4">
+                <ImageG
+                    className="w-1/2 rounded-lg"
+                    src={cond_props.img}
+                    unoptimized={cond_props.img.split('.')[1] == 'gif' ? true : false}
+                    alt={`Imagem da etapa ${props.numero}: ${cond_props.tema}`}
+                    width={400}
+                    height={400}
+                />
+            </figure>
+            <header className="flex flex-col justify-center items-center grow p-4 mx-4">
                 <h1 className="text-2xl mb-4">Etapa {props.numero}</h1>
                 <h2 className={`text-3xl text-center ${poppins.className}`}>{cond_props.tema}</h2>
             </header>
-            <div className="col-span-5 sm:col-span-2 flex justify-center items-center pb-4 md:pb-0 px-4">
+            <div className="flex justify-center items-center pb-4 md:pb-0 px-4">
                 <div className="w-full max-w-xs flex justify-center items-center">
-                    <PrimaryButton title={cond_props.texto_botao} onClick={() => { }} />
+                    <PrimaryButton 
+                        title={cond_props.texto_botao} 
+                        onClick={() => { }} 
+                    />
                 </div>
             </div>
         </div>
