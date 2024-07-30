@@ -17,7 +17,7 @@ export default function Etapas() {
     // const etapas_data: { etapas: Etapa[] } = require('@/data/landingpage.json') 
 
     return (
-        <section className="flex flex-col sm:flex-row justify-between max-w-full bg-brancoBX">
+        <section className="flex flex-col md:flex-row justify-between max-w-full bg-brancoBX">
             <header className="m-16">
                 <h1 className="text-verdeBX text-6xl mb-4">Etapas</h1>
                 <h2 className={`${poppins.className} text-black text-thin`}>Estude ao rever os temas, desafios e resoluções já apresentadas nesta edição do BXCOMP!</h2>
