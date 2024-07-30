@@ -17,7 +17,7 @@ export default function Regulamento() {
     const latestDate = new Date(Math.max(...datas.map(data => data.getTime())));
 
     return (
-        <main className='flex flex-col items-center w-full justify-center min-h-screen pt-24'>
+        <main className='flex flex-col text-center items-center w-screen px-6 sm:px-16 justify-center min-h-screen pt-24'>
 
             <h1 className='text-laranjaBX text-6xl md:text-7xl p-12'>Regulamento</h1>
 
@@ -26,7 +26,7 @@ export default function Regulamento() {
             <iframe
                 src={getFileFromPublic(regulamento.arquivo)}
                 title="Regulamento"
-                className="px-6 sm:px-16 py-4 w-full max-w-[50rem] h-[36rem] lg:h-[50rem]"
+                className="py-4 w-full max-w-[50rem] h-[36rem] lg:h-[50rem]"
             >
             </iframe>
 
