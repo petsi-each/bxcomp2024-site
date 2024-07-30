@@ -12,7 +12,7 @@ interface BotaoEquipeProps{
 export default function BotaoEquipe(props: BotaoEquipeProps){
     return(
         
-        <button className="bg-brancoBX focus:bg-laranjaBX">
+        <button className="px-2 rounded-md border-1-stone-500 bg-brancoBX focus:bg-laranjaBX focus:border-collapse">
             <div>
                 {props.nomeEquipe}
             </div>
