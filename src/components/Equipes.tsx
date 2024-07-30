@@ -5,6 +5,8 @@ import { Poppins } from 'next/font/google'
 import equipes_data from '@/data/landingpage.json'
 import BotaoEquipe from "./BotaoEquipe"
 
+const poppins = Poppins({weight: "300", subsets: ['latin']})
+
 export default function Equipes(){
     return (
     <section className="w-auto py-12 px-16 bg-brancoBX flex flex-row justify-center padding">
@@ -29,6 +31,7 @@ export default function Equipes(){
             </div>
 
             <div className="z-20 -mt-16 drop-shadow-md bg-laranjaBX w-80 h-36 rounded-tl-[96px] rounded-br-[96px] flex flex-col items-center justify-center">
+            <div className="`${poppins.className} text-black` z-20 -mt-16 drop-shadow-md bg-laranjaBX w-80 h-36 rounded-tl-[96px] rounded-br-[96px] flex flex-col items-center justify-center">
                 <h3> Nome equipe </h3>
                 <div className="flex flex-col items-center justify-center">
                     <p>Nome</p>
