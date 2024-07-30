@@ -5,20 +5,20 @@ import ImageG from './ImageG';
 
 export default function Footer() {
     return (
-        <footer className="relative w-full h-80 pt-10 bg-transparent flex flex-row items-end justify-between bg-[url('/waves.svg')] bg-cover bg-no-repeat bg-top" >
+        <footer className="relative w-full h-80 pt-10 bg-transparent flex-col flex md:flex-row items-center md:items-end justify-end md:justify-between bg-[url('/waves.svg')] bg-cover bg-no-repeat bg-top" >
             
             {/* Texto */}
-            <h1 className="flex h-4 items-center text-center font-sans font-semibold text-black m-10">Desenvolvido por PET-SI 2024</h1>
+            <h1 className="flex collapse md:visible md:h-4 items-center text-center font-sans font-semibold text-black m-5 md:m-10">Desenvolvido por PET-SI 2024</h1>
             
             {/* Logo PET e BX */}
-            <div className="flex h-4 items-center justify-center m-10">
+            <div className="flex md:h-4 items-center justify-center m-5 md:m-10">
                 <ImageG src="/logoCoruja.png" alt="Logo PET" width="140"
                 height="4"
                 />
             </div>
             
             {/* Botões interativos */}
-            <ul className="flex h-4 space-x-2 m-10">
+            <ul className="flex md:h-4 space-x-2 m-2 md:m-10">
                 <li>
                     <a href="https://www.facebook.com/petsieach" target="_blank" rel="noopener noreferrer" className="flex items-center">
                         <BiLogoFacebookSquare size={26} color='black' />
@@ -40,6 +40,9 @@ export default function Footer() {
                     </a>
                 </li>
             </ul>
+
+            <h1 className="flex md:h-4 md:hidden items-center text-center font-sans font-semibold text-black m-5 md:m-10">Desenvolvido por PET-SI 2024</h1>
+        
         </footer>
     );
 }
