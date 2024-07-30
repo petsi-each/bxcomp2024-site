@@ -17,19 +17,20 @@ export default function Regulamento() {
     const latestDate = new Date(Math.max(...datas.map(data => data.getTime())));
 
     return (
-        <main className='flex flex-col text-center items-center w-screen px-6 sm:px-16 justify-center min-h-screen pt-24'>
+        <main className='pt-24 text-center'>
 
-            <h1 className='text-laranjaBX text-6xl md:text-7xl p-12'>Regulamento</h1>
+            <h1 className='text-laranjaBX text-6xl md:text-7xl py-12'>Regulamento</h1>
 
             <p className={`${poppins.className}`}><b>Última atualização em:</b> {latestDate.toLocaleDateString()}</p>
 
+            <div className="w-full flex items-center justify-center px-4">
             <iframe
                 src={getFileFromPublic(regulamento.arquivo)}
                 title="Regulamento"
                 className="py-4 w-full max-w-[50rem] h-[36rem] lg:h-[50rem]"
             >
             </iframe>
-
+            </div>
             <ul className={`flex flex-col items-center ${poppins.className}`}>
                 {
                     regulamento.modificacoes.map((atualizacao, idx) => {
