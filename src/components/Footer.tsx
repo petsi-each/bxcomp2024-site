@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { BiLogoFacebookSquare, BiSolidEnvelope, BiLogoLinkedinSquare, BiLogoInstagramAlt} from "react-icons/bi";
+import ImageG from './ImageG';
 
 export default function Footer() {
     return (
@@ -11,7 +12,9 @@ export default function Footer() {
             
             {/* Logo PET e BX */}
             <div className="flex h-4 items-center justify-center m-10">
-                <img src="logoCoruja.svg" alt="Logo PET" />
+                <ImageG src="/logoCoruja.png" alt="Logo PET" width="198"
+                height="60"
+                />
             </div>
             
             {/* Botões interativos */}
