@@ -7,7 +7,7 @@ import BotaoEquipe from "./BotaoEquipe"
 
 export default function Equipes(){
     return (
-    <section className="py-12 px-16 bg-brancoBX flex flex-row justify-center padding">
+    <section className="w-auto py-12 px-16 bg-brancoBX flex flex-row justify-center padding">
         <section className="px-4 py-2 justify-center flex-row items-center">
             <section className="px-2 flex col items-center">
             <BotaoEquipe 
