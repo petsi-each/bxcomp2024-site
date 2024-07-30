@@ -20,7 +20,7 @@ export default function Header() {
     const pathname = usePathname();
 
     return (
-        <header className="fixed top-0 left-0 w-screen px-8 mt-4 flex flex-col lg:items-center justify-between lg:flex-row">
+        <header className="fixed top-0 left-0 w-screen px-8 pt-4 pb-8 flex flex-col lg:items-center justify-between lg:flex-row bg-gradient-to-b from-pretoBX from-60% ">
             <div className="flex  justify-between">
                 <a href="/" aria-label="Ir para página inicial" className="lg:mr-64">
                     <ImageG src="/logoBxcomp.svg" alt="Logo do BXComp 2024" width="174" height="118" />
@@ -33,8 +33,8 @@ export default function Header() {
                     <PiList />
                 </button>
             </div>
-            {openMenu && <div className="fixed left-0 top-0 h-screen w-full bg-brancoBX opacity-40 z-0 animate-appear lg:hidden" onClick={() => setOpenMenu(false)}/>}
-            <nav className={`${!openMenu ? 'translate-x-full lg:translate-x-0' : 'translate-x-0'} transform transition-transform duration-300 ease-out z-10 bg-pretoBX p-8 flex flex-col rounded-bl-lg text-verdeBX fixed w-80 h-screen right-0 top-0 space-y-4 border-l border-b lg:w-max lg:flex-row lg:justify-between lg:space-y-0 lg:grow lg:relative lg:bg-transparent lg:h-min lg:p-0 lg:border-none`}>
+            {openMenu && <div className="fixed left-0 top-0 h-screen w-full bg-brancoBX opacity-40 z-40 animate-appear lg:hidden" onClick={() => setOpenMenu(false)}/>}
+            <nav className={`${!openMenu ? 'translate-x-full lg:translate-x-0' : 'translate-x-0'} transform transition-transform duration-300 ease-out z-40 bg-pretoBX p-8 flex flex-col rounded-bl-lg text-verdeBX fixed w-80 h-screen right-0 top-0 space-y-4 border-l border-b lg:w-max lg:flex-row lg:justify-between lg:space-y-0 lg:grow lg:relative lg:bg-transparent lg:h-min lg:p-0 lg:border-none`}>
                 <button type="button"
                     className="mt-4 text-4xl text-brancoBX self-end lg:hidden"
                     onClick={() => setOpenMenu(false)}
