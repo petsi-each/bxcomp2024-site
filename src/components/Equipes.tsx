@@ -24,9 +24,11 @@ export default function Equipes(){
         <section className=" px-4 flex flex-col items-center justify-center">
             <h2 className="text-verdeBX text-6xl"> Equipes </h2>
             <p className=" py-4 text-pretoBX"> Conheça os competidores desse ano! </p>
-            <div className="border-laranjaBX border-8 rounded-full bg-white w-72 h-72 drop-shadow">
+            <div className="z-10 relative border-laranjaBX border-8 rounded-full bg-white w-72 h-72 drop-shadow">
+                <div className="-z-10 absolute bottom-16 -right-20  bg-verdeBX text-white rounded-full pl-8 pr-6 py-2 drop-shadow">   12 pontos </div>
             </div>
-            <div className="drop-shadow-md bg-laranjaBX w-80 h-36 rounded-tl-[96px] rounded-br-[96px] flex flex-col items-center justify-center">
+
+            <div className="z-20 -mt-16 drop-shadow-md bg-laranjaBX w-80 h-36 rounded-tl-[96px] rounded-br-[96px] flex flex-col items-center justify-center">
                 <h3> Nome equipe </h3>
                 <div className="flex flex-col items-center justify-center">
                     <p>Nome</p>
@@ -35,7 +37,7 @@ export default function Equipes(){
                     <p>Nome</p>
                 </div>
             </div>
-            <div className="bg-verdeBX text-brancoBX rounded-full px-2 drop-shadow">   12 pontos   </div>
+            
             
 
         </section>
