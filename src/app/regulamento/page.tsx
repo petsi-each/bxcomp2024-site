@@ -17,7 +17,7 @@ export default function Regulamento() {
     const latestDate = new Date(Math.max(...datas.map(data => data.getTime())));
 
     return (
-        <main className='flex flex-col items-center w-full justify-center min-h-screen pt-12 lg:pt-24'>
+        <main className='flex flex-col items-center w-full justify-center min-h-screen pt-24'>
 
             <h1 className='text-laranjaBX text-6xl md:text-7xl p-12'>Regulamento</h1>
 
