@@ -22,7 +22,7 @@ export default function Header() {
     return (
         <header className="fixed top-0 left-0 w-screen px-8 pt-4 pb-8 flex flex-col lg:items-center justify-between lg:flex-row bg-gradient-to-b from-pretoBX from-60% ">
             <div className="flex  justify-between">
-                <a href="/" aria-label="Ir para página inicial" className="lg:mr-64">
+                <a href="/" aria-label="Ir para página inicial" className="lg:mr-64 2xl:mr-96">
                     <ImageG src="/logoBxcomp.svg" alt="Logo do BXComp 2024" width="174" height="118" />
                 </a>
                 <button type="button"
@@ -45,7 +45,7 @@ export default function Header() {
                 {navLinks.map(link => (
                     <a key={link.path} 
                         href={link.path} 
-                        className={`border-b border-brancoBX text-2xl hover:font-bold ${pathname == link.path ? 'text-brancoBX' : ''} lg:max-2xl:text-sm 2xl:text-md lg:border-none ${!openMenu ? 'hidden lg:inline-block' : ''}`}
+                        className={`border-b border-brancoBX text-2xl hover:font-bold ${pathname == link.path ? 'text-brancoBX' : ''} lg:text-sm lg:border-none ${!openMenu ? 'hidden lg:inline-block' : ''}`}
                         >
                             {link.title}
                         </a>
