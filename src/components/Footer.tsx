@@ -5,7 +5,7 @@ import ImageG from './ImageG';
 
 export default function Footer() {
     return (
-        <footer className="relative w-full h-80 mt-10 bg-transparent flex flex-row items-end justify-between before:content-[''] before:absolute before:w-full before:h-96 before:bg-[url('/waves.svg')] before:bg-cover before:bg-no-repeat before:bg-top before:-z-10">
+        <footer className="relative w-full h-80 pt-10 bg-transparent flex flex-row items-end justify-between bg-[url('/waves.svg')] bg-cover bg-no-repeat bg-top" >
             
             {/* Texto */}
             <h1 className="flex h-4 items-center text-center font-sans font-semibold text-black m-10">Desenvolvido por PET-SI 2024</h1>
