@@ -6,7 +6,6 @@ import equipes_data from '@/data/landingpage.json'
 interface BotaoEquipeProps{
     nomeEquipe: string;
     srcImage: string;
-    onClick: () => void;
 }
 
 export default function BotaoEquipe(props: BotaoEquipeProps){
