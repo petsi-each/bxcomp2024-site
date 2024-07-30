@@ -21,7 +21,7 @@ export default function Regulamento() {
 
             <h1 className='text-laranjaBX text-6xl md:text-7xl py-12'>Regulamento</h1>
 
-            <p className={`${poppins.className}`}><b>Última atualização em:</b> {latestDate.toLocaleDateString()}</p>
+            <p className={`${poppins.className}`}><b>Última atualização em:</b> {latestDate.toLocaleDateString('pt-BR')}</p>
 
             <div className="w-full flex items-center justify-center px-4">
             <iframe
