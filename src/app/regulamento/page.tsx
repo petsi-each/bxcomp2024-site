@@ -33,7 +33,7 @@ export default function Regulamento() {
             <ul className={`flex flex-col items-center ${poppins.className}`}>
                 {
                     regulamento.modificacoes.map((atualizacao, idx) => {
-                        return <li key={idx}><b>{atualizacao.verbo_tipo}</b> em {atualizacao.data}</li>
+                        return <li key={idx}><b>{atualizacao.verbo_tipo}</b> em: {atualizacao.data}</li>
                     })
                 }
 
