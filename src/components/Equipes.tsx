@@ -2,12 +2,14 @@
 
 import ImageG from "@/components/ImageG"
 import { Poppins } from 'next/font/google'
+import { Lilita_One } from 'next/font/google'
 import equipes_data from '@/data/landingpage.json'
 import BotaoEquipe from "./BotaoEquipe"
 
 const poppins = Poppins({weight: "300", subsets: ['latin']})
 
 interface Equipe {
+const lilita = Lilita_One({weight: "400", subsets: ['latin']})
     nome: string,
     srcImage: string,
     membros: string[],
@@ -44,15 +46,15 @@ export default function Equipes(){
 
         <section className=" px-4 flex flex-col items-center justify-center">
             <h2 className="text-verdeBX text-6xl"> Equipes </h2>
-            <p className=" py-4 text-pretoBX"> Conheça os competidores desse ano! </p>
+            <p className= {`${poppins.className} py-4 text-sm text-pretoBX`}> Conheça os competidores desse ano! </p>
             <section className="relative">
-                <div className="z-auto relative border-laranjaBX border-8 rounded-full bg-transparent w-72 h-72 drop-shadow"></div>
-                <div className="-z-10 absolute bottom-16 -right-20  bg-verdeBX text-white rounded-full pl-8 pr-6 py-2 drop-shadow">   12 pontos </div>
+                <div className="z-10 relative border-laranjaBX border-8 rounded-full bg-white w-72 h-72 drop-shadow-lg"></div>
+                <div className="z-0 absolute bottom-20 -right-20  bg-verdeBX text-white rounded-full pl-8 pr-6 py-2 drop-shadow-md">   12 pontos </div>
             </section>
 
             <div className="z-20 -mt-16 drop-shadow-md bg-laranjaBX w-80 h-36 rounded-tl-[96px] rounded-br-[96px] flex flex-col items-center justify-center">
-                <h3> Nome equipe </h3>
-                <div className="flex flex-col items-center justify-center">
+                <h3 className= {`${lilita.className} my-2 tracking-wide drop-shadow-md text-3xl font-bold`}> Nome Equipe </h3>
+                <div className= {`${poppins.className} text-xs text-white flex flex-col items-center justify-center`}>
                     <p>Nome</p>
                     <p>Nome</p>
                     <p>Nome</p>
