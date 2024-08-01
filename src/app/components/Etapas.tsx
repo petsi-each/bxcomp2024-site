@@ -17,7 +17,7 @@ export default function Etapas() {
     // const etapas_data: { etapas: Etapa[] } = require('@/data/landingpage.json') 
 
     return (
-        <section className="flex flex-col md:flex-row justify-center max-w-full bg-brancoBX">
+        <section className="flex flex-col md:flex-row justify-center bg-brancoBX">
             <header className="m-16">
                 <h1 className="text-verdeBX text-6xl mb-4">Etapas</h1>
                 <h2 className={`${poppins.className} text-black text-thin`}>Estude ao rever os temas, desafios e resoluções já apresentadas nesta edição do BXCOMP!</h2>
@@ -31,7 +31,7 @@ export default function Etapas() {
                     />
                 </figure>
             </header>
-            <aside className="grid grid-rows-5 w-full gap-4 my-4">
+            <aside className="flex flex-col justify-center mx-auto w-fit md:w-full gap-4 my-4 md:mx-4 bg-red-500">
                 <EtapaCard 
                     numero={etapas_data.etapas[0].numero}
                     tema={etapas_data.etapas[0].tema}
