@@ -23,7 +23,7 @@ export default function EtapaCard(props: Etapa) {
     }
 
     return (
-        <div className="flex flex-col sm:flex-row justify-between rounded-3xl w-full bg-azulBX">
+        <article className="flex flex-col sm:flex-row justify-between rounded-3xl w-full bg-azulBX">
             <div className="flex items-center justify-center pt-8 sm:pt-4 sm:p-4">
                 <figure className="w-32 flex justify-center items-center">
                     <ImageG
@@ -48,6 +48,6 @@ export default function EtapaCard(props: Etapa) {
                     />
                 </div>
             </div>
-        </div>
+        </article>
     )
 }
