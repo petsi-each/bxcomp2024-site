@@ -19,9 +19,6 @@ const config: Config = {
         'azulBX': '#81C9E4',
         'brancoBX': '#E6E4E0',
         'pretoBX': '#031621'
-      },
-      fontFamily: {
-        poppins: ['Poppins', 'sans-serif']
       }
     }
   },

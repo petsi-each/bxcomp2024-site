@@ -3,7 +3,12 @@ import etapasDesafios from '@/data/etapasDesafios.json';
 import ImageG from '@/components/ImageG';
 import CardDesafios from './components/CardDesafios';
 import { useState } from "react";
+import { Poppins } from 'next/font/google'
 
+const poppins = Poppins({
+    subsets: ['latin'],
+    weight: '400' 
+})
 
 export default function EtapasDesafios() {
 
@@ -35,8 +40,8 @@ export default function EtapasDesafios() {
                                         :
                                         <div>
                                             <ImageG className="-z-10 rounded-3xl opacity-[0.95]" src={etapa.icon} alt={etapa.altIcon} fill={true} />
-                                            <h2 className="mt-28 font-poppins text-white text-2xl drop-shadow-lg underline underline-offset-4 decoration-verdeBX"><b>Etapa {etapa.etapaIndice}</b></h2>
-                                            <h3 className="-mt-1.5 font-poppins text-white text-lg drop-shadow-lg">{etapa.tema}</h3>
+                                            <h2 className={`mt-24 ${poppins.className} text-white text-2xl drop-shadow-lg underline underline-offset-4 decoration-verdeBX`}><b>Etapa {etapa.etapaIndice}</b></h2>
+                                            <h3 className={`-mt-1.5 ${poppins.className} text-white text-lg drop-shadow-lg`}>{etapa.tema}</h3>
                                         </div>
                                 }
                             </button>
