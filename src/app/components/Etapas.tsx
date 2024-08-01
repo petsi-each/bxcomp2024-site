@@ -30,7 +30,7 @@ export default function Etapas() {
                     />
                 </figure>
             </header>
-            <aside className="flex flex-col justify-center mx-auto w-fit md:w-full gap-4 my-4 md:mx-4 bg-red-500">
+            <aside className="flex flex-col justify-center mx-auto w-fit md:w-full gap-4 my-4 md:mx-4">
                 <EtapaCard 
                     numero={etapas_data.etapas[0].numero}
                     tema={etapas_data.etapas[0].tema}
