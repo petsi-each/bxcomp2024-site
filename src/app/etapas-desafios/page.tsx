@@ -25,7 +25,7 @@ export default function EtapasDesafios() {
                     {
                         etapasDesafios.map((etapa) => (
                             <button onClick={() => handleOnClick(etapa.etapaIndice)} disabled={etapa.estado == false} title={`Etapa ${etapa.etapaIndice}`} 
-                            className={`relative size-44 rounded-3xl ${etapa.estado == true ? 'hover:underline hover:underline-offset-4 hover:decoration-verdeBX hover:ring-8 hover:ring-azulBX hover:ring-opacity-20 hover:bg-blue-600 hover:bg-opacity-20 active:ring-8 active:ring-laranjaBX active:ring-opacity-70' : ''} ${indice == etapa.etapaIndice ? 'scale-[1.12] shadow-sky-900 shadow-lg ' : ''}`}> 
+                            className={`relative size-44 rounded-3xl ${etapa.estado == true ? 'hover:transition-all hover:duration-150 hover:underline hover:underline-offset-4 hover:decoration-verdeBX hover:ring-8 hover:ring-azulBX hover:ring-opacity-20 hover:bg-blue-600 hover:bg-opacity-20 active:ring-8 active:ring-laranjaBX active:ring-opacity-70' : ''} ${indice == etapa.etapaIndice ? 'scale-[1.13] shadow-sky-900 shadow-lg ' : ''}`}> 
                              {/*gostaria de adicionar um hover que escale apenas os elementos textuais/headers*/}
                                 {
                                     etapa.estado == false ?
