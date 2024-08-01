@@ -21,12 +21,11 @@ export default function EtapasDesafios() {
         <main>
             <h1 className="mx-60 mt-20 text-right text-5xl text-brancoBX"> Etapas <br></br> <span className="text-laranjaBX">&</span> Desafios</h1> {/*whitespace-pre-line não funcionou*/}
             <div className="flex items-center flex-col">
-                <div className="my-16 grid grid-cols-5 w-fit gap-x-5"> {/*TODO:no clique do botão de cada Etapa o gap está mudando*/}
+                <div className="my-16 grid grid-cols-5 w-fit gap-x-7">
                     {
                         etapasDesafios.map((etapa) => (
                             <button onClick={() => handleOnClick(etapa.etapaIndice)} disabled={etapa.estado == false} title={`Etapa ${etapa.etapaIndice}`} 
-                            className={`relative size-48 rounded-3xl ${etapa.estado == true ? 'hover:underline hover:underline-offset-4 hover:decoration-verdeBX hover:ring-8 hover:ring-azulBX hover:ring-opacity-20 hover:bg-blue-600 hover:bg-opacity-20 active:ring-8 active:ring-laranjaBX active:ring-opacity-70' : ''} ${indice == etapa.etapaIndice ? 'scale-100 shadow-sky-900 shadow-lg ' : 'scale-90'}`}> 
-                             {/*bg em azul começou a sumir quando há um card em destaque */}
+                            className={`relative size-48 rounded-3xl ${etapa.estado == true ? 'hover:underline hover:underline-offset-4 hover:decoration-verdeBX hover:ring-8 hover:ring-azulBX hover:ring-opacity-20 hover:bg-blue-600 hover:bg-opacity-20 active:ring-8 active:ring-laranjaBX active:ring-opacity-70' : ''} ${indice == etapa.etapaIndice ? 'scale-[1.12] shadow-sky-900 shadow-lg ' : ''}`}> 
                              {/*gostaria de adicionar um hover que escale apenas os elementos textuais/headers*/}
                                 {
                                     etapa.estado == false ?
