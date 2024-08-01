@@ -14,7 +14,6 @@ export interface Etapa {
 }
 
 export default function Etapas() {
-    // const etapas_data: { etapas: Etapa[] } = require('@/data/landingpage.json') 
 
     return (
         <section className="flex flex-col md:flex-row justify-center bg-brancoBX">

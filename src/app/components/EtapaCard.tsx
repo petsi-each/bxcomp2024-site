@@ -4,10 +4,13 @@ import ImageG from "@/components/ImageG"
 import PrimaryButton from "@/components/PrimaryButton";
 import { Etapa } from "@/app/components/Etapas";
 import { Poppins } from 'next/font/google'
+import { useRouter } from 'next/navigation'
 
 const poppins = Poppins({ weight: '300', subsets: ['latin'] })
 
 export default function EtapaCard(props: Etapa) {
+    const router = useRouter()
+
     let cond_props = {
         tema: props.tema,
         img: props.imagem,
@@ -44,7 +47,7 @@ export default function EtapaCard(props: Etapa) {
                 <div className="w-full max-w-xs flex justify-center items-center">
                     <PrimaryButton
                         title={cond_props.texto_botao}
-                        onClick={() => { }}
+                        onClick={() => {router.push(cond_props.link)}}
                     />
                 </div>
             </div>
