@@ -1,4 +1,3 @@
-import { getFileFromPublic } from '@/lib/Files'
 import { Poppins } from 'next/font/google'
 
 import regulamento from '@/data/regulamento.json';
@@ -25,7 +24,7 @@ export default function Regulamento() {
 
             <div className="w-full flex items-center justify-center px-4">
             <iframe
-                src={getFileFromPublic(regulamento.arquivo)}
+                src={regulamento.arquivo}
                 title="Regulamento"
                 className="py-4 w-full max-w-[50rem] h-[36rem] lg:h-[50rem]"
             >
