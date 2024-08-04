@@ -18,9 +18,11 @@ export default function EtapasDesafios() {
         if (indice == etapaIndice){
             setIndice(-1)
         } else {
-                setIndice(etapaIndice)
+            setIndice(etapaIndice)
+            setTimeout(() => { 
                 const scroll = document.getElementById('scrollDestiny');
                 scroll?.scrollIntoView({behavior:'smooth'});
+            }, 0);
         }
     }
 
