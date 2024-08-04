@@ -7,31 +7,34 @@ import { Poppins } from 'next/font/google'
 
 const poppins = Poppins({
     subsets: ['latin'],
-    weight: '400' 
+    weight: '400'
 })
 
 export default function EtapasDesafios() {
 
     const [indice, setIndice] = useState(-1);
 
-    const handleOnClick = (etapaIndice: number) =>{
-        indice == etapaIndice ?
+    const handleOnClick = (etapaIndice: number) => {
+        if (indice == etapaIndice){
             setIndice(-1)
-            :
-            setIndice(etapaIndice)
+        } else {
+                setIndice(etapaIndice)
+                const scroll = document.getElementById('scrollDestiny');
+                scroll?.scrollIntoView({behavior:'smooth'});
+        }
     }
 
-    
+
     return (
         <main>
-            <h1 className="mx-60 mt-20 text-right text-5xl text-brancoBX"> Etapas <br></br> <span className="text-laranjaBX">&</span> Desafios</h1> {/*whitespace-pre-line não funcionou*/}
+            <h1 className="mx-60 mt-20 mb-8 text-right text-5xl text-brancoBX"> Etapas <br></br> <span className="text-laranjaBX">&</span> Desafios</h1> {/*whitespace-pre-line não funcionou*/}
             <div className="flex items-center flex-col">
-                <div className="my-16 grid grid-cols-5 w-fit gap-x-7">
+                <section className="my-8 grid grid-cols-5 w-fit gap-x-7">
                     {
                         etapasDesafios.map((etapa) => (
-                            <button onClick={() => handleOnClick(etapa.etapaIndice)} disabled={etapa.estado == false} title={`Etapa ${etapa.etapaIndice}`} 
-                            className={`relative size-44 rounded-3xl ${etapa.estado == true ? 'hover:transition-all hover:duration-150 hover:underline hover:underline-offset-4 hover:decoration-verdeBX hover:ring-8 hover:ring-azulBX hover:ring-opacity-20 hover:bg-blue-600 hover:bg-opacity-20 active:ring-8 active:ring-laranjaBX active:ring-opacity-70' : ''} ${indice == etapa.etapaIndice ? 'scale-[1.13] shadow-sky-900 shadow-lg ' : ''}`}> 
-                             {/*gostaria de adicionar um hover que escale apenas os elementos textuais/headers*/}
+                            <button onClick={() => handleOnClick(etapa.etapaIndice)} disabled={etapa.estado == false} title={`Etapa ${etapa.etapaIndice}`}
+                                className={`relative size-44 rounded-3xl ${etapa.estado == true ? 'hover:transition-all hover:duration-150 hover:underline hover:underline-offset-4 hover:decoration-verdeBX hover:ring-8 hover:ring-azulBX hover:ring-opacity-20 hover:bg-blue-600 hover:bg-opacity-20 active:ring-8 active:ring-laranjaBX active:ring-opacity-70' : ''} ${indice == etapa.etapaIndice ? 'scale-[1.13] shadow-sky-900 shadow-lg ' : ''}`}>
+                                {/*gostaria de adicionar um hover que escale apenas os elementos textuais/headers*/}
                                 {
                                     etapa.estado == false ?
                                         <div>
@@ -47,12 +50,14 @@ export default function EtapasDesafios() {
                             </button>
                         ))
                     }
-                </div>
-                {
-                    indice != -1 && (
-                        <CardDesafios desafios={(etapasDesafios[indice]).desafios} />
-                    )
-                }
+                </section>
+                <section id="scrollDestiny" className="pt-8 mb-20"> {/*a fim do scroll ter como destino um ponto ligeiramente anterior ao início do primeiro balao de desafio, ao invés de utilizar mt-8, aqui usamos pt-8 */}
+                    {
+                        indice != -1 && (
+                            <CardDesafios desafios={(etapasDesafios[indice]).desafios} /> 
+                        )
+                    }
+                </section>
             </div>
         </main>
     );
