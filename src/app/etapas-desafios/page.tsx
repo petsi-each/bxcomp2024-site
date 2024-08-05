@@ -31,7 +31,7 @@ export default function EtapasDesafios() {
         <main>
             <h1 className="mx-60 mt-20 mb-8 text-right text-5xl text-brancoBX"> Etapas <br></br> <span className="text-laranjaBX">&</span> Desafios</h1> {/*whitespace-pre-line não funcionou*/}
             <div className="flex items-center flex-col">
-                <section className="m-8 flex flex-wrap justify-center gap-x-7 gap-y-7">
+                <section className="mx-10 my-8 flex flex-wrap justify-center gap-x-7 gap-y-7">
                     {
                         etapasDesafios.map((etapa) => (
                             <button onClick={() => handleOnClick(etapa.etapaIndice)} disabled={etapa.estado == false} title={`Etapa ${etapa.etapaIndice}`}
