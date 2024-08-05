@@ -34,7 +34,7 @@ export default function EtapasDesafios() {
                     {
                         etapasDesafios.map((etapa) => (
                             //o clique só é viável para as etapas liberadas, com isso os hovers, etc, também só devem ser aplicados aos Cards cujas etapas já foram liberadas, em caso contrário nada deve ser feito
-                            <button onClick={() => handleOnClick(etapa.etapaIndice)} disabled={etapa.estado == false} title={`Etapa ${etapa.etapaIndice}`} className={`relative size-44 rounded-3xl ${etapa.estado == true ? 'hover:transition-all hover:duration-150 hover:underline hover:underline-offset-4 hover:decoration-verdeBX hover:ring-8 hover:ring-azulBX hover:ring-opacity-20 hover:bg-blue-600 hover:bg-opacity-20 active:ring-8 active:ring-laranjaBX active:ring-opacity-70' : ''}  ${indice == etapa.etapaIndice ? 'scale-[1.13] shadow-sky-900 shadow-lg ' : ''}`}>
+                            <button onClick={() => handleOnClick(etapa.etapaIndice)} disabled={etapa.estado == false} title={`Etapa ${etapa.etapaIndice}`} className={`relative size-44 rounded-3xl ${etapa.estado == true ? 'hover:transition-all hover:duration-150 hover:underline hover:underline-offset-4 decoration-verdeBX hover:ring-8 hover:ring-azulBX hover:ring-opacity-20 hover:bg-blue-600 hover:bg-opacity-20 active:ring-8 active:ring-laranjaBX active:ring-opacity-70' : ''}  ${indice == etapa.etapaIndice ? 'scale-[1.13] shadow-sky-900 shadow-lg ' : ''}`}>
                                 {
                                     etapa.estado == false ? //caso a etapa ainda não tenha ocorrido:
                                         <div> 
@@ -43,7 +43,7 @@ export default function EtapasDesafios() {
                                         : //caso contrário (etapa.estado==true):
                                         <div>
                                             <ImageG className="-z-10 rounded-3xl opacity-[0.95]" src={etapa.icon} alt={etapa.altIcon} fill={true} />
-                                            <h2 className={`mt-24 ${poppins.className} text-white text-2xl [text-shadow:_0_1.3px_0_var(--tw-shadow-color)] shadow-gray-600 underline underline-offset-4 decoration-verdeBX`}><b>Etapa {etapa.etapaIndice}</b></h2>
+                                            <h2 className={`mt-24 ${poppins.className} text-white text-2xl [text-shadow:_0_1.3px_0_var(--tw-shadow-color)] shadow-gray-600 underline underline-offset-4 decoration-verdeBX decoration-2`}><b>Etapa {etapa.etapaIndice}</b></h2>
                                             <h3 className={`-mt-1.5 ${poppins.className} text-white text-lg [text-shadow:_0_1.3px_0_var(--tw-shadow-color)] shadow-gray-600`}>{etapa.tema}</h3>
                                         </div>
                                 }
