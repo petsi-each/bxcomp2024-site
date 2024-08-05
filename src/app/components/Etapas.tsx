@@ -40,7 +40,7 @@ function EtapaCard(props: Etapa) {
                     <ImageG
                         className="rounded-lg"
                         src={cond_props.img}
-                        unoptimized={cond_props.img.split('.')[1] == 'gif' ? true : false}
+                        unoptimized={cond_props.img.split('.')[1] == 'gif'}
                         alt={`Imagem da etapa ${props.numero}: ${cond_props.tema}`}
                         fill={true}
                     />
