@@ -36,14 +36,13 @@ function EtapaCard(props: Etapa) {
     return (
         <article className="flex flex-col sm:flex-row justify-between rounded-3xl w-full bg-azulBX">
             <div className="flex items-center justify-center pt-8 sm:pt-4 sm:p-4">
-                <figure className="w-32 flex justify-center items-center">
+                <figure className="w-32 h-32 flex justify-center items-center relative">
                     <ImageG
                         className="rounded-lg"
                         src={cond_props.img}
                         unoptimized={cond_props.img.split('.')[1] == 'gif' ? true : false}
                         alt={`Imagem da etapa ${props.numero}: ${cond_props.tema}`}
-                        width={400}
-                        height={400}
+                        fill={true}
                     />
                 </figure>
             </div>
