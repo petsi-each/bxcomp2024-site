@@ -26,10 +26,9 @@ export default function EtapasDesafios() {
         }
     }
 
-
     return (
         <main>
-            <h1 className="mx-60 mt-20 mb-8 text-right text-5xl text-brancoBX"> Etapas <br></br> <span className="text-laranjaBX">&</span> Desafios</h1> 
+            <h1 className="mx-16 sm:mx-28 md:mx-36 lg:mx-48 xl:mx-60 mt-20 mb-8 text-right text-5xl text-brancoBX"> Etapas <br></br> <span className="text-laranjaBX">&</span> Desafios</h1> 
             <div className="flex items-center flex-col">
                 <section className="mx-10 my-8 flex flex-wrap justify-center gap-x-7 gap-y-7">
                     {
