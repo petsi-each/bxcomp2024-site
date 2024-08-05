@@ -80,41 +80,18 @@ export default function Etapas() {
                 </figure>
             </header>
             <aside className="flex flex-col justify-center mx-auto w-fit md:w-full gap-4 my-4 md:mx-4">
-                <EtapaCard
-                    numero={etapas_data.etapas[0].numero}
-                    tema={etapas_data.etapas[0].tema}
-                    imagem={etapas_data.etapas[0].imagem}
-                    link={etapas_data.etapas[0].link}
-                    visivel={etapas_data.etapas[0].visivel}
-                />
-                <EtapaCard
-                    numero={etapas_data.etapas[1].numero}
-                    tema={etapas_data.etapas[1].tema}
-                    imagem={etapas_data.etapas[1].imagem}
-                    link={etapas_data.etapas[1].link}
-                    visivel={etapas_data.etapas[1].visivel}
-                />
-                <EtapaCard
-                    numero={etapas_data.etapas[2].numero}
-                    tema={etapas_data.etapas[2].tema}
-                    imagem={etapas_data.etapas[2].imagem}
-                    link={etapas_data.etapas[2].link}
-                    visivel={etapas_data.etapas[2].visivel}
-                />
-                <EtapaCard
-                    numero={etapas_data.etapas[3].numero}
-                    tema={etapas_data.etapas[3].tema}
-                    imagem={etapas_data.etapas[3].imagem}
-                    link={etapas_data.etapas[3].link}
-                    visivel={etapas_data.etapas[3].visivel}
-                />
-                <EtapaCard
-                    numero={etapas_data.etapas[4].numero}
-                    tema={etapas_data.etapas[4].tema}
-                    imagem={etapas_data.etapas[4].imagem}
-                    link={etapas_data.etapas[4].link}
-                    visivel={etapas_data.etapas[4].visivel}
-                />
+                {etapas_data.etapas.map((etapa, index) => {
+                    return (
+                        <EtapaCard
+                            key={index}
+                            numero={etapa.numero}
+                            tema={etapa.tema}
+                            imagem={etapa.imagem}
+                            link={etapa.link}
+                            visivel={etapa.visivel}
+                        />
+                    )
+                })}
             </aside>
         </section>
     )
