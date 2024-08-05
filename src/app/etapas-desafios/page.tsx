@@ -31,7 +31,7 @@ export default function EtapasDesafios() {
         <main>
             <h1 className="mx-60 mt-20 mb-8 text-right text-5xl text-brancoBX"> Etapas <br></br> <span className="text-laranjaBX">&</span> Desafios</h1> {/*whitespace-pre-line não funcionou*/}
             <div className="flex items-center flex-col">
-                <section className="my-8 grid grid-cols-5 w-fit gap-x-7">
+                <section className="m-8 flex flex-wrap justify-center gap-x-7 gap-y-7">
                     {
                         etapasDesafios.map((etapa) => (
                             <button onClick={() => handleOnClick(etapa.etapaIndice)} disabled={etapa.estado == false} title={`Etapa ${etapa.etapaIndice}`}
@@ -53,7 +53,7 @@ export default function EtapasDesafios() {
                         ))
                     }
                 </section>
-                <section id="scrollDestiny" className="pt-8 mb-20"> {/*a fim do scroll ter como destino um ponto ligeiramente anterior ao início do primeiro balao de desafio, ao invés de utilizar mt-8, aqui usamos pt-8 */}
+                <section id="scrollDestiny" className="pt-8 mb-20 mx-8"> {/*a fim do scroll ter como destino um ponto ligeiramente anterior ao início do primeiro balao de desafio, ao invés de utilizar mt-8, aqui usamos pt-8 */}
                     {
                         indice != -1 && (
                             <CardDesafios desafios={(etapasDesafios[indice]).desafios} /> 
