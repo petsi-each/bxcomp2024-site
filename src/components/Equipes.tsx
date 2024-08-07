@@ -46,17 +46,17 @@ export default function Equipes(){
             <p className= {`${poppins.className} py-4 text-sm text-pretoBX`}> Conheça os competidores desse ano! </p>
 
             <section className=" relative">
-                <div className="z-10 relative border-laranjaBX border-8 rounded-full bg-white w-72 h-72 drop-shadow-lg"></div>
+                <div className="z-10 flex justify-center items-center relative border-laranjaBX border-8 rounded-full bg-white w-72 h-72 drop-shadow-lg"> 
+                <ImageG className="" alt="ícone da equipe selecionada" width={240} height={240} src={equipes_data.equipes[idSelecionado].iconPath} />
+                </div>
                 <div className="z-0 absolute bottom-20 -right-20  bg-verdeBX text-white rounded-full pl-8 pr-6 py-2 drop-shadow-md">   12 pontos </div>
             </section>
             
             <div className="z-20 -mt-16 drop-shadow-md bg-laranjaBX w-80 h-36 rounded-tl-[96px] rounded-br-[96px] flex flex-col items-center justify-center">
                 <h3 className= {`${lilita.className} my-2 tracking-wide drop-shadow-md text-3xl font-bold`}> {equipes_data.equipes[idSelecionado].nome} </h3>
                 <div className= {`${poppins.className} text-xs text-white flex flex-col items-center justify-center`}>
-                    <p>Nome</p>
-                    <p>Nome</p>
-                    <p>Nome</p>
-                    <p>Nome</p>
+                    <div> {equipes_data.equipes[idSelecionado].membros.map((membro, idx) => {                       
+                    return <p className="flex justify-center">{membro}</p>})} </div>
                 </div>
             </div>
 
