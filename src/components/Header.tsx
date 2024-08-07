@@ -20,7 +20,7 @@ export default function Header() {
     const pathname = usePathname();
 
     return (
-        <header className="fixed top-0 left-0 w-screen px-8 pt-4 pb-8 flex flex-col lg:items-center justify-between lg:flex-row bg-gradient-to-b from-pretoBX from-60% ">
+        <header className="fixed z-40 top-0 left-0 w-screen px-8 pt-4 pb-8 flex flex-col lg:items-center justify-between lg:flex-row bg-gradient-to-b from-pretoBX from-60% ">
             <div className="flex  justify-between">
                 <a href="/" aria-label="Ir para página inicial" className="lg:mr-64 2xl:mr-96">
                     <ImageG src="/logoBxcomp.svg" alt="Logo do BXComp 2024" width="174" height="118" />
