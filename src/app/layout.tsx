@@ -23,8 +23,14 @@ export default function RootLayout({
   return (
     <html lang="pt">
       <body className={bubblegum.className}>
-        <Header />
+        <header className="z-40">
+          <Header/>
+        </header>
+        
+        <main className="z-30">
         {children}
+        </main>
+
       </body>
     </html>
   );
