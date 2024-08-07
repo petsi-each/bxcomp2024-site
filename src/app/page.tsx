@@ -1,5 +1,5 @@
-import Etapas from "./components/Etapas";
 'use client'
+import Etapas from "./components/Etapas";
 import Ranking from "@/components/Ranking";
 import PrimaryButton from "@/components/PrimaryButton";
 import data from '../data/landingpage.json';
