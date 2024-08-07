@@ -92,12 +92,26 @@ const Ranking: React.FC<RankingProps> = ({ equipes, displayQuantity = -1 }) => {
     const topScore = sumPoints(sortedEquipes[0].pontos) // Pega a maior quantidade de pontos (representa 100%)
     const displayEquipes = displayQuantity < 0 ? sortedEquipes : sortedEquipes.slice(0, displayQuantity) // Apresenta displayQuantity itens do array caso um valor seja determinado
 
+    // // Define as 3 primeiras pontuações
+    let secondScore, thirdScore;
+    let contMaior = 0;
+
+    sortedEquipes.forEach((equipe, index) => {
+
+    if(equipe.pontos > topScore) {
+        contMaior++;
+    }
+
+    });
+    
+    
     return (
 
         <section className="grid grid-rows-1 gap-8 md:gap-2">
 
             {
                 displayEquipes.map((equipe, index) => (
+
                     <PointBar key={index} equipe={equipe} topScore={topScore} />
                 ))
             }
