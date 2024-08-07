@@ -55,6 +55,16 @@
       "iconPath": "/equipe_icons/example.png"
     },
     {
+      "nome": "grace",
+      "membros": [
+        "eu",
+        "vc",
+        "eleDSADSA"
+      ],
+      "pontos": 1,
+      "iconPath": "/equipe_icons/example.png"
+    },
+    {
       "nome": "Equipea",
       "membros": [
         "eu",
