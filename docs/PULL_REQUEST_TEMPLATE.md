@@ -5,6 +5,8 @@
 
 Descreva o objetivo desse pull request, qual problema ele está resolvendo e qual é a motivação
 
+Siga o seguinte tutorial: https://www.notion.so/gianemayumi/Documenta-o-de-Pull-Request-474a9f54bd4c46b89f98bca2eb246f82
+
 Para relacionar com uma issue, escreva uma das palavras reservadas e o ID da issue relacionada como abaixo:
 
 Fixes #1 
