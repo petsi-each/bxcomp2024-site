@@ -16,7 +16,7 @@ const config: Config = {
       colors: {
         'laranjaBX': '#FF8113',
         'verdeBX': '#52CC50',
-        'azulBX': '#81C9E4',
+        'azulBX': '#058FC3',
         'brancoBX': '#E6E4E0',
         'pretoBX': '#031621'
       },
