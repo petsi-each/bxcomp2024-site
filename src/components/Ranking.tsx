@@ -9,12 +9,15 @@ interface Equipe {
 
 interface RankingProps {
     equipes: Equipe[],
-    displayQuantity?: number
+    displayQuantity?: number,
+    secondScore: number,
+    thirdScore: number
 }
 
 interface PointBarProps {
     equipe: Equipe,
-    topScore: number
+    topScore: number,
+    scorePosition: number,
 }
 
 
@@ -23,9 +26,10 @@ interface PointBarProps {
  *
  * @param {Equipe} equipe - Informações da equipe incluindo nome, membros, pontos e ícone.
  * @param {number} topScore - O maior número de pontos entre todas as equipes, usado para calcular a largura da barra.
+ * @param {number} scorePosition - Posicao do top; Pode ser: 1, 2 e 3.
  */
 
-const PointBar: React.FC<PointBarProps> = ({ equipe, topScore }) => {
+const PointBar: React.FC<PointBarProps> = ({ equipe, topScore, scorePosition }) => {
     
     const totalPontos = equipe.pontos.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
     
@@ -34,6 +38,11 @@ const PointBar: React.FC<PointBarProps> = ({ equipe, topScore }) => {
     return (
 
         <article className="-z-10">
+
+            {scorePosition == 1 ? <ImageG src="/coroaReiGelado.png" alt="" width={88} height={132}/>
+            :
+            <ImageG src={`${scorePosition == 2 ? "/coroaTeste.png" : scorePosition == 3 ? "/coroaTeste.png" : ""}`} alt="" width={85} height={65}/>
+            }
 
             {/* Descrição da equipe no mobile */}
             <div className="md:hidden w-screen px-8">
@@ -92,18 +101,25 @@ const Ranking: React.FC<RankingProps> = ({ equipes, displayQuantity = -1 }) => {
     const topScore = sumPoints(sortedEquipes[0].pontos) // Pega a maior quantidade de pontos (representa 100%)
     const displayEquipes = displayQuantity < 0 ? sortedEquipes : sortedEquipes.slice(0, displayQuantity) // Apresenta displayQuantity itens do array caso um valor seja determinado
 
-    // // Define as 3 primeiras pontuações
-    let secondScore, thirdScore;
+    // Define as pontuações de secondScore e thirdScore
+    let secondScore: number | undefined,
+        thirdScore: number | undefined;
     let contMaior = 0;
 
     sortedEquipes.forEach((equipe, index) => {
-
-    if(equipe.pontos > topScore) {
-        contMaior++;
-    }
+        
+        if(equipe.pontos[index] != topScore){
+            if(contMaior == 0){ // É o primeiro maior = secondScore
+                contMaior++;
+                secondScore = equipe.pontos[index];
+            }
+            if(contMaior == 1 && equipe.pontos[index] != equipe.pontos[index-1]){ // É o segundo maior = thirdScore
+                contMaior++;
+                thirdScore = equipe.pontos[index];
+            }
+        }
 
     });
-    
     
     return (
 
@@ -111,8 +127,17 @@ const Ranking: React.FC<RankingProps> = ({ equipes, displayQuantity = -1 }) => {
 
             {
                 displayEquipes.map((equipe, index) => (
-
-                    <PointBar key={index} equipe={equipe} topScore={topScore} />
+                    
+                    topScore == 0? <PointBar key={index} equipe={equipe} topScore={topScore} scorePosition={4}/> // Ninguém pontuou, sem coroa
+                    :
+                    equipe.pontos[index] == topScore ? <PointBar key={index} equipe={equipe} topScore={topScore} scorePosition={1}/> // PointBar 1o lugar
+                    :
+                    equipe.pontos[index] == secondScore ? <PointBar key={index} equipe={equipe} topScore={topScore} scorePosition={2}/> // PointBar 2o lugar
+                    :
+                    equipe.pontos[index] == thirdScore? <PointBar key={index} equipe={equipe} topScore={topScore} scorePosition={3}/> // PointBar 3o lugar
+                    : 
+                    <PointBar key={index} equipe={equipe} topScore={topScore} scorePosition={4}/> // Sem coroa
+                    
                 ))
             }
 
