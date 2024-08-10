@@ -39,11 +39,11 @@ const CoroaImage: React.FC<CoroaImageProps> = ({ scorePosition }) => {
                 </div>
     } else if (scorePosition == 2) {
         image = <div className="absolute -mt-24 -ml-12">
-                    <ImageG src="/coroaTeste.png" alt="" width={85} height={65} />
+                    <ImageG src="/coroaPrata.png" alt="" width={85} height={65} />
                 </div>
     } else if (scorePosition == 3) {
         image = <div className="absolute -mt-24 -ml-12">
-                    <ImageG src="/coroaTeste.png" alt="" width={85} height={65} />
+                    <ImageG src="/coroaBronze.png" alt="" width={85} height={65} />
                 </div>
     } else {
         //image = null; // Nenhuma imagem será renderizada
