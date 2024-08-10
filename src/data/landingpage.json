@@ -61,7 +61,47 @@
         "vc",
         "ele"
       ],
+      "pontos": [0,2,3],
+      "iconPath": "/equipe_icons/example.png"
+    },
+    {
+      "nome": "Equipea",
+      "membros": [
+        "eu",
+        "vc",
+        "ele"
+      ],
       "pontos": [1,2,3],
+      "iconPath": "/equipe_icons/example.png"
+    },
+    {
+      "nome": "EquipeV",
+      "membros": [
+        "eu",
+        "vc",
+        "ele"
+      ],
+      "pontos": [100,2,3],
+      "iconPath": "/equipe_icons/example.png"
+    },
+    {
+      "nome": "Equipea",
+      "membros": [
+        "eu",
+        "vc",
+        "ele"
+      ],
+      "pontos": [1,0,0],
+      "iconPath": "/equipe_icons/example.png"
+    },
+    {
+      "nome": "Equipea",
+      "membros": [
+        "eu",
+        "vc",
+        "ele"
+      ],
+      "pontos": [0,2,0],
       "iconPath": "/equipe_icons/example.png"
     }
   ]

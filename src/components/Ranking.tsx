@@ -17,7 +17,7 @@ interface RankingProps {
 interface PointBarProps {
     equipe: Equipe,
     topScore: number,
-    scorePosition: number,
+    scorePosition: number | undefined,
 }
 
 
@@ -26,7 +26,7 @@ interface PointBarProps {
  *
  * @param {Equipe} equipe - Informações da equipe incluindo nome, membros, pontos e ícone.
  * @param {number} topScore - O maior número de pontos entre todas as equipes, usado para calcular a largura da barra.
- * @param {number} scorePosition - Posicao do top; Pode ser: 1, 2 e 3.
+ * @param {number} [scorePosition] - Posição do top; Pode ser: 1, 2, 3.
  */
 
 const PointBar: React.FC<PointBarProps> = ({ equipe, topScore, scorePosition }) => {
@@ -95,53 +95,55 @@ const Ranking: React.FC<RankingProps> = ({ equipes, displayQuantity = -1 }) => {
         return points.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
     };
 
-    sortedEquipes.sort((a, b) => sumPoints(b.pontos) - sumPoints(a.pontos));
 
     // sortedEquipes.sort((a, b) => b.pontos - a.pontos); // Ordena o array a partir dos pontos
+    sortedEquipes.sort((a, b) => sumPoints(b.pontos) - sumPoints(a.pontos));
+    
     const topScore = sumPoints(sortedEquipes[0].pontos) // Pega a maior quantidade de pontos (representa 100%)
     const displayEquipes = displayQuantity < 0 ? sortedEquipes : sortedEquipes.slice(0, displayQuantity) // Apresenta displayQuantity itens do array caso um valor seja determinado
+
 
     // Define as pontuações de secondScore e thirdScore
     let secondScore: number | undefined,
         thirdScore: number | undefined;
-    let contMaior = 0;
 
-    sortedEquipes.forEach((equipe, index) => {
-        
-        if(equipe.pontos[index] != topScore){
-            if(contMaior == 0){ // É o primeiro maior = secondScore
-                contMaior++;
-                secondScore = equipe.pontos[index];
-            }
-            if(contMaior == 1 && equipe.pontos[index] != equipe.pontos[index-1]){ // É o segundo maior = thirdScore
-                contMaior++;
-                thirdScore = equipe.pontos[index];
-            }
-        }
-
-    });
+    const uniqueSortedScores = Array.from(new Set(sortedEquipes.map(equipe => sumPoints(equipe.pontos)))); // Array ordenado de pontuações totais das equipes
+    if (uniqueSortedScores.length > 1) {
+        secondScore = uniqueSortedScores[1]; // A segunda maior pontuação
+    }
+    
+    if (uniqueSortedScores.length > 2) {
+        thirdScore = uniqueSortedScores[2]; // A terceira maior pontuação
+    }
+    ;
     
     return (
 
         <section className="grid grid-rows-1 gap-8 md:gap-2">
+            {displayEquipes.map((equipe, index) => {
+                // Calcula a soma da pontuação da equipe uma vez
+                const equipeScore = sumPoints(equipe.pontos);
 
-            {
-                displayEquipes.map((equipe, index) => (
-                    
-                    topScore == 0? <PointBar key={index} equipe={equipe} topScore={topScore} scorePosition={4}/> // Ninguém pontuou, sem coroa
-                    :
-                    equipe.pontos[index] == topScore ? <PointBar key={index} equipe={equipe} topScore={topScore} scorePosition={1}/> // PointBar 1o lugar
-                    :
-                    equipe.pontos[index] == secondScore ? <PointBar key={index} equipe={equipe} topScore={topScore} scorePosition={2}/> // PointBar 2o lugar
-                    :
-                    equipe.pontos[index] == thirdScore? <PointBar key={index} equipe={equipe} topScore={topScore} scorePosition={3}/> // PointBar 3o lugar
-                    : 
-                    <PointBar key={index} equipe={equipe} topScore={topScore} scorePosition={4}/> // Sem coroa
-                    
-                ))
-            }
+                // Determina a posição da equipe com base na pontuação
+                let scorePosition: number | undefined;
+                if (topScore === 0) {
+                    scorePosition = undefined; // Ninguém pontuou
+                } else if (equipeScore === topScore) {
+                    scorePosition = 1; // 1º lugar
+                } else if (equipeScore === secondScore) {
+                    scorePosition = 2; // 2º lugar
+                } else if (equipeScore === thirdScore) {
+                    scorePosition = 3; // 3º lugar
+                } else {
+                    scorePosition = undefined; // Sem coroa
+                }
 
-        </section>
+                // Retorna o componente PointBar com a posição correta
+                return (
+                    <PointBar key={index} equipe={equipe} topScore={topScore} scorePosition={scorePosition} />
+                );
+            })}
+        </section>  
 
     );
 };
