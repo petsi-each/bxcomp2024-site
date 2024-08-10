@@ -20,6 +20,39 @@ interface PointBarProps {
     scorePosition: number | undefined,
 }
 
+interface CoroaImageProps {
+    scorePosition: number | undefined;
+}
+
+/**
+ * Componente que representa o tipo de coroa do PointBar
+ * 
+ * @param {number} [scorePosition] - Posição do top; 
+ */
+
+const CoroaImage: React.FC<CoroaImageProps> = ({ scorePosition }) => {
+    let image;
+
+    if (scorePosition == 1) {
+        image = <div className="absolute -mt-40">
+                    <ImageG src="/coroaReiGelado.png" alt="" width={88} height={132} />
+                </div>
+    } else if (scorePosition == 2) {
+        image = <div className="absolute -mt-24 -ml-12">
+                    <ImageG src="/coroaTeste.png" alt="" width={85} height={65} />
+                </div>
+    } else if (scorePosition == 3) {
+        image = <div className="absolute -mt-24 -ml-12">
+                    <ImageG src="/coroaTeste.png" alt="" width={85} height={65} />
+                </div>
+    } else {
+        //image = null; // Nenhuma imagem será renderizada
+        return null;
+    }
+
+    return image;
+}
+
 
 /**
  * Componente que representa uma barra de pontos para uma equipe.
@@ -37,12 +70,7 @@ const PointBar: React.FC<PointBarProps> = ({ equipe, topScore, scorePosition }) 
 
     return (
 
-        <article className="-z-10">
-
-            {scorePosition == 1 ? <ImageG src="/coroaReiGelado.png" alt="" width={88} height={132}/>
-            :
-            <ImageG src={`${scorePosition == 2 ? "/coroaTeste.png" : scorePosition == 3 ? "/coroaTeste.png" : ""}`} alt="" width={85} height={65}/>
-            }
+        <article className="-z-10 pb-7">
 
             {/* Descrição da equipe no mobile */}
             <div className="md:hidden w-screen px-8">
@@ -50,22 +78,27 @@ const PointBar: React.FC<PointBarProps> = ({ equipe, topScore, scorePosition }) 
                 <p className="text-md">{totalPontos} pontos</p>
             </div>
 
-            <div style={{ width: percentage + '%' }} className={`flex items-center px-8`}>
+            <div>
 
-                <div className="flex flex-grow h-10 drop-shadow-lg bg-white rounded-full">
-                    <div className="w-full drop-shadow-lg rounded-full m-2 h-6 bg-laranjaBX"></div>
-                </div>
+                <div style={{ width: percentage + '%' }} className={`flex items-center px-8`}>
 
-                <div>
-                    <figure className="-ml-8 h-20 w-20 relative flex items-center text-black justify-center drop-shadow-xl rounded-full bg-white">
-                        <ImageG src={equipe.iconPath} fill={true} alt={""} />
-                    </figure>
-                </div>
+                    <div className="flex flex-grow h-10 drop-shadow-lg bg-white rounded-full">
+                        <div className="w-full drop-shadow-lg rounded-full m-2 h-6 bg-laranjaBX"></div>
+                    </div>
 
-                {/* Descrição da equipe no desktop */}
-                <div className="px-4 max-w-10 min-w-10 md:max-w-28 md:min-w-28 hidden md:block">
-                    <h2 className="text-2xl w-full truncate">{equipe.nome}</h2>
-                    <p className="text-md w-full">{totalPontos} pontos</p>
+                    <div>
+                        <figure className="-ml-8 h-20 w-20 relative flex items-center text-black justify-center drop-shadow-xl rounded-full bg-white">
+                            <ImageG className="absolute" src={equipe.iconPath} fill={true} alt={""} />
+                            <CoroaImage scorePosition={scorePosition} />
+                        </figure>
+                    </div>
+
+                    {/* Descrição da equipe no desktop */}
+                    <div className="px-4 max-w-10 min-w-10 md:max-w-28 md:min-w-28 hidden md:block">
+                        <h2 className="text-2xl w-full truncate">{equipe.nome}</h2>
+                        <p className="text-md w-full">{totalPontos} pontos</p>
+                    </div>
+
                 </div>
 
             </div>
@@ -126,13 +159,13 @@ const Ranking: React.FC<RankingProps> = ({ equipes, displayQuantity = -1 }) => {
 
                 // Determina a posição da equipe com base na pontuação
                 let scorePosition: number | undefined;
-                if (topScore === 0) {
+                if (topScore == 0) {
                     scorePosition = undefined; // Ninguém pontuou
-                } else if (equipeScore === topScore) {
+                } else if (equipeScore == topScore) {
                     scorePosition = 1; // 1º lugar
-                } else if (equipeScore === secondScore) {
+                } else if (equipeScore == secondScore) {
                     scorePosition = 2; // 2º lugar
-                } else if (equipeScore === thirdScore) {
+                } else if (equipeScore == thirdScore) {
                     scorePosition = 3; // 3º lugar
                 } else {
                     scorePosition = undefined; // Sem coroa

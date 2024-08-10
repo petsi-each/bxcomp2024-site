@@ -51,7 +51,7 @@
         "vc",
         "ele"
       ],
-      "pontos": [1,6,2],
+      "pontos": [10,0,0],
       "iconPath": "/equipe_icons/example.png"
     },
     {
@@ -61,7 +61,7 @@
         "vc",
         "ele"
       ],
-      "pontos": [0,2,3],
+      "pontos": [10,0,0],
       "iconPath": "/equipe_icons/example.png"
     },
     {
@@ -81,7 +81,7 @@
         "vc",
         "ele"
       ],
-      "pontos": [100,2,3],
+      "pontos": [30,2,3],
       "iconPath": "/equipe_icons/example.png"
     },
     {
@@ -91,7 +91,37 @@
         "vc",
         "ele"
       ],
-      "pontos": [1,0,0],
+      "pontos": [1,34,0],
+      "iconPath": "/equipe_icons/example.png"
+    },
+    {
+      "nome": "Equipea",
+      "membros": [
+        "eu",
+        "vc",
+        "ele"
+      ],
+      "pontos": [0,2,0],
+      "iconPath": "/equipe_icons/example.png"
+    },
+    {
+      "nome": "Equipea",
+      "membros": [
+        "eu",
+        "vc",
+        "ele"
+      ],
+      "pontos": [0,2,0],
+      "iconPath": "/equipe_icons/example.png"
+    },
+    {
+      "nome": "Equipea",
+      "membros": [
+        "eu",
+        "vc",
+        "ele"
+      ],
+      "pontos": [0,2,0],
       "iconPath": "/equipe_icons/example.png"
     },
     {
