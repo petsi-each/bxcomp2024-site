@@ -87,7 +87,7 @@ const PointBar: React.FC<PointBarProps> = ({ equipe, topScore, scorePosition }) 
 
                 <div>
                     <figure className="-ml-8 h-20 w-20 relative flex items-center justify-center drop-shadow-xl rounded-full bg-white">
-                        <ImageG src={equipe.iconPath} fill={true} alt={""} />
+                        <ImageG className="absolute" src={equipe.iconPath} fill={true} alt={""} />
                         <CoroaImage scorePosition={scorePosition}/>                 
                     </figure>
                 </div>
