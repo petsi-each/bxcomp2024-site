@@ -16,12 +16,22 @@ const config: Config = {
       colors: {
         'laranjaBX': '#FF8113',
         'verdeBX': '#52CC50',
-        'azulBX': '#81C9E4',
+        'azulBX': '#058FC3',
         'brancoBX': '#E6E4E0',
         'pretoBX': '#031621'
-      }
-    }
+      },
+      keyframes: {
+        appear: {
+          "0%": { opacity: '0' },
+          "100%": { opacity: '0.4' },
+        },
+      },
+      animation: {
+        appear: "appear 0.3s ease-out",
+      },
+    },
   },
   plugins: [],
 };
 export default config;
+

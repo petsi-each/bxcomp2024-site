@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import { Bubblegum_Sans } from "next/font/google";
 import "./globals.css";
 
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+
+
 const bubblegum = Bubblegum_Sans(
   {
     subsets: ["latin"],
@@ -20,8 +24,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={bubblegum.className}>{children}</body>
+
+    <html lang="pt">
+      <body className={bubblegum.className}>
+        <header className="z-40 relative">
+          <Header/>
+        </header>
+        
+        <main className="z-30 relative">
+        {children}
+        </main>
+      
+        <footer>
+          <Footer />
+        </footer>
+        
+      </body>
     </html>
   );
 }
