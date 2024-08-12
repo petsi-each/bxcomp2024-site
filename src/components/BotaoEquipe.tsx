@@ -20,8 +20,8 @@ interface BotaoEquipeProps{
 export default function BotaoEquipe(props: BotaoEquipeProps){
     return(
         
-        <button onClick={props.onClick} className={`w-20 h-28 opacity-50 px-4 py-4 mx-1 my-2 rounded-md border border-slate-500
-         ${props.selecionado ? 'opacity-100 bg-laranjaBX' : 'opacity-50 bg-brancoBX'}`}>
+        <button onClick={props.onClick} className={`w-20 h-28 px-4 py-4 mx-1 my-2 rounded-md border border-slate-500
+         ${props.selecionado ? 'bg-laranjaBX' : 'opacity-50 bg-brancoBX'}`}>
             <ImageG src={props.equipe.iconPath} width={42} height={42} alt={`ícone da equipe ${props.equipe.nome}`}></ImageG>
             <div className="text-pretoBX pt-2">
                 {props.equipe.nome}
