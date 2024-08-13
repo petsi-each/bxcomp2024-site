@@ -8,30 +8,35 @@
         "desafios": [
             {
                 "desafio": "Desejo não ser idiota - <NUM PONTOS>",
+                "idx": 0,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
                 "desafio": "Os 4 elementos - <NUM PONTOS>",
+                "idx": 1,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
                 "desafio": "ROUBO DO HAMBURGUER DE SIRI - <NUM PONTOS>",
+                "idx": 2,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
                 "desafio": "A porta espiritual - <NUM PONTOS>",
+                "idx": 3,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
                 "desafio": "Os robôs de Jimmy - <NUM PONTOS>",
+                "idx": 4,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
@@ -47,30 +52,35 @@
         "desafios": [
             {
                 "desafio": "Fuga dos Linux - <NUM PONTOS>",
+                "idx": 0,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
                 "desafio": "<NOME> - <NUM PONTOS>",
+                "idx": 1,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
                 "desafio": "Equilíbrio das Galinhas - <NUM PONTOS>",
+                "idx": 2,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
                 "desafio": "Rinha de Dragões - <NUM PONTOS>",
+                "idx": 3,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
                 "desafio": "FAZ O URRO - <NUM PONTOS>",
+                "idx": 4,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
@@ -86,30 +96,35 @@
         "desafios": [
             {
                 "desafio": "Tá com você Puro Osso - <NUM PONTOS>",
+                "idx": 0,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
                 "desafio": "<NOME> - <NUM PONTOS>",
+                "idx": 1,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
                 "desafio": "Explodindo planetas - <NUM PONTOS>",
+                "idx": 2,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
                 "desafio": "Açúcar, tempero e ...? - <NUM PONTOS>",
+                "idx": 3,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
                 "desafio": "1234554321 - <NUM PONTOS>",
+                "idx": 4,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
@@ -125,30 +140,35 @@
         "desafios": [
             {
                 "desafio": "MANHÊ!!! - <NUM PONTOS>",
+                "idx": 0,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
                 "desafio": "Tá no TAPETE! - <NUM PONTOS>",
+                "idx": 1,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
                 "desafio": "Mente PETurbada - <NUM PONTOS>",
+                "idx": 2,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
                 "desafio": "Estudo Estranho - <NUM PONTOS>",
+                "idx": 3,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
                 "desafio": "<NOME> - <NUM PONTOS>",
+                "idx": 4,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
@@ -164,30 +184,35 @@
         "desafios": [
             {
                 "desafio": "O Frango tá voando - <NUM PONTOS>",
+                "idx": 0,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
                 "desafio": "<NOME> - <NUM PONTOS>",
+                "idx": 1,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
                 "desafio": "<NOME> - <NUM PONTOS>",
+                "idx": 2,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
                 "desafio": "<NOME> - <NUM PONTOS>",
+                "idx": 3,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
                 "desafio": "<NOME> - <NUM PONTOS>",
+                "idx": 4,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
