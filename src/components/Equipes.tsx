@@ -31,7 +31,8 @@ export default function Equipes(){
     
     return (
     <section className="py-12 px-16 bg-brancoBX grid grid-cols-1 md:grid-cols-2 justify-center padding">
-        <section className="px-4 py-2 flex flex-wrap items-center justify-center ">
+        
+        <section className="order-2 md:order-1 my-4 md:my-2 px-4 py-2 flex flex-wrap items-center justify-center">
             <section className="h-fit flex flex-wrap justify-center">
                 { equipes_data.equipes.map((equipe, idx) => {
                     return <BotaoEquipe key={idx} equipe={equipe} selecionado={idSelecionado==idx} onClick={()=> setIdSelecionado(idx)} />  
@@ -41,15 +42,15 @@ export default function Equipes(){
             </section>
         </section>
 
-        <section className=" px-4 flex flex-col items-center justify-center">
+        <section className="order-1 md:order-2 px-4 flex flex-col items-center justify-center">
             <h2 className="text-verdeBX text-6xl"> Equipes </h2>
             <p className= {`${poppins.className} py-4 text-sm text-pretoBX`}> Conheça os competidores desse ano! </p>
-
+   
             <section className=" relative">
                 <div className="z-10 flex justify-center items-center relative border-laranjaBX border-8 rounded-full bg-white w-72 h-72 drop-shadow-lg"> 
                 <ImageG className="" alt="ícone da equipe selecionada" width={240} height={240} src={equipes_data.equipes[idSelecionado].iconPath} />
                 </div>
-                <div className="z-0 absolute bottom-20 -right-20  bg-verdeBX text-white rounded-full pl-8 pr-6 py-2 drop-shadow-md">   12 pontos </div>
+                <div className="hidden sm:block z-0 absolute bottom-20 -right-20  bg-verdeBX text-white rounded-full pl-8 pr-6 py-2 drop-shadow-md">   12 pontos </div>
             </section>
             
             <div className="z-20 -mt-16 drop-shadow-md bg-laranjaBX w-80 h-36 rounded-tl-[96px] rounded-br-[96px] flex flex-col items-center justify-center">
@@ -59,8 +60,9 @@ export default function Equipes(){
                     return <p className="flex justify-center">{membro}</p>})} </div>
                 </div>
             </div>
-
+        
         </section>
+
     </section>
 
     );
