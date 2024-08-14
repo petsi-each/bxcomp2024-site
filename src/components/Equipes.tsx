@@ -50,7 +50,7 @@ export default function Equipes(){
                 <div className="z-10 flex justify-center items-center relative border-laranjaBX border-8 rounded-full bg-white w-72 h-72 drop-shadow-lg"> 
                 <ImageG className="" alt="ícone da equipe selecionada" width={240} height={240} src={equipes_data.equipes[idSelecionado].iconPath} />
                 </div>
-                <div className="hidden sm:block z-0 absolute bottom-20 -right-20  bg-verdeBX text-white rounded-full pl-8 pr-6 py-2 drop-shadow-md"> {equipes_data.equipes[idSelecionado].pontos} pontos </div>
+                <div className="hidden sm:block z-0 absolute bottom-20 -right-20  bg-verdeBX text-white rounded-full pl-8 pr-6 py-2 drop-shadow-md"> {equipes_data.equipes[idSelecionado].pontos} {equipes_data.equipes[idSelecionado].pontos == 1 ? "ponto" : "pontos" } </div>
             </section>
             
             <div className="z-20 -mt-16 drop-shadow-md bg-laranjaBX w-80 h-36 rounded-tl-[96px] rounded-br-[96px] flex flex-col items-center justify-center">
