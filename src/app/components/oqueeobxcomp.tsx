@@ -13,9 +13,9 @@ const poppins = Poppins({
 
 export default function oqueeobxcomp() {
     return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden md:pb-16 pt-8 md:pt-12 lg:pt-16">
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-8 md:pt-12 lg:pt-16">
             {/* Background Image Container */}
-            <div className="absolute z-0 flex items-center justify-center w-[1154px] h-[875px] overflow-visible">
+            <div className="absolute z-0 flex items-center justify-center w-[1154px] h-[875px]">
                 <ImageG src="/home/sobrebx.png" quality={100} fill ={true} className="object-cover sm:object-contain" alt={""}/>
             </div>
 
