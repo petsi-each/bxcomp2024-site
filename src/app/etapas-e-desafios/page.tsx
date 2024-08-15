@@ -38,7 +38,7 @@ export default function EtapasDesafios() {
                                 {
                                     etapa.estado == false ? //caso a etapa ainda não tenha ocorrido:
                                         <div> 
-                                            <ImageG className="rounded-3xl" src="/staticTV.gif" alt="TV estática" fill={true} /> 
+                                            <ImageG className="rounded-3xl" src="/home/staticTV.gif" alt="TV estática" fill={true} /> 
                                         </div>
                                         : //caso contrário (etapa.estado==true):
                                         <div>
