@@ -27,7 +27,7 @@ export default function EtapasDesafios() {
     }
 
     return (
-        <main>
+        <main className="pt-16">
             <h1 className="mx-16 sm:mx-28 md:mx-36 lg:mx-48 xl:mx-60 mt-20 mb-8 text-right text-5xl text-brancoBX"> Etapas <br></br> <span className="text-laranjaBX">&</span> Desafios</h1> 
             <div className="flex items-center flex-col">
                 <section className="mx-10 my-8 flex flex-wrap justify-center gap-x-7 gap-y-7">
@@ -38,7 +38,7 @@ export default function EtapasDesafios() {
                                 {
                                     etapa.estado == false ? //caso a etapa ainda não tenha ocorrido:
                                         <div> 
-                                            <ImageG className="rounded-3xl" src="/staticTV.gif" alt="TV estática" fill={true} /> 
+                                            <ImageG className="rounded-3xl" src="/home/staticTV.gif" alt="TV estática" fill={true} /> 
                                         </div>
                                         : //caso contrário (etapa.estado==true):
                                         <div>
