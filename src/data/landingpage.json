@@ -1,0 +1,61 @@
+{
+  "etapas": [
+    {
+      "numero": 0,
+      "tema": "Nickelodeon",
+      "visivel": false,
+      "imagem": "/EtapasDesafios/E0-Nickelodeon.png",
+      "link": "#"
+    },
+    {
+      "numero": 1,
+      "tema": "DreamWorks",
+      "visivel": false,
+      "imagem": "/EtapasDesafios/E1-DreamWorks.png",
+      "link": "#"
+    },
+    {
+      "numero": 2,
+      "tema": "Warner Bros.",
+      "visivel": false,
+      "imagem": "/EtapasDesafios/E2-WarnerBros.png",
+      "link": "#"
+    },
+    {
+      "numero": 3,
+      "tema": "Disney",
+      "visivel": false,
+      "imagem": "/EtapasDesafios/E3-Disney.png",
+      "link": "#"
+    },
+    {
+      "numero": 4,
+      "tema": "Estudios PET",
+      "visivel": false,
+      "imagem": "/EtapasDesafios/E4-EstudioPET.png",
+      "link": "#"
+    }
+  ],
+  "equipes": [
+    {
+      "nome": "Equipe",
+      "membros": [
+        "eu",
+        "vc",
+        "ele"
+      ],
+      "pontos": [1,6,2],
+      "iconPath": "/equipe_icons/example.png"
+    },
+    {
+      "nome": "Equipea",
+      "membros": [
+        "eu",
+        "vc",
+        "ele"
+      ],
+      "pontos": [1,2,3],
+      "iconPath": "/equipe_icons/example.png"
+    }
+  ]
+}
