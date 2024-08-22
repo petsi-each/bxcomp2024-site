@@ -55,3 +55,19 @@ Todas as informações relativas aos times estão armazenadas em arquivos JSON e
 * **Regulamento**
 
     Por fim, o regulamento e o suas última atualizações são armazenadas em ```regulamento.json```.
+
+### Durante o campeonato
+
+Entre as etapas, as seguintes atualizações são necessárias:
+
+* **Liberar a etapa:**
+
+    Em ```landingpage.json```, no array ```etapas```, alterar o campo ```visivel``` da etapa concluída de ```false``` para ```true```.
+
+    **OBS:** Conferir se o ```link``` para a página da etapa foi atribuído corretamente.
+
+* **Contabilizar a pontuação:**
+
+    Os pontos das equipes são armazenados em um array ```pontos``` onde o índice é o número da etapa.
+
+    Em ```landingpage.json```, colocar a quantidade de pontos da equipe na respectiva posição do seu array de pontos. Não esquecer de adicionar ```0``` para as equipes que tiveram menos que 2 (dois) dos membros chegando antes do horário limite.
