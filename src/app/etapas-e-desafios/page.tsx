@@ -51,7 +51,7 @@ export default function EtapasDesafios() {
                         ))
                     }
                 </section> 
-                <section id="scrollDestiny" className="pt-8 mb-20 mx-8"> {/*a fim do scroll ter como destino um ponto ligeiramente anterior ao início do primeiro balao de desafio, ao invés de utilizar mt-8, aqui usamos pt-8 */} 
+                <section id="scrollDestiny" className="pt-36 mb-20 mx-8"> {/*a fim do scroll ter como destino um ponto ligeiramente anterior ao início do primeiro balao de desafio, ao invés de utilizar mt-8, aqui usamos pt-8 */} 
                     {
                         indice != -1 && ( //garantindo que os CardDesafios só serão chamados caso haja um valor válido em 'indice', evitando tentativas de acesso à posições não existentes no arranjo de etapas
                             <CardDesafios desafios={(etapasDesafios[indice]).desafios} /> 
