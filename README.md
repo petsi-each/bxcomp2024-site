@@ -62,9 +62,9 @@ Entre as etapas, as seguintes atualizações são necessárias:
 
 * **Liberar a etapa:**
 
-    Em ```landingpage.json```, no array ```etapas```, alterar o campo ```visivel``` da etapa concluída de ```false``` para ```true```.
+    Tanto em ```landingpage.json``` quando em ```etapaDesafios.json```, alterar o campo ```visivel``` da etapa concluída de ```false``` para ```true```.
 
-    **OBS:** Conferir se o ```link``` para a página da etapa foi atribuído corretamente.
+    **OBS:** No primeiro, conferir se o ```link``` para a página da etapa foi atribuído corretamente.
 
 * **Contabilizar a pontuação:**
 
