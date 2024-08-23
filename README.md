@@ -71,3 +71,7 @@ Entre as etapas, as seguintes atualizações são necessárias:
     Os pontos das equipes são armazenados em um array ```pontos``` onde o índice é o número da etapa.
 
     Em ```landingpage.json```, colocar a quantidade de pontos da equipe na respectiva posição do seu array de pontos. Não esquecer de adicionar ```0``` para as equipes que tiveram menos que 2 (dois) dos membros chegando antes do horário limite.
+
+    **Ex.:** Essa equipe fez 1 ponto na etapa 0, 6 na etapa 1 e 2 na etapa 2.
+  
+    ![image](https://github.com/user-attachments/assets/3defdba2-b556-4635-b118-41c5c13ee43d)
