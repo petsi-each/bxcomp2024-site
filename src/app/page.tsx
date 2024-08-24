@@ -1,4 +1,7 @@
 'use client'
+
+import Hero from "./components/hero";
+import Oqueeobxcomp from "./components/oqueeobxcomp";
 import Etapas from "./components/Etapas";
 import Ranking from "@/components/Ranking";
 import PrimaryButton from "@/components/PrimaryButton";
@@ -8,7 +11,10 @@ import ImageG from "@/components/ImageG";
 export default function Home() {
 
   return (
-    <main>
+
+    <main>   
+      <Hero />
+      <Oqueeobxcomp />
       {/* Ranking section using ranking component */}
       <section className="flex flex-col my-12 lg:px-16 gap-12">
         <h1 className="text-7xl px-8">Ranking</h1>
