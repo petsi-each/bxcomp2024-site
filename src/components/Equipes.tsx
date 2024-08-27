@@ -40,12 +40,13 @@ export default function Equipes(){
                 <div className="z-10 w-56 h-56 flex justify-center items-center relative border-laranjaBX border-8 p-2 rounded-full bg-white sm:w-72 sm:h-72 drop-shadow-lg"> 
                 <ImageG className="" alt="" width={240} height={240} src={equipes_data.equipes[idSelecionado].iconPath} />
                 </div>
+                <div className="z-30 text-center -top-4 px-6 rounded-full block absolute sm:hidden  bg-verdeBX text-white py-2 drop-shadow-md"> {equipes_data.equipes[idSelecionado].pontos} {equipes_data.equipes[idSelecionado].pontos == 1 ? " ponto " : "pontos" } </div>
                 <div className=" hidden w-28 z-0 absolute sm:block bottom-20 -right-20 bg-verdeBX text-white sm:rounded-full pl-10 spr-2 py-2 drop-shadow-md"> {equipes_data.equipes[idSelecionado].pontos} {equipes_data.equipes[idSelecionado].pontos == 1 ? " ponto " : "pontos" } </div>
             </section>
             
             {/* Onda laranja de baixo do circulo que apresenta equipe e membros da equipe */}
             <div className="relative z-20 mb-8 -mt-16 pt-2 pb-6 sm:pb-4 drop-shadow-md bg-laranjaBX w-64 h-fit sm:w-80 sm:h-fit rounded-tl-[84px] rounded-br-[84px] sm:rounded-tl-[96px] sm:rounded-br-[96px] flex flex-col items-center justify-center">
-                <div className="z-30 text-center right-0 -top-4 px-6 rounded-l-full block absolute sm:hidden  bg-verdeBX text-white py-2 drop-shadow-md"> {equipes_data.equipes[idSelecionado].pontos} {equipes_data.equipes[idSelecionado].pontos == 1 ? " ponto " : "pontos" } </div>
+                {/* <div className="z-30 text-center right-0 -top-4 px-6 rounded-l-full block absolute sm:hidden  bg-verdeBX text-white py-2 drop-shadow-md"> {equipes_data.equipes[idSelecionado].pontos} {equipes_data.equipes[idSelecionado].pontos == 1 ? " ponto " : "pontos" } </div>  */}
                 {/* //opção 2// <div className="z-30 text-center -bottom-8 px-6 rounded-l-full rounded-r-full block absolute sm:hidden  bg-verdeBX text-white py-2 drop-shadow-md"> {equipes_data.equipes[idSelecionado].pontos} {equipes_data.equipes[idSelecionado].pontos == 1 ? " ponto " : "pontos" } </div> */}
                 {/* //opção 3// <div className="z-30 text-center -top-6 left-0 px-6 rounded-l-full rounded-r-full block absolute sm:hidden  bg-verdeBX text-white py-2 drop-shadow-md"> {equipes_data.equipes[idSelecionado].pontos} {equipes_data.equipes[idSelecionado].pontos == 1 ? " ponto " : "pontos" } </div> */}
 
