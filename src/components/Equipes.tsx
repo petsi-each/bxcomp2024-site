@@ -18,7 +18,7 @@ export default function Equipes(){
     const totalPontos = equipes_data.equipes[idSelecionado].pontos.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
     
     return (
-    <section className="py-12 sm:px-16 bg-brancoBX grid grid-cols-1 lg:grid-cols-2 justify-center padding">
+    <section className="pb-8 pt-16 sm:px-16 bg-brancoBX grid grid-cols-1 lg:grid-cols-2 justify-center padding">
     
     {/* parte que mostra os botões de todas as equipes */}
         <section className="order-2 lg:order-1 my-4 md:my-2 px-4 py-2 flex flex-wrap items-center justify-center">
