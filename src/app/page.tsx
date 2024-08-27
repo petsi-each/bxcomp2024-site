@@ -3,6 +3,7 @@
 import Hero from "./components/hero";
 import Oqueeobxcomp from "./components/oqueeobxcomp";
 import Etapas from "./components/Etapas";
+import Equipes from "../components/Equipes";
 import Ranking from "@/components/Ranking";
 import PrimaryButton from "@/components/PrimaryButton";
 import data from '../data/landingpage.json';
@@ -34,6 +35,7 @@ export default function Home() {
           />
         </figure>
         <Etapas />
+        <Equipes />
       </section>
     </main>
   );
