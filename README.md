@@ -50,7 +50,9 @@ Todas as informações relativas aos times estão armazenadas em arquivos JSON e
 
 * **Desafios**
 
-    Em ```etapasDesafios.json```, há um array que determina quais desafios pertencem a qual etapa e as suas informações. 
+    Em ```etapasDesafios.json```, há um array que determina quais desafios pertencem a qual etapa e as suas informações.
+
+    Além disso, cada desafio referencia o ```path``` para três arquivos: enunciado, resolução e casos de testes. Esses arquivos devem ser armazenados em ```public/{etapa}/{desafio}``` (criar pastas para cada etapa e desafio).
 
 * **Regulamento**
 
