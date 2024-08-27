@@ -8,9 +8,9 @@ const poppins = Poppins({ weight: '400', subsets: ['latin'] })
 
 export default function o_que_eh_BXComp() {
   return (
-    <main className="px-16">
+    <main className="pt-40 px-16">
 
-      <h1 className="text-6xl py-8">
+      <h1 className="text-6xl">
         O que é o <span className="text-laranjaBX">BXComp</span>?
       </h1>
       <p className={`${poppins.className} text-white`}>
