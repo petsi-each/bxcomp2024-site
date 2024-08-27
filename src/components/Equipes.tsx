@@ -15,6 +15,7 @@ export default function Equipes(){
 
     /* variavel usada para selecionar equipe para o botao clicado */
     const [idSelecionado, setIdSelecionado] = useState(0)
+    const totalPontos = equipes_data.equipes[idSelecionado].pontos.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
     
     return (
     <section className="py-12 sm:px-16 bg-brancoBX grid grid-cols-1 lg:grid-cols-2 justify-center padding">
@@ -40,8 +41,8 @@ export default function Equipes(){
                 <div className="z-10 w-56 h-56 flex justify-center items-center relative border-laranjaBX border-8 p-2 rounded-full bg-white sm:w-72 sm:h-72 drop-shadow-lg"> 
                 <ImageG className="" alt="" width={240} height={240} src={equipes_data.equipes[idSelecionado].iconPath} />
                 </div>
-                <div className="z-30 text-center -top-4 px-6 rounded-full block absolute sm:hidden  bg-verdeBX text-white py-2 drop-shadow-md"> {equipes_data.equipes[idSelecionado].pontos} {equipes_data.equipes[idSelecionado].pontos == 1 ? " ponto " : "pontos" } </div>
-                <div className=" hidden w-28 z-0 absolute sm:block bottom-20 -right-20 bg-verdeBX text-white sm:rounded-full pl-10 spr-2 py-2 drop-shadow-md"> {equipes_data.equipes[idSelecionado].pontos} {equipes_data.equipes[idSelecionado].pontos == 1 ? " ponto " : "pontos" } </div>
+                <div className="z-30 text-center -top-4 px-6 rounded-full block absolute sm:hidden  bg-verdeBX text-white py-2 drop-shadow-md"> {totalPontos} {totalPontos == 1 ? " ponto " : "pontos" } </div>
+                <div className=" hidden w-28 z-0 absolute sm:block bottom-20 -right-20 bg-verdeBX text-white sm:rounded-full pl-10 spr-2 py-2 drop-shadow-md"> {totalPontos} {totalPontos == 1 ? " ponto " : "pontos" } </div>
             </section>
             
             {/* Onda laranja de baixo do circulo que apresenta equipe e membros da equipe */}

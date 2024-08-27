@@ -6,7 +6,7 @@ import { MouseEventHandler } from "react";
 interface ObjEquipe{
     nome: string;
     membros: string[];
-    pontos: number;
+    pontos: number[];
     iconPath: string;
 }
 
