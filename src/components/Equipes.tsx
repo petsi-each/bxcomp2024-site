@@ -6,6 +6,7 @@ import { Lilita_One } from 'next/font/google'
 import equipes_data from '@/data/landingpage.json'
 import BotaoEquipe from "./BotaoEquipe"
 import { useState } from "react"
+import { IoDocumentText } from "react-icons/io5"
 
 const poppins = Poppins({weight: "300", subsets: ['latin']})
 const lilita = Lilita_One({weight: "400", subsets: ['latin']})
@@ -32,7 +33,7 @@ export default function Equipes(){
         <section className="order-1 lg:order-2 px-4 flex flex-col items-center justify-center">
             {/* titulo do componente e descrição da seção  */}       
             <h2 className="text-verdeBX text-6xl"> Equipes </h2>
-            <p className= {`${poppins.className} p-4 text-sm text-center text-pretoBX`}> Conheça os competidores desse ano! </p>
+            <p className= {`${poppins.className} p-4 text-sm text-center text-pretoBX`}> Conheça os competidores deste ano! </p>
         
             {/* circulo, imagem da equipe selecionada e folhinha que indica pontos da equipe modo desktop */}
             <section className="flex justify-center relative mx-4 my-2 h-60 w-60 sm:h-auto sm:w-auto">
@@ -48,11 +49,11 @@ export default function Equipes(){
                 {/* //opção 2// <div className="z-30 text-center -bottom-8 px-6 rounded-l-full rounded-r-full block absolute sm:hidden  bg-verdeBX text-white py-2 drop-shadow-md"> {equipes_data.equipes[idSelecionado].pontos} {equipes_data.equipes[idSelecionado].pontos == 1 ? " ponto " : "pontos" } </div> */}
                 {/* //opção 3// <div className="z-30 text-center -top-6 left-0 px-6 rounded-l-full rounded-r-full block absolute sm:hidden  bg-verdeBX text-white py-2 drop-shadow-md"> {equipes_data.equipes[idSelecionado].pontos} {equipes_data.equipes[idSelecionado].pontos == 1 ? " ponto " : "pontos" } </div> */}
 
-                <h3 className= {`${lilita.className} text-center break-words w-48 sm:w-60 my-1 mt-3 sm:my-2 text-md tracking-wide drop-shadow-md text-2xl font-bold`}> {equipes_data.equipes[idSelecionado].nome} </h3>
-                <div className= {`${poppins.className} text-xs text-white flex flex-col items-center justify-center`}>
-                    <div> {equipes_data.equipes[idSelecionado].membros.map((membro, idx) => {                       
-                    return <p className="flex justify-center">{membro}</p>})} 
-                    </div>
+                <h3 className={`${lilita.className} text-center break-words w-48 sm:w-60 my-1 mt-3 sm:my-2 text-md tracking-wide drop-shadow-md text-2xl font-bold`}> {equipes_data.equipes[idSelecionado].nome} </h3>
+                <div className={`${poppins.className} text-center w-full max-w-[16rem] flex flex-col items-center justify-center text-xs text-white`}>
+                    {equipes_data.equipes[idSelecionado].membros.map((membro, idx) => {
+                        return (
+                        <p key={idx} className="truncate w-full text-center">{membro}</p>); })}
                 </div>
             </div>
         
