@@ -37,7 +37,7 @@ export default function Equipes(){
         
             {/* circulo, imagem da equipe selecionada e folhinha que indica pontos da equipe modo desktop */}
             <section className="flex justify-center relative mx-4 my-2 h-60 w-60 sm:h-auto sm:w-auto">
-                <div className="z-10 w-56 h-56 flex justify-center items-center relative border-laranjaBX border-8 rounded-full bg-white sm:w-72 sm:h-72 drop-shadow-lg"> 
+                <div className="z-10 w-56 h-56 flex justify-center items-center relative border-laranjaBX border-8 p-2 rounded-full bg-white sm:w-72 sm:h-72 drop-shadow-lg"> 
                 <ImageG className="" alt="" width={240} height={240} src={equipes_data.equipes[idSelecionado].iconPath} />
                 </div>
                 <div className=" hidden w-28 z-0 absolute sm:block bottom-20 -right-20 bg-verdeBX text-white sm:rounded-full pl-10 spr-2 py-2 drop-shadow-md"> {equipes_data.equipes[idSelecionado].pontos} {equipes_data.equipes[idSelecionado].pontos == 1 ? " ponto " : "pontos" } </div>
@@ -50,7 +50,7 @@ export default function Equipes(){
                 {/* //opção 3// <div className="z-30 text-center -top-6 left-0 px-6 rounded-l-full rounded-r-full block absolute sm:hidden  bg-verdeBX text-white py-2 drop-shadow-md"> {equipes_data.equipes[idSelecionado].pontos} {equipes_data.equipes[idSelecionado].pontos == 1 ? " ponto " : "pontos" } </div> */}
 
                 <h3 className={`${lilita.className} text-center break-words w-48 sm:w-60 my-1 mt-3 sm:my-2 text-md tracking-wide drop-shadow-md text-2xl font-bold`}> {equipes_data.equipes[idSelecionado].nome} </h3>
-                <div className={`${poppins.className} text-center w-full max-w-[16rem] flex flex-col items-center justify-center text-xs text-white`}>
+                <div className={`${poppins.className} text-center w-full max-w-[12rem] flex flex-col items-center justify-center text-xs text-white`}>
                     {equipes_data.equipes[idSelecionado].membros.map((membro, idx) => {
                         return (
                         <p key={idx} className="truncate w-full text-center">{membro}</p>); })}
