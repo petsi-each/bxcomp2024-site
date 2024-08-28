@@ -3,7 +3,7 @@ import Equipes from '@/components/Equipes'
 import data from '@/data/landingpage.json'
 import ImageG from '@/components/ImageG'
 
-export default function RankingEEquipes() {
+export default function EquipesERanking() {
     return (
         <main className='pt-24'> {/*Esse padding faz com que parte da onda fique atrás da navbar. Porém, deixar maior empurra o conteúdo muito para baixo.*/}
             <ImageG className='w-full -mb-1 pointer-events-none rotate-180' src='home/onda_branca.svg' width="1280" height="186" alt='Onda branca' />
