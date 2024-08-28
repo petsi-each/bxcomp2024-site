@@ -76,9 +76,9 @@ export default function o_que_eh_BXComp() {
 				<h2 className="text-4xl py-4">Outras competições</h2>
 				
 				<ul className={`${poppins.className} text-white list-disc`}>
-					<li className='pb-4'><b>Olimpíada Brasileira de Informática (OBI):</b> Promovida pela Sociedade Brasileira de Computação (SBC). Veja mais detalhes em <a target="_blank" href='https://olimpiada.ic.unicamp.br/'>olimpiada.ic.unicamp.br</a></li>
-					<li className='pb-4'><b>Maratona SBC de Programação:</b> Promovida pela Sociedade Brasileira de Computação (SBC), eliminatória para o	International Collegiate Programming Contest. Veja mais em <a target="_blank" href='https://maratona.sbc.org.br/'>maratona.sbc.org.br</a>.</li>
-					<li className='pb-4'><b>International Collegiate Programming Contest (ICPC):</b>  Também conhecida como “A Batalha dos Cérebros”. Veja mais em <a target="_blank" href='https://icpc.global/'>icpc.global/</a>.</li>
+					<li className='pb-4'><b>Olimpíada Brasileira de Informática (OBI):</b> Promovida pela Sociedade Brasileira de Computação (SBC). Veja mais detalhes em <a className='underline' target="_blank" href='https://olimpiada.ic.unicamp.br/'>olimpiada.ic.unicamp.br</a></li>
+					<li className='pb-4'><b>Maratona SBC de Programação:</b> Promovida pela Sociedade Brasileira de Computação (SBC), eliminatória para o	International Collegiate Programming Contest. Veja mais em <a className='underline' target="_blank" href='https://maratona.sbc.org.br/'>maratona.sbc.org.br</a>.</li>
+					<li className='pb-4'><b>International Collegiate Programming Contest (ICPC):</b>  Também conhecida como “A Batalha dos Cérebros”. Veja mais em <a className='underline' target="_blank" href='https://icpc.global/'>icpc.global/</a>.</li>
 				</ul>
 			</div>
 
