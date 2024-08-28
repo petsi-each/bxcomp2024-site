@@ -9,10 +9,10 @@ const poppins = Poppins({ weight: '400', subsets: ['latin'] })
 export default function o_que_eh_BXComp() {
   return (
 
-    <main className="pt-40 pb-20 px-8 md:px-20">
+    <main className="pt-36 sm:pt-40 sm:pb-20 px-8 md:px-20">
 
-		<div className="lg:px-36">
-			<h1 className="text-5xl sm:text-6xl py-8">
+		<div className="lg:px-32">
+			<h1 className="text-5xl sm:text-6xl py-4 sm:py-8">
 				O que é o <span className="text-laranjaBX">BXComp</span>?
 			</h1>
 
@@ -31,7 +31,7 @@ export default function o_que_eh_BXComp() {
 			<PrimaryButton title={'Regulamento'} onClick={() => window.open("linkdoregulamento")} />
 		</div>
 
-		<div className="sm:grid grid-cols-2 gap-4 lg:px-36">
+		<div className="sm:grid grid-cols-2 gap-4 lg:px-32">
 
 			<div className="order-2 flex flex-col justify-center"> 
 				<h2 className="text-4xl py-4">Objetivo</h2>
