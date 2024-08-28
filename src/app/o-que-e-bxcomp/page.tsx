@@ -9,12 +9,12 @@ const poppins = Poppins({ weight: '400', subsets: ['latin'] })
 export default function o_que_eh_BXComp() {
   return (
 
-    <main className="py-40 px-16">
+    <main className="pt-40 pb-20 px-8 md:px-20">
 
 		
 
-		<div className="px-36">
-			<h1 className="text-6xl py-8">
+		<div className="lg:px-36">
+			<h1 className="text-5xl sm:text-6xl py-8">
 				O que é o <span className="text-laranjaBX">BXComp</span>?
 			</h1>
 
@@ -33,7 +33,16 @@ export default function o_que_eh_BXComp() {
 			<PrimaryButton title={'Regulamento'} onClick={() => window.open("linkdoregulamento")} />
 		</div>
 
-		<div className="grid grid-cols-2 gap-4 px-36">
+		<div className="sm:grid grid-cols-2 gap-4 lg:px-36">
+
+			<div className="flex sm:hidden flex-col justify-center"> 
+				<h2 className="text-4xl py-4">Objetivos</h2>
+				<p className={`${poppins.className} text-white`}>
+				Nosso objetivo é criar um ambiente divertido e desafiador, composto por atividades de resolução de problemas usando programação. 
+				<br/>
+				Os participantes aprendem e evoluem muito no decorrer do campeonato, o que torna o evento ainda mais satisfatório!
+				</p>
+			</div>
 
 			<div className="flex justify-center items-center">
 				<div className='size-80 relative'>
@@ -41,16 +50,13 @@ export default function o_que_eh_BXComp() {
 				</div>
 			</div>
 
-			<div className="flex flex-col justify-center"> 
-
+			<div className="hidden sm:flex flex-col justify-center"> 
 				<h2 className="text-4xl py-4">Objetivos</h2>
-
 				<p className={`${poppins.className} text-white`}>
 				Nosso objetivo é criar um ambiente divertido e desafiador, composto por atividades de resolução de problemas usando programação. 
 				<br/>
 				Os participantes aprendem e evoluem muito no decorrer do campeonato, o que torna o evento ainda mais satisfatório!
 				</p>
-				
 			</div>
 
 			<div className='flex flex-col justify-center'>
@@ -64,12 +70,20 @@ export default function o_que_eh_BXComp() {
 				</div>
 			</div>
 
+			<div className='flex sm:hidden flex-col justify-center'>
+				<h2 className="text-4xl py-4">Organização</h2>
+				<p className={`${poppins.className} text-white`}>O BXComp é um projeto organizado pelo PET-SI (Programa de Educação Tutorial - Sistemas de Informação) da EACH.<br/>
+				O PET é um programa do Governo Federal subordinado ao Ministério da Educação,	cujo objetivo é realizar projetos para os três pilares da graduação: ensino, pesquisa e extensão. Acompanhe o PET para saber de suas outras iniciativas!
+				</p>
+			</div>
+
 			<div className="flex justify-center items-center">
 				<div className='size-80 relative'>
 				<ImageG className="object-contain" src={'/sobre-bx/padrinhos.png'} alt={'Padrinhos mágicos'} fill={true}/>
 				</div>
 			</div>
-			<div className='flex flex-col justify-center'>
+
+			<div className='hidden sm:flex flex-col justify-center'>
 				<h2 className="text-4xl py-4">Organização</h2>
 				<p className={`${poppins.className} text-white`}>O BXComp é um projeto organizado pelo PET-SI (Programa de Educação Tutorial - Sistemas de Informação) da EACH.<br/>
 				O PET é um programa do Governo Federal subordinado ao Ministério da Educação,	cujo objetivo é realizar projetos para os três pilares da graduação: ensino, pesquisa e extensão. Acompanhe o PET para saber de suas outras iniciativas!
