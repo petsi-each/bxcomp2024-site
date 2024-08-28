@@ -10,7 +10,7 @@ export default function Header() {
         { title: 'Início', path: '/' },
         { title: 'Regulamento', path: '/regulamento' }, // TODO: Add path
         { title: 'Etapas & Desafios', path: '/etapas-e-desafios' }, // TODO: Add path
-        { title: 'Ranking & Grupos', path: '/ranking-e-grupos' }, // TODO: Add path
+        { title: 'Ranking & Equipes', path: '/ranking-e-equipes' }, // TODO: Add path
         { title: 'O que é o BXComp?', path: '/o-que-e-bxcomp' }, // TODO: Add path
         { title: 'Anos Anteriores', path: '/anos-anteriores' }, // TODO: Add path
     ]
