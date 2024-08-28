@@ -54,7 +54,7 @@
         "vc",
         "eleDSADSA"
       ],
-      "pontos": 1,
+      "pontos": [1,6,2],
       "iconPath": "/equipe_icons/example.png"
     },
     {
