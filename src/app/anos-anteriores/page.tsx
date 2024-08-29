@@ -2,6 +2,8 @@ import Image from 'next/image';
 import { Poppins } from 'next/font/google';
 import { PiCaretLeftFill } from "react-icons/pi";
 
+import anosAnteriores from '@/data/anosAnteriores.json';
+
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -21,37 +23,28 @@ export default function AnosAnterioresPage() {
         <Image src='/anos-anteriores/fotosAnosAnteriores.png' alt='Três fotos de edições anteriores do BXComp. Com mais destaque, ao centro, participantes e organizadores em torno de um banner do BXComp. À esquerda, com parte da imagem atrás da central, participantes durante a competição no laboratório de informática. À direita, também com parte da imagem atrás da central, quatro membros de uma equipe vencedora segurando sacolas de prêmios.' width={818} height={360} />
         <p>Conheça um pouco dessa história e se prepare para a nova edição do BXCOMP visitando os sites das antigas edições.</p>
         <section className='space-y-8 relative'>
-          <div className='absolute top-8 left-2 -z-10 bottom-0 w-0.5 bg-verdeBX'></div>
-          <article>
-            <div className='flex items-center '>
-              <div className='w-4 h-4 bg-white rounded-full'></div>
-              <figure className='flex items-center'>
-                <PiCaretLeftFill className='-me-1.5' />
-                <div className='bg-white w-[263px] h-[76px] rounded-xl flex justify-center items-center '>
-                  <Image src='/anos-anteriores/logoBx2022.svg' alt='Logo da 12ª edição do BXComp' width={204} height={45} />
+          <div className='absolute top-8 left-2 md:left-[279px] -z-10 bottom-0 w-0.5 bg-verdeBX'></div>
+          { // Cria um article para cada ano anterior
+            anosAnteriores.map((ano, idx) => {
+              const is_left = idx % 2 === 1;
+              return (
+              <article key={idx} className='md:flex md:items-center'>
+                <div className={`flex items-center  ${is_left? '' : 'md:order-last'}`}>
+                  <div className={`w-4 h-4 bg-white rounded-full ${is_left? 'md:order-last' : ''}`}></div>
+                  <figure className={`flex items-center w-64 ml-4 ${is_left ? 'md:mr-4 md:ml-0' : ''}`}>
+                    <PiCaretLeftFill className={`-me-1.5 ${is_left ? 'md:order-last md:rotate-180 md:-ms-1.5 md:me-0' : '' }`}/>
+                    <div className='bg-white w-[263px] h-[76px] rounded-xl flex justify-center items-center '>
+                      <Image src={`/anos-anteriores/${ano.logoArquivo}`} alt={`Logo da ${ano.edicao}ª edição do BXComp`} width={204} height={45} />
+                    </div>
+                  </figure>
                 </div>
-              </figure>
-            </div>
-            <div className='text-right'>
-              <p>2022 - 12ª edição</p>
-              <p className='text-xs'>Brasilidades</p>
-            </div>
-          </article>
-          <article>
-            <div className='flex items-center '>
-              <div className='w-4 h-4 bg-white rounded-full'></div>
-              <figure className='flex items-center'>
-                <PiCaretLeftFill className='-me-1.5' />
-                <div className='bg-white w-[263px] h-[76px] rounded-xl flex justify-center items-center '>
-                  <Image src='/anos-anteriores/logoBx2022.svg' alt='Logo da 12ª edição do BXComp' width={204} height={45} />
+                <div className={`text-right ${is_left ? 'md:ml-4 md:text-left' : 'md:mr-4'} md:w-64`}>
+                  <p>{ano.ano} - {ano.edicao}ª edição</p>
+                  <p className='text-xs'>{ano.tema}</p>
                 </div>
-              </figure>
-            </div>
-            <div className='text-right'>
-              <p>2022 - 12ª edição</p>
-              <p className='text-xs'>Brasilidades</p>
-            </div>
-          </article>
+              </article>
+            )})
+          }
         </section>
       </div>
     </main>
