@@ -28,7 +28,7 @@ export default function o_que_eh_BXComp() {
 		</div>  
 
 		<div className="w-full flex justify-center py-8">
-			<PrimaryButton title={'Regulamento'} onClick={() => window.open("linkdoregulamento")} />
+			<PrimaryButton title={'Regulamento'} onClick={() => window.open("regulamento")} />
 		</div>
 
 		<div className="sm:grid grid-cols-2 gap-4 lg:px-32">
