@@ -26,15 +26,17 @@ export default function AnosAnterioresPage() {
           <div className='absolute top-8 left-2 md:left-[279px] -z-10 bottom-0 w-0.5 bg-verdeBX'></div>
           { // Cria um article para cada ano anterior
             anosAnteriores.map((ano, idx) => {
-              const is_left = idx % 2 === 1;
+              const is_left = idx % 2 === 1; // Define se a logo deve ficar à esquerda ou à direita
               return (
               <article key={idx} className='md:flex md:items-center'>
                 <div className={`flex items-center  ${is_left? '' : 'md:order-last'}`}>
                   <div className={`w-4 h-4 bg-white rounded-full ${is_left? 'md:order-last' : ''}`}></div>
                   <figure className={`flex items-center w-64 ml-4 ${is_left ? 'md:mr-4 md:ml-0' : ''}`}>
                     <PiCaretLeftFill className={`-me-1.5 ${is_left ? 'md:order-last md:rotate-180 md:-ms-1.5 md:me-0' : '' }`}/>
-                    <div className='bg-white w-[263px] h-[76px] rounded-xl flex justify-center items-center '>
-                      <Image src={`/anos-anteriores/${ano.logoArquivo}`} alt={`Logo da ${ano.edicao}ª edição do BXComp`} width={204} height={45} />
+                      <div className='bg-white w-[263px] h-[76px] rounded-xl flex justify-center items-center '>
+                        <a href={ano.link} target='_blank' rel='noreferrer'>
+                          <Image src={`/anos-anteriores/${ano.logoArquivo}`} alt={`Logo da ${ano.edicao}ª edição do BXComp`} width={204} height={45} />
+                        </a>
                     </div>
                   </figure>
                 </div>
