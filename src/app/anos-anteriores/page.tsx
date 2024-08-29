@@ -23,7 +23,7 @@ export default function AnosAnterioresPage() {
         <Image src='/anos-anteriores/fotosAnosAnteriores.png' alt='Três fotos de edições anteriores do BXComp. Com mais destaque, ao centro, participantes e organizadores em torno de um banner do BXComp. À esquerda, com parte da imagem atrás da central, participantes durante a competição no laboratório de informática. À direita, também com parte da imagem atrás da central, quatro membros de uma equipe vencedora segurando sacolas de prêmios.' width={818} height={360} />
         <p>Conheça um pouco dessa história e se prepare para a nova edição do BXCOMP visitando os sites das antigas edições.</p>
         <section className='space-y-8 relative'>
-          <div className='absolute top-8 left-2 md:left-[279px] -z-10 bottom-0 w-0.5 bg-verdeBX'></div>
+          <div className='absolute top-8 left-2 md:left-[279px] -z-10 bottom-0 w-0.5 bg-azulBX'></div>
           { // Cria um article para cada ano anterior
             anosAnteriores.map((ano, idx) => {
               const is_left = idx % 2 === 1; // Define se a logo deve ficar à esquerda ou à direita
@@ -32,8 +32,8 @@ export default function AnosAnterioresPage() {
                 <div className={`flex items-center  ${is_left? '' : 'md:order-last'}`}>
                   <div className={`w-4 h-4 bg-white rounded-full ${is_left? 'md:order-last' : ''}`}></div>
                   <figure className={`flex items-center w-64 ml-4 ${is_left ? 'md:mr-4 md:ml-0' : ''}`}>
-                    <PiCaretLeftFill className={`-me-1.5 ${is_left ? 'md:order-last md:rotate-180 md:-ms-1.5 md:me-0' : '' }`}/>
-                      <div className='bg-white w-[263px] h-[76px] rounded-xl flex justify-center items-center '>
+                    <PiCaretLeftFill className={`-me-1.5 text-azulBX ${is_left ? 'md:order-last md:rotate-180 md:-ms-1.5 md:me-0' : '' }`}/>
+                      <div className='bg-azulBX w-[263px] h-[76px] rounded-xl flex justify-center items-center overflow-hidden'>
                         <a href={ano.link} target='_blank' rel='noreferrer'>
                           <Image src={`/anos-anteriores/${ano.logoArquivo}`} alt={`Logo da ${ano.edicao}ª edição do BXComp`} width={204} height={45} />
                         </a>
