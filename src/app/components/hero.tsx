@@ -7,7 +7,7 @@ export default function Hero() {
             <div className="w-full max-w-3xl flex justify-center mt-24 md:mt-4">
                 <ImageG 
                     className="w-full h-auto" 
-                    src="/home/logobxcomp.png" 
+                    src="/logoBxcomp.png" 
                     alt="Logo do BXCOMP"
                     width={725} 
                     height={490} 
