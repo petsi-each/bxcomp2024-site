@@ -50,7 +50,7 @@ export default function Home() {
         <h1 className="text-7xl px-8">Ranking</h1>
         <Ranking equipes={data.equipes} displayQuantity={5} />
         <div className="flex justify-center w-full">
-          <PrimaryButton title="Ranking completo" onClick={() => location.replace("/ranking")} />
+          <PrimaryButton title="Ranking completo" onClick={() => location.replace("/equipes-e-ranking#ranking")} />
         </div>
       </section>
 
