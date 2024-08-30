@@ -10,8 +10,6 @@ interface Equipe {
 interface RankingProps {
     equipes: Equipe[],
     displayQuantity?: number,
-    secondScore: number,
-    thirdScore: number
 }
 
 interface PointBarProps {
