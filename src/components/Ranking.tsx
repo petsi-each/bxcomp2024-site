@@ -30,8 +30,6 @@ interface CoroaImageProps {
  */
 
 const CoroaImage: React.FC<CoroaImageProps> = ({ scorePosition }) => {
-    let image;
-
     if (scorePosition == -1) return null;    
     if (scorePosition == 0) return (
         <div className="absolute -mt-40">
@@ -72,12 +70,12 @@ const PointBar: React.FC<PointBarProps> = ({ equipe, topScores }) => {
         <article className="-z-10">
 
             {/* Descrição da equipe no mobile */}
-            <div className="md:hidden w-screen px-8">
+            <div className="md:hidden w-screen px-8 mb-4">
                 <h2 className="text-2xl truncate">{equipe.nome}</h2>
                 <p className="text-md">{totalPontos} pontos</p>
             </div>
 
-            <div className="w-full px-8 flex items-center">
+            <div className="w-full px-8 mb-6 md:mb-0 flex items-center">
             <div style={{ width: size }} className={`flex items-center`}>
 
                 <div className="flex flex-grow h-10 drop-shadow-lg bg-white rounded-full">
