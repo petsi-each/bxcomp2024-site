@@ -1,10 +1,11 @@
 'use client'
 
-import { Poppins } from 'next/font/google'
+import { Poppins, Bubblegum_Sans } from 'next/font/google'
 import PrimaryButton from '@/components/PrimaryButton';
 import ImageG from '@/components/ImageG';
 
 const poppins = Poppins({ weight: '400', subsets: ['latin'] })
+const bubblegum = Bubblegum_Sans({subsets: ["latin"], weight: "400"})
 
 export default function o_que_eh_BXComp() {
 	return (
@@ -18,7 +19,16 @@ export default function o_que_eh_BXComp() {
 
 function Organizadores(){
 	return(
-		<section>
+		<section className="flex flex-col items-center justify-center">
+			<h1 className="text-5xl text-laranjaBX sm:text-6xl py-4 sm:py-8 text-center">
+				Organização
+			</h1>
+			
+			<p className={`${poppins.className}`}>Conheça as <b>pessoas</b> por trás do BXCOMP</p>
+
+		
+
+			<p className={`${poppins.className}`}>Confira o repositório deste site no <a href="https://github.com/Anemaygi/bxcomp2024-site" className={`text-laranjaBX text-xl ${bubblegum.className}`}>GitHub</a></p>
 			
 		</section>
 	);
