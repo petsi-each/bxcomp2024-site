@@ -34,11 +34,19 @@ interface OrganizadorCardProps {
 
 const OrganizadorCard: React.FC<OrganizadorCardProps> = ({organizador}) => {
 	return(
-		<article className='w-full flex flex-col items-center justify-center gap-y-4 p-8'>
-			<figure className="size-52 rounded-full bg-blue-500 outline outline-offset-4 outline-4 outline-verdeBX relative">
+		<article className='w-full flex flex-col items-center justify-center gap-y-8 p-8'>
+			<figure className="size-52 rounded-full bg-blue-500 outline outline-offset-8 outline-4 outline-verdeBX relative">
 				<ImageG className="object-cover" src={organizador.imgSrc} alt={""} fill={true} />
+				{organizador.dev && (
+				<ImageG
+					className="absolute right-6 bottom-4 transform translate-x-1/2 translate-y-1/2"
+					src={'/o-que-e-bxcomp/seloDev.png'}
+					alt={'Desenvolvedor'}
+					width={100}
+					height={98}
+				/>
+				)}
 			</figure>
-			<ImageG className={`self-end object-cover -mt-24 z-40 ${organizador.dev ? "" : "invisible"} `} src={'/o-que-e-bxcomp/seloDev.png'} alt={'Desenvolvedor'} width={100} height={98} />
 
 			<section className={` w-full bg-brancoBX rounded-full text-black flex items-center gap-x-2 ${poppins.className} justify-center py-4`}>
 				<p>{"<"+ organizador.nome +">"}</p>
@@ -57,7 +65,7 @@ function Organizadores(){
 			
 			<p className={`${poppins.className}`}>Conheça as <b>pessoas</b> por trás do BXCOMP</p>
 
-			<section className="grid grid-cols-4 gap-8 py-12 w-full px-24">
+			<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-12 w-full xl:px-24">
 				
 				{
 					organizadores.map((organizador,idx) => (
