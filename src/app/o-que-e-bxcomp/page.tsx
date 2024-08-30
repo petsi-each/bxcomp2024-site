@@ -50,8 +50,11 @@ export default function o_que_eh_BXComp() {
 
 			<div className='order-3 flex flex-col justify-center'>
 				<h2 className="text-4xl py-4">Formato</h2>
-				<p className={`${poppins.className} text-white`}>O campeonato acontece em 5 etapas presenciais nos laboratórios da EACH.</p>
-			</div>
+				  <div className={`${poppins.className}`}>
+					  <p>O campeonato acontece em 5 etapas presenciais nos laboratórios da EACH.</p>
+					  <p>Em cada etapa, 5 problemas de autoria do PET-SI no estilo de maratona de programação são disponibilizados aos participantes, com diferentes pontuações baseadas em dificuldade.</p>
+				  </div>
+			  </div>
 
 			<div className="order-4 flex justify-center items-center">
 				<div className='size-80 relative'>
