@@ -10,7 +10,8 @@ interface desafio {
     idx: number,
     enunciado: string,
     resolucao: string,
-    testes: string
+    entrada: string
+    saida: string
 }
 
 export interface desafioList {
@@ -26,7 +27,8 @@ export default function CardDesafios(props: desafioList) {
                         <h3 className="text-2xl">{desafio.desafio}</h3>
                         <p className={`flex items-center flex-col ${poppins.className} text-base underline`}>
                             <a href={desafio.enunciado} target="_blank" className="w-fit hover:transition-all hover:duration-100 hover:scale-[1.13] hover:font-bold hover:text-white">Enunciado</a>
-                            <a href={desafio.testes} target="_blank" className="w-fit hover:transition-all hover:duration-100 hover:scale-[1.13] hover:font-bold hover:text-white">Casos Teste</a>
+                            <a href={desafio.entrada} target="_blank" className="w-fit hover:transition-all hover:duration-100 hover:scale-[1.13] hover:font-bold hover:text-white">Casos Teste - Entrada</a>
+                            <a href={desafio.saida} target="_blank" className="w-fit hover:transition-all hover:duration-100 hover:scale-[1.13] hover:font-bold hover:text-white">Casos Teste - Saída</a>
                             <a href={desafio.resolucao} target="_blank" className="w-fit hover:transition-all hover:duration-100 hover:scale-[1.13] hover:font-bold hover:text-white">Exemplo de Gabarito</a>
                         </p>
                     </article>
