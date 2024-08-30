@@ -2,38 +2,45 @@
   "etapas": [
     {
       "numero": 0,
-      "tema": "Nickelodeon",
-      "visivel": false,
-      "imagem": "/EtapasDesafios/E0-Nickelodeon.png",
-      "link": "#"
+      "tema": "titulo da etapa",
+      "imagem": "path da imagem",
+      "link": "link",
+      "visivel": true
     },
     {
       "numero": 1,
-      "tema": "DreamWorks",
-      "visivel": false,
-      "imagem": "/EtapasDesafios/E1-DreamWorks.png",
-      "link": "#"
+      "tema": "titulo da etapa",
+      "imagem": "path da imagem",
+      "link": "link",
+      "visivel": true
     },
     {
       "numero": 2,
-      "tema": "Warner Bros.",
-      "visivel": false,
-      "imagem": "/EtapasDesafios/E2-WarnerBros.png",
-      "link": "#"
+      "tema": "titulo da etapa",
+      "imagem": "path da imagem",
+      "link": "link",
+      "visivel": true
     },
     {
       "numero": 3,
-      "tema": "Disney",
-      "visivel": false,
-      "imagem": "/EtapasDesafios/E3-Disney.png",
-      "link": "#"
+      "tema": "titulo da etapa",
+      "imagem": "path da imagem",
+      "link": "link",
+      "visivel": true
     },
     {
       "numero": 4,
-      "tema": "Estudios PET",
-      "visivel": false,
-      "imagem": "/EtapasDesafios/E4-EstudioPET.png",
-      "link": "#"
+      "tema": "titulo da etapa",
+      "imagem": "path da imagem",
+      "link": "link",
+      "visivel": true
+    },
+    {
+      "numero": 5,
+      "tema": "titulo da etapa",
+      "imagem": "path da imagem",
+      "link": "link",
+      "visivel": true
     }
   ],
   "equipes": [
@@ -43,16 +50,6 @@
         "eu",
         "vc",
         "ele"
-      ],
-      "pontos": [1,6,2],
-      "iconPath": "/equipe_icons/example.png"
-    },
-    {
-      "nome": "grace",
-      "membros": [
-        "eu",
-        "vc",
-        "eleDSADSA"
       ],
       "pontos": [1,6,2],
       "iconPath": "/equipe_icons/example.png"
