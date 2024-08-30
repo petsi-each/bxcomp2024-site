@@ -9,7 +9,7 @@ import ImageG from '@/components/ImageG';
 import organizadores from '../../data/organizadores.json';
 
 const poppins = Poppins({ weight: '400', subsets: ['latin'] })
-const bubblegum = Bubblegum_Sans({subsets: ["latin"], weight: "400"})
+const bubblegum = Bubblegum_Sans({ subsets: ["latin"], weight: "400" })
 
 export default function o_que_eh_BXComp() {
 	return (
@@ -32,51 +32,51 @@ interface OrganizadorCardProps {
 	organizador: Organizador
 }
 
-const OrganizadorCard: React.FC<OrganizadorCardProps> = ({organizador}) => {
-	return(
+const OrganizadorCard: React.FC<OrganizadorCardProps> = ({ organizador }) => {
+	return (
 		<article className='w-full flex flex-col items-center justify-center gap-y-8 p-8'>
 			<figure className="size-52 rounded-full bg-blue-500 outline outline-offset-8 outline-4 outline-verdeBX relative">
 				<ImageG className="object-cover" src={organizador.imgSrc} alt={""} fill={true} />
 				{organizador.dev && (
-				<ImageG
-					className="absolute right-6 bottom-4 transform translate-x-1/2 translate-y-1/2"
-					src={'/o-que-e-bxcomp/seloDev.png'}
-					alt={'Desenvolvedor'}
-					width={100}
-					height={98}
-				/>
+					<ImageG
+						className="absolute right-6 bottom-4 transform translate-x-1/2 translate-y-1/2"
+						src={'/o-que-e-bxcomp/seloDev.png'}
+						alt={'Desenvolvedor'}
+						width={100}
+						height={98}
+					/>
 				)}
 			</figure>
 
 			<section className={` w-full bg-brancoBX rounded-full text-black flex items-center gap-x-2 ${poppins.className} justify-center py-4`}>
-				<p>{"<"+ organizador.nome +">"}</p>
+				<p>{"<" + organizador.nome + ">"}</p>
 				<a href="organizador.linkedinUrl" target='_blank'><ImLinkedin /></a>
 			</section>
 		</article>
 	)
 }
 
-function Organizadores(){
-	return(
+function Organizadores() {
+	return (
 		<section className="flex flex-col items-center justify-center">
 			<h1 className="text-5xl text-laranjaBX sm:text-6xl py-4 sm:py-8 text-center">
 				Organização
 			</h1>
-			
+
 			<p className={`${poppins.className}`}>Conheça as <b>pessoas</b> por trás do BXCOMP</p>
 
 			<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-12 w-full xl:px-24">
-				
+
 				{
-					organizadores.map((organizador,idx) => (
+					organizadores.map((organizador, idx) => (
 						<OrganizadorCard key={idx} organizador={organizador} />
-					  ))
+					))
 				}
 
 			</section>
 
 			<p className={`${poppins.className}`}>Confira o repositório deste site no <a href="https://github.com/Anemaygi/bxcomp2024-site" className={`text-laranjaBX text-xl ${bubblegum.className}`}>GitHub</a></p>
-			
+
 		</section>
 	);
 }
