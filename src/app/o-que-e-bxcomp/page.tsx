@@ -60,7 +60,7 @@ function Organizadores() {
 	return (
 		<section className="flex flex-col items-center justify-center">
 			<h1 className="text-5xl text-laranjaBX sm:text-6xl py-4 sm:py-8 text-center">
-				Organização
+				Organizadores
 			</h1>
 
 			<p className={`${poppins.className}`}>Conheça as <b>pessoas</b> por trás do BXCOMP</p>
