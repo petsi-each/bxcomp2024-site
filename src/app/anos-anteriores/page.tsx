@@ -33,9 +33,11 @@ export default function AnosAnterioresPage() {
                   <div className={`w-4 h-4 bg-white rounded-full ${is_left? 'md:order-last' : ''}`}></div>
                   <figure className={`flex items-center w-64 ml-4 ${is_left ? 'md:mr-4 md:ml-0' : ''}`}>
                     <PiCaretLeftFill className={`-me-1.5 text-azulBX ${is_left ? 'md:order-last md:rotate-180 md:-ms-1.5 md:me-0' : '' }`}/>
-                      <div className='bg-azulBX w-[263px] h-[76px] rounded-xl flex justify-center items-center overflow-hidden'>
+                      <div className='bg-azulBX w-[263px] h-[76px] rounded-xl flex justify-center items-center'>
                         <a href={ano.link} target='_blank' rel='noreferrer'>
-                          <Image src={`/anos-anteriores/${ano.logoArquivo}`} alt={`Logo da ${ano.edicao}ª edição do BXComp`} width={204} height={45} />
+                          <figure className="w-52 h-11 relative ">
+                          <Image src={`/anos-anteriores/${ano.logoArquivo}`} className="object-scale-down" alt={`Logo da ${ano.edicao}ª edição do BXComp`} fill={true} />
+                          </figure>
                         </a>
                     </div>
                   </figure>
