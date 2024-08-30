@@ -126,7 +126,7 @@ const Ranking: React.FC<RankingProps> = ({ equipes, displayQuantity = -1 }) => {
 
     sortedEquipes.sort((a, b) => sumPoints(b.pontos) - sumPoints(a.pontos));
 
-    const topScores = Array.from(new Set(sortedEquipes.map(equipe => sumPoints(equipe.pontos)))).slice(0,3);
+    const topScores = Array.from(new Set(sortedEquipes.map(equipe => sumPoints(equipe.pontos)))).slice(0,3).filter(score => score !== 0).filter((score, idx, arr) => !(idx === 0 && score === 1));
 
     const displayEquipes = displayQuantity < 0 ? sortedEquipes : sortedEquipes.slice(0, displayQuantity) // Apresenta displayQuantity itens do array caso um valor seja determinado
 
