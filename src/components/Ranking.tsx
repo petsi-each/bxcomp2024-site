@@ -80,7 +80,7 @@ const PointBar: React.FC<PointBarProps> = ({ equipe, topScore, scorePosition }) 
                 <p className="text-md">{totalPontos} pontos</p>
             </div>
 
-            <div className="w-full px-8 flex">
+            <div className="w-full px-8 flex items-center">
             <div style={{ width: size }} className={`flex items-center`}>
 
                 <div className="flex flex-grow h-10 drop-shadow-lg bg-white rounded-full">
