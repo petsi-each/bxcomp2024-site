@@ -35,7 +35,7 @@ interface OrganizadorCardProps {
 const OrganizadorCard: React.FC<OrganizadorCardProps> = ({ organizador }) => {
 	return (
 		<article className='w-full flex flex-col items-center justify-center gap-y-8 p-8'>
-			<figure className="size-52 rounded-full bg-blue-500 outline outline-offset-8 outline-4 outline-verdeBX relative">
+			<figure className="size-52 rounded-full outline outline-offset-8 outline-4 outline-verdeBX relative">
 				<ImageG className="object-cover" src={organizador.imgSrc} alt={""} fill={true} />
 				{organizador.dev && (
 					<ImageG
@@ -58,7 +58,7 @@ const OrganizadorCard: React.FC<OrganizadorCardProps> = ({ organizador }) => {
 
 function Organizadores() {
 	return (
-		<section className="flex flex-col items-center justify-center">
+		<section className="flex flex-col items-center justify-center my-20">
 			<h1 className="text-5xl text-laranjaBX sm:text-6xl py-4 sm:py-8 text-center">
 				Organizadores
 			</h1>
