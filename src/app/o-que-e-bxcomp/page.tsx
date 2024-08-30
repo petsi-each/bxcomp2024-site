@@ -167,7 +167,7 @@ function Organizadores() {
 
 			</section>
 
-			<p className={`${poppins.className}`}>Confira o repositório deste site no <a href="https://github.com/Anemaygi/bxcomp2024-site" className={`text-laranjaBX text-xl ${bubblegum.className}`}>GitHub</a></p>
+			<p className={`${poppins.className}`}>Confira o repositório deste site no <em onClick={()=>alert("Disponível após a final do BXCOMP 2024!")}  className={`text-laranjaBX cursor-pointer text-xl ${bubblegum.className}`}>GitHub</em></p>
 
 		</section>
 	);
