@@ -32,19 +32,17 @@ interface OrganizadorCardProps {
 
 const OrganizadorCard: React.FC<OrganizadorCardProps> = ({organizador}) => {
 	return(
-		<div className='w-full flex flex-col items-center justify-center gap-y-4 p-8'>
-			
-			<div className="size-52 rounded-full bg-blue-500 outline outline-offset-4 outline-4 outline-verdeBX relative">
+		<article className='w-full flex flex-col items-center justify-center gap-y-4 p-8'>
+			<figure className="size-52 rounded-full bg-blue-500 outline outline-offset-4 outline-4 outline-verdeBX relative">
 				<ImageG className="object-cover" src={organizador.imgSrc} alt={""} fill={true} />
-			</div>
+			</figure>
 			<ImageG className={`self-end object-cover -mt-24 z-40 ${organizador.dev ? "" : "invisible"} `} src={'/o-que-e-bxcomp/seloDev.png'} alt={'Desenvolvedor'} width={100} height={98} />
 
-			<div className={` w-full bg-brancoBX rounded-full text-black flex items-center gap-x-2 ${poppins.className} justify-center py-4`}>
+			<section className={` w-full bg-brancoBX rounded-full text-black flex items-center gap-x-2 ${poppins.className} justify-center py-4`}>
 				<p>{"<"+ organizador.nome +">"}</p>
 				<a href="organizador.linkedinUrl" target='_blank'><ImLinkedin /></a>
-			</div>
-
-		</div>
+			</section>
+		</article>
 	)
 }
 
