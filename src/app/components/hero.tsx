@@ -6,11 +6,11 @@ export default function Hero() {
         <section className="flex items-center justify-center overflow-visible relative md:min-h-screen px-4 md:px-8 lg:px-16">
             <div className="w-full max-w-3xl flex justify-center mt-24 md:mt-4">
                 <ImageG 
-                    className="w-full h-auto" 
-                    src="/home/logobxcomp.png" 
+                    className="w-full h-auto scale-110 sm:scale-150" 
+                    src="/logoBxcomp.svg" 
                     alt="Logo do BXCOMP"
-                    width={725} 
-                    height={490} 
+                    width={1400} 
+                    height={1000} 
                 />
             </div>
         </section>
