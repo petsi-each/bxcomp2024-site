@@ -46,7 +46,7 @@
         "Gabriel Trigueiro de Melo"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/example.png"
+      "iconPath": "/equipe_icons/anonimious.png"
     },
     {
       "nome": "Caxaxeiros Viajantes",
@@ -57,7 +57,7 @@
         "Davi Oliveira Medina"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/example.png"
+      "iconPath": "/equipe_icons/Caxaxeiros Viajantes.png"
     },
     {
       "nome": "Os pipoqueiros",
@@ -68,7 +68,7 @@
         "Guilherme Samuel Lemos Segura"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/example.png"
+      "iconPath": "/equipe_icons/Os Pipoqueiros.png"
     },
     {
       "nome": "cptEmos",
@@ -79,7 +79,7 @@
         "Felipe Ferreira de Souza"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/example.png"
+      "iconPath": "/equipe_icons/cptEmos.png"
     },
     {
       "nome": "Flezus",
@@ -90,7 +90,7 @@
         "Gustavo dos Santos Silva"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/example.png"
+      "iconPath": "/equipe_icons/Flezus.png"
     },
     {
       "nome": "GELADEIRA ELECTROLUX DFX41 FROST FREE COM TURBO",
@@ -101,7 +101,7 @@
         "Victor Yodono"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/example.png"
+      "iconPath": "/equipe_icons/GELADEIRA ELECTROLUX DFX41 FROST FREE COM TURBO.png"
     },
     {
       "nome": "BRAT",
@@ -112,7 +112,7 @@
         "Gilberto Serafim Dias de Araújo"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/example.png"
+      "iconPath": "/equipe_icons/BRAT.png"
     },
     {
       "nome": "Patolinux QUACK QUACK",
@@ -123,7 +123,7 @@
         "Rayssa Buarque Malheiros"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/example.png"
+      "iconPath": "/equipe_icons/patolinux _cuack-cuack.png"
     },
     {
       "nome": "Pandeirinho",
@@ -134,7 +134,7 @@
         "Luísa Karen Yanai"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/example.png"
+      "iconPath": "/equipe_icons/Pandeirinho.png"
     },
     {
       "nome": "Português Desestruturado",
@@ -144,7 +144,7 @@
         "João Gabriel Bruni Santeiro"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/example.png"
+      "iconPath": "/equipe_icons/português desestruturado.png"
     },
     {
       "nome": "Cobras Caubóis Tomadoras de Suco (CCTS)",
@@ -155,7 +155,7 @@
         "Gustavo Santos El Dib"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/example.png"
+      "iconPath": "/equipe_icons/Cobras Caubóis Tomadoras de Suco (CCTS).png"
     },
     {
       "nome": "CompilouRodou",
@@ -166,7 +166,7 @@
         "Renan Biruel Uema"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/example.png"
+      "iconPath": "/equipe_icons/Compilou Rodou.png"
     },
     {
       "nome": "medo do panelas",
@@ -177,7 +177,7 @@
         "Gabriel Castellar"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/example.png"
+      "iconPath": "/equipe_icons/medo do panelas.png"
     },
     {
       "nome": "O ROCK NÃO É BRINCADEIRA",
@@ -188,7 +188,7 @@
         "Alisson Santos Silva"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/example.png"
+      "iconPath": "/equipe_icons/O ROCK NÃO É BRINCADEIRA.png"
     },
     {
       "nome": "Trivial",
@@ -199,18 +199,17 @@
         "João Henrique Kuroki Cominato"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/example.png"
+      "iconPath": "/equipe_icons/Trivial.png"
     },
     {
       "nome": "moondevs",
       "membros": [
         "Ana Luisa Oliveira da Silva",
         "Alexsandro de Souza Campos",
-        "Thales Iamamura",
-        " "
+        "Thales Iamamura"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/example.png"
+      "iconPath": "/equipe_icons/moondevs.png"
     }
   ]
 }
