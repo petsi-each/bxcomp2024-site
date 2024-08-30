@@ -154,7 +154,7 @@ function Organizadores() {
 
 			<p className={`${poppins.className}`}>Conheça as <b>pessoas</b> por trás do BXCOMP</p>
 
-			<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-12 w-full xl:px-24">
+			<section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 py-12 w-full xl:px-24">
 
 				{
 					organizadores.map((organizador, idx) => (
