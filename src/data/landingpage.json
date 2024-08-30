@@ -38,33 +38,178 @@
   ],
   "equipes": [
     {
-      "nome": "Equipe",
+      "nome": "Anonimious",
       "membros": [
-        "eu",
-        "vc",
-        "ele"
+        "Davi Santos Fernandes",
+        "DHENER ALVES BENTO DA SILVA",
+        "Caio Augusto de Freitas Brito",
+        "Gabriel Trigueiro de Melo"
       ],
-      "pontos": [1,6,2],
+      "pontos": [0,0,0],
       "iconPath": "/equipe_icons/example.png"
     },
     {
-      "nome": "grace",
+      "nome": "Caxaxeiros Viajantes",
       "membros": [
-        "eu",
-        "vc",
-        "eleDSADSA"
+        "Camila Alves Teixeira da Silva",
+        "Eric Isin Wang Chou",
+        "Marianna Saltarelli Arvellos Pontes",
+        "Davi Oliveira Medina"
       ],
-      "pontos": [1,6,2],
+      "pontos": [0,0,0],
       "iconPath": "/equipe_icons/example.png"
     },
     {
-      "nome": "Equipea",
+      "nome": "Os pipoqueiros",
       "membros": [
-        "eu",
-        "vc",
-        "ele"
+        "João de Melo Fantini",
+        "Higor Ranel Viani Lopes",
+        "Bruno Hideo Ioneda",
+        "Guilherme Samuel Lemos Segura"
       ],
-      "pontos": [1,2,3],
+      "pontos": [0,0,0],
+      "iconPath": "/equipe_icons/example.png"
+    },
+    {
+      "nome": "cptEmos",
+      "membros": [
+        "Gabriel Luís da Silva",
+        "Alan Moura Silva",
+        "isabella cremonezi morija",
+        "Felipe Ferreira de Souza"
+      ],
+      "pontos": [0,0,0],
+      "iconPath": "/equipe_icons/example.png"
+    },
+    {
+      "nome": "Flezus",
+      "membros": [
+        "Felipe da Silva Serralheiro Gigante",
+        "Maysa Hellen Sacht Aragão",
+        "Yasmin Oliveira da Silva",
+        "Gustavo dos Santos Silva"
+      ],
+      "pontos": [0,0,0],
+      "iconPath": "/equipe_icons/example.png"
+    },
+    {
+      "nome": "GELADEIRA ELECTROLUX DFX41 FROST FREE COM TURBO",
+      "membros": [
+        "Bruno Rangel Pereira Tadim",
+        "Higor Gabriel de Freitas",
+        "Hugo Cardoso Ferreira de Araújo",
+        "Victor Yodono"
+      ],
+      "pontos": [0,0,0],
+      "iconPath": "/equipe_icons/example.png"
+    },
+    {
+      "nome": "BRAT",
+      "membros": [
+        "Flavio Augusto Faustino de Carvalho",
+        "Leonardo de Cico Bonani",
+        "Rafael tolentino limberte",
+        "Gilberto Serafim Dias de Araújo"
+      ],
+      "pontos": [0,0,0],
+      "iconPath": "/equipe_icons/example.png"
+    },
+    {
+      "nome": "Patolinux QUACK QUACK",
+      "membros": [
+        "Thales Kauan Paiva de Oliveira",
+        "Dario Santos Cunha",
+        "Luís Guilherme Hitoshi Kanazawa",
+        "Rayssa Buarque Malheiros"
+      ],
+      "pontos": [0,0,0],
+      "iconPath": "/equipe_icons/example.png"
+    },
+    {
+      "nome": "Pandeirinho",
+      "membros": [
+        "Henrique Lam Ka Shing Chen",
+        "Guilherme Ivo Bozi",
+        "Letícia Namie Ono Honda",
+        "Luísa Karen Yanai"
+      ],
+      "pontos": [0,0,0],
+      "iconPath": "/equipe_icons/example.png"
+    },
+    {
+      "nome": "Português Desestruturado",
+      "membros": [
+        "Caio Vinícius Cunha Bernardo",
+        "Lucas Neves Souza",
+        "João Gabriel Bruni Santeiro"
+      ],
+      "pontos": [0,0,0],
+      "iconPath": "/equipe_icons/example.png"
+    },
+    {
+      "nome": "Cobras Caubóis Tomadoras de Suco (CCTS)",
+      "membros": [
+        "Lucas Giovani Santos Ross",
+        "Vinicius Chirnev Panhoca",
+        "Tiago Silveira Almeida",
+        "Gustavo Santos El Dib"
+      ],
+      "pontos": [0,0,0],
+      "iconPath": "/equipe_icons/example.png"
+    },
+    {
+      "nome": "CompilouRodou",
+      "membros": [
+        "Guilherme Hiyuki Maruta",
+        "Luiz Souza Neto",
+        "Luiz Vicente Neto",
+        "Renan Biruel Uema"
+      ],
+      "pontos": [0,0,0],
+      "iconPath": "/equipe_icons/example.png"
+    },
+    {
+      "nome": "medo do panelas",
+      "membros": [
+        "0100010101100100011101010110000101110010011001000110111100100000010000010111001001100001011101010110101001101111",
+        "Yuri Van Steen",
+        "Tae jin chun",
+        "Gabriel Castellar"
+      ],
+      "pontos": [0,0,0],
+      "iconPath": "/equipe_icons/example.png"
+    },
+    {
+      "nome": "O ROCK NÃO É BRINCADEIRA",
+      "membros": [
+        "Dérick dos Santos Arriado",
+        "Júlio Arroio Silva",
+        "Carlos Henrique Camillo da Silva",
+        "Alisson Santos Silva"
+      ],
+      "pontos": [0,0,0],
+      "iconPath": "/equipe_icons/example.png"
+    },
+    {
+      "nome": "Trivial",
+      "membros": [
+        "Enrico Lechar de Barros Aranha",
+        "Clara Pires Campardo",
+        "Renan Rodrigues Moreira",
+        "João Henrique Kuroki Cominato"
+      ],
+      "pontos": [0,0,0],
+      "iconPath": "/equipe_icons/example.png"
+    },
+    {
+      "nome": "moondevs",
+      "membros": [
+        "Ana Luisa Oliveira da Silva",
+        "Alexsandro de Souza Campos",
+        "Thales Iamamura",
+        " "
+      ],
+      "pontos": [0,0,0],
       "iconPath": "/equipe_icons/example.png"
     }
   ]
