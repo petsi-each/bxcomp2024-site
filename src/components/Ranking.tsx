@@ -16,12 +16,11 @@ interface RankingProps {
 
 interface PointBarProps {
     equipe: Equipe,
-    topScore: number,
-    scorePosition: number | undefined,
+    topScores: number[],
 }
 
 interface CoroaImageProps {
-    scorePosition: number | undefined;
+    scorePosition: number;
 }
 
 /**
@@ -33,24 +32,23 @@ interface CoroaImageProps {
 const CoroaImage: React.FC<CoroaImageProps> = ({ scorePosition }) => {
     let image;
 
-    if (scorePosition == 1) {
-        image = <div className="absolute -mt-40">
-                    <ImageG src="/coroaReiGelado.png" alt="" width={88} height={132} />
-                </div>
-    } else if (scorePosition == 2) {
-        image = <div className="absolute -mt-24 -ml-12">
-                    <ImageG src="/coroaPrata.png" alt="" width={85} height={65} />
-                </div>
-    } else if (scorePosition == 3) {
-        image = <div className="absolute -mt-24 -ml-12">
-                    <ImageG src="/coroaBronze.png" alt="" width={85} height={65} />
-                </div>
-    } else {
-        //image = null; // Nenhuma imagem será renderizada
-        return null;
-    }
-
-    return image;
+    if (scorePosition == -1) return null;    
+    if (scorePosition == 0) return (
+        <div className="absolute -mt-40">
+            <ImageG src="/coroaReiGelado.png" alt="" width={88} height={132} />
+        </div>
+    )
+    if (scorePosition == 1) return(
+        <div className="absolute -mt-24 -ml-12">
+            <ImageG src="/coroaPrata.png" alt="" width={85} height={65} />
+        </div>
+    )
+    if (scorePosition == 2) return(
+        <div className="absolute -mt-24 -ml-12">
+            <ImageG src="/coroaBronze.png" alt="" width={85} height={65} />
+        </div>
+    )
+        
 }
 
 
@@ -58,15 +56,14 @@ const CoroaImage: React.FC<CoroaImageProps> = ({ scorePosition }) => {
  * Componente que representa uma barra de pontos para uma equipe.
  *
  * @param {Equipe} equipe - Informações da equipe incluindo nome, membros, pontos e ícone.
- * @param {number} topScore - O maior número de pontos entre todas as equipes, usado para calcular a largura da barra.
- * @param {number} [scorePosition] - Posição do top; Pode ser: 1, 2, 3.
+ * @param {number} topScores - Lista com a quantidade de ponto dos tres primeiros lugares para renderizar coroa.
  */
 
-const PointBar: React.FC<PointBarProps> = ({ equipe, topScore, scorePosition }) => {
+const PointBar: React.FC<PointBarProps> = ({ equipe, topScores }) => {
     
     const totalPontos = equipe.pontos.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
     
-    const percentage = (totalPontos / topScore) * 100
+    const percentage = (totalPontos / topScores[0]) * 100
 
     const size = percentage < 8 ? 'fit-content' :  percentage + '%'
 
@@ -90,7 +87,7 @@ const PointBar: React.FC<PointBarProps> = ({ equipe, topScore, scorePosition }) 
                 <div>
                     <figure className="-ml-8 h-20 w-20 relative flex items-center justify-center drop-shadow-xl rounded-full bg-white">
                         <ImageG className="absolute" src={equipe.iconPath} fill={true} alt={""} />
-                        <CoroaImage scorePosition={scorePosition}/>                 
+                        <CoroaImage scorePosition={topScores.indexOf(totalPontos)}/>                 
                     </figure>
                 </div>
 
@@ -129,56 +126,20 @@ const Ranking: React.FC<RankingProps> = ({ equipes, displayQuantity = -1 }) => {
         return points.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
     };
 
-
-    // sortedEquipes.sort((a, b) => b.pontos - a.pontos); // Ordena o array a partir dos pontos
     sortedEquipes.sort((a, b) => sumPoints(b.pontos) - sumPoints(a.pontos));
-    
-    const topScore = sumPoints(sortedEquipes[0].pontos) // Pega a maior quantidade de pontos (representa 100%)
+
+    const topScores = Array.from(new Set(sortedEquipes.map(equipe => sumPoints(equipe.pontos)))).slice(0,3);
+
     const displayEquipes = displayQuantity < 0 ? sortedEquipes : sortedEquipes.slice(0, displayQuantity) // Apresenta displayQuantity itens do array caso um valor seja determinado
 
-
-    // Define as pontuações de secondScore e thirdScore
-    let secondScore: number | undefined,
-        thirdScore: number | undefined;
-
-    const uniqueSortedScores = Array.from(new Set(sortedEquipes.map(equipe => sumPoints(equipe.pontos)))); // Array ordenado de pontuações totais das equipes
-    if (uniqueSortedScores.length > 1) {
-        secondScore = uniqueSortedScores[1]; // A segunda maior pontuação
-    }
-    
-    if (uniqueSortedScores.length > 2) {
-        thirdScore = uniqueSortedScores[2]; // A terceira maior pontuação
-    }
-    ;
-    
     return (
-
         <section className="grid grid-rows-1 gap-8 md:gap-2">
             {displayEquipes.map((equipe, index) => {
-                // Calcula a soma da pontuação da equipe uma vez
-                const equipeScore = sumPoints(equipe.pontos);
-
-                // Determina a posição da equipe com base na pontuação
-                let scorePosition: number | undefined;
-                if (topScore == 0) {
-                    scorePosition = undefined; // Ninguém pontuou
-                } else if (equipeScore == topScore) {
-                    scorePosition = 1; // 1º lugar
-                } else if (equipeScore == secondScore) {
-                    scorePosition = 2; // 2º lugar
-                } else if (equipeScore == thirdScore) {
-                    scorePosition = 3; // 3º lugar
-                } else {
-                    scorePosition = undefined; // Sem coroa
-                }
-
-                // Retorna o componente PointBar com a posição correta
                 return (
-                    <PointBar key={index} equipe={equipe} topScore={topScore} scorePosition={scorePosition} />
+                    <PointBar key={index} equipe={equipe} topScores={topScores} />
                 );
             })}
         </section>  
-
     );
 };
 
