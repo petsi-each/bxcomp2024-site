@@ -57,7 +57,7 @@ function Organizadores(){
 			
 			<p className={`${poppins.className}`}>Conheça as <b>pessoas</b> por trás do BXCOMP</p>
 
-			<div className="grid grid-cols-4 gap-8 py-12 w-full px-24">
+			<section className="grid grid-cols-4 gap-8 py-12 w-full px-24">
 				
 				{
 					organizadores.map((organizador,idx) => (
@@ -65,7 +65,7 @@ function Organizadores(){
 					  ))
 				}
 
-			</div>
+			</section>
 
 			<p className={`${poppins.className}`}>Confira o repositório deste site no <a href="https://github.com/Anemaygi/bxcomp2024-site" className={`text-laranjaBX text-xl ${bubblegum.className}`}>GitHub</a></p>
 			
