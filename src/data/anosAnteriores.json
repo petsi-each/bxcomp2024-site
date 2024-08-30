@@ -1,0 +1,87 @@
+[
+    {
+        "ano": 2023,
+        "edicao": 13,
+        "tema": "Jogos Nostálgicos",
+        "logoArquivo": "logoBx2023.png",
+        "link": "http://www.each.usp.br/petsi/bxcomp2023/"
+    },
+    {
+        "ano": 2022,
+        "edicao": 12,
+        "tema": "Brasil",
+        "logoArquivo": "logoBx2022.svg",
+        "link": "http://www.each.usp.br/petsi/bxcomp2022/"
+    },
+    {
+        "ano": 2021,
+        "edicao": 11,
+        "tema": "Matrix",
+        "logoArquivo": "logoBx2021.gif",
+        "link": "http://www.each.usp.br/petsi/bxcomp2021/"
+    },
+    {
+        "ano": 2020,
+        "edicao": 10,
+        "tema": "Mitologias",
+        "logoArquivo": "logoBx2020.png",
+        "link": "http://www.each.usp.br/petsi/bxcomp2020/"
+    },
+    {
+        "ano": 2019,
+        "edicao": 9,
+        "tema": "Espaço",
+        "logoArquivo": "logoBx2019.png",
+        "link": "http://www.each.usp.br/petsi/bxcomp2019/"
+    },
+    {
+        "ano": 2018,
+        "edicao": 8,
+        "tema": "Os Desafios do Infinito",
+        "logoArquivo": "logoBx2018.png",
+        "link": "http://www.each.usp.br/petsi/bxcomp2018/"
+    },
+    {
+        "ano": 2017,
+        "edicao": 7,
+        "logoArquivo": "logoBx2017.png",
+        "link": "http://www.each.usp.br/petsi/bxcomp2017/"
+    },
+    {
+        "ano": 2016,
+        "edicao": 6,
+        "logoArquivo": "logoBx2016.png",
+        "link": "http://www.each.usp.br/petsi/bxcomp2016/"
+    },
+    {
+        "ano": 2015,
+        "edicao": 5,
+        "logoArquivo": "logoBx2015.png",
+        "link": "http://www.each.usp.br/petsi/bxcomp2015/"
+    },
+    {
+        "ano": 2014,
+        "edicao": 4,
+        "logoArquivo": "logoBx2014.png",
+        "link": "http://www.each.usp.br/petsi/bxcomp2014/"
+    },
+    {
+        "ano": 2013,
+        "edicao": 3,
+        "logoArquivo": "logoBx2013.png",
+        "link": "http://www.each.usp.br/petsi/bxcomp2013/"
+    },
+    {
+        "ano": 2012,
+        "edicao": 2,
+        "logoArquivo": "logoBx2012.png",
+        "link": "http://www.each.usp.br/petsi/bxcomp2012/"
+    },
+    {
+        "ano": 2011,
+        "edicao": 1,
+        "logoArquivo": "logoBx2011.png",
+        "link": "http://www.each.usp.br/petsi/bxcomp2011/"
+    }
+
+]
