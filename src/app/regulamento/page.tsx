@@ -16,7 +16,7 @@ export default function Regulamento() {
     const latestDate = new Date(Math.max(...datas.map(data => data.getTime())));
 
     return (
-        <main className='pt-24 text-center'>
+        <main className='text-center'>
 
             <h1 className='text-laranjaBX text-6xl md:text-7xl py-12'>Regulamento</h1>
 

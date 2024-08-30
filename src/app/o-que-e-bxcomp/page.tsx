@@ -9,7 +9,7 @@ const poppins = Poppins({ weight: '400', subsets: ['latin'] })
 export default function o_que_eh_BXComp() {
   return (
 
-    <main className="pt-36 sm:pt-40 sm:pb-20 px-8 md:px-20">
+    <main className="pt-8 sm:pb-20 px-8 md:px-20">
 
 		<div className="lg:px-32">
 			<h1 className="text-5xl sm:text-6xl py-4 sm:py-8">
