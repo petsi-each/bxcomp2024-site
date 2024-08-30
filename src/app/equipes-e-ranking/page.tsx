@@ -5,7 +5,7 @@ import ImageG from '@/components/ImageG'
 
 export default function EquipesERanking() {
     return (
-        <main className='pt-24'>
+        <main>
             <ImageG className='w-full -mb-1 pointer-events-none rotate-180' src='home/onda_branca.svg' width="1280" height="186" alt='Onda branca' />
             <Equipes />
             <ImageG id="ranking" className='w-full -mt-1 pointer-events-none' src='home/onda_branca.svg' width="1280" height="186" alt='Onda branca' />
