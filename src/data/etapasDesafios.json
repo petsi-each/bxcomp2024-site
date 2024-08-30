@@ -7,35 +7,35 @@
         "altIcon": "Bob Esponja e Patrick Estrela",
         "desafios": [
             {
-                "desafio": "Desejo não ser idiota - <NUM PONTOS>",
+                "desafio": "Desejo não ser idiota - 2 pontos",
                 "idx": 0,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
-                "desafio": "Os 4 elementos - <NUM PONTOS>",
+                "desafio": "Os 4 elementos - 4 pontos",
                 "idx": 1,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
-                "desafio": "ROUBO DO HAMBURGUER DE SIRI - <NUM PONTOS>",
+                "desafio": "ROUBO DO HAMBURGUER DE SIRI - 3 pontos",
                 "idx": 2,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
-                "desafio": "A porta espiritual - <NUM PONTOS>",
+                "desafio": "A porta espiritual - 3 pontos",
                 "idx": 3,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
-                "desafio": "Os robôs de Jimmy - <NUM PONTOS>",
+                "desafio": "Os robôs de Jimmy - 6 pontos",
                 "idx": 4,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
@@ -51,35 +51,35 @@
         "altIcon": "Shrek",
         "desafios": [
             {
-                "desafio": "Fuga dos Linux - <NUM PONTOS>",
+                "desafio": "Fuga dos Linux - 2 pontos",
                 "idx": 0,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
-                "desafio": "<NOME> - <NUM PONTOS>",
+                "desafio": "Perdidinhos no pagode - 3 pontos",
                 "idx": 1,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
-                "desafio": "Equilíbrio das Galinhas - <NUM PONTOS>",
+                "desafio": "Equilíbrio das Galinhas - 6 pontos",
                 "idx": 2,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
-                "desafio": "Rinha de Dragões - <NUM PONTOS>",
+                "desafio": "Rinha de Dragões - 2 pontos",
                 "idx": 3,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
-                "desafio": "FAZ O URRO - <NUM PONTOS>",
+                "desafio": "FAZ O URRO - 4 pontos",
                 "idx": 4,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
@@ -95,35 +95,35 @@
         "altIcon": "Frajola salgando Piu-Piu",
         "desafios": [
             {
-                "desafio": "Tá com você Puro Osso - <NUM PONTOS>",
+                "desafio": "Tá com você Puro Osso - 6 pontos",
                 "idx": 0,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
-                "desafio": "<NOME> - <NUM PONTOS>",
+                "desafio": "a - 2 pontos",
                 "idx": 1,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
-                "desafio": "Explodindo planetas - <NUM PONTOS>",
+                "desafio": "Explodindo planetas - 2 pontos",
                 "idx": 2,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
-                "desafio": "Açúcar, tempero e ...? - <NUM PONTOS>",
+                "desafio": "Açúcar, tempero e ...? - 4 pontos",
                 "idx": 3,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
-                "desafio": "1234554321 - <NUM PONTOS>",
+                "desafio": "1234554321 - 3 pontos",
                 "idx": 4,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
@@ -139,35 +139,35 @@
         "altIcon": "Mike Wazowski",
         "desafios": [
             {
-                "desafio": "MANHÊ!!! - <NUM PONTOS>",
+                "desafio": "MANHÊ!!! - 4 pontos",
                 "idx": 0,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
-                "desafio": "Tá no TAPETE! - <NUM PONTOS>",
+                "desafio": "Tá no taPETe! - 3 pontos",
                 "idx": 1,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
-                "desafio": "Mente PETurbada - <NUM PONTOS>",
+                "desafio": "Mente PETurbada - 4 pontos",
                 "idx": 2,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
-                "desafio": "Estudo Estranho - <NUM PONTOS>",
+                "desafio": "Estudo Estranho - 2 pontos",
                 "idx": 3,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
-                "desafio": "<NOME> - <NUM PONTOS>",
+                "desafio": "Livro de Feitiços da Star - 3 pontos",
                 "idx": 4,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
@@ -183,35 +183,35 @@
         "altIcon": "Coruja-logo PET-SI",
         "desafios": [
             {
-                "desafio": "O Frango tá voando - <NUM PONTOS>",
+                "desafio": "O Frango tá voando - 4 pontos",
                 "idx": 0,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
-                "desafio": "<NOME> - <NUM PONTOS>",
+                "desafio": "Castelo de Diamantes - 3 pontos",
                 "idx": 1,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
-                "desafio": "<NOME> - <NUM PONTOS>",
+                "desafio": "Não quero ser um desafio do BxComp - 4 pontos",
                 "idx": 2,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
-                "desafio": "<NOME> - <NUM PONTOS>",
+                "desafio": "Entraram na mente do Ciborgue - 2 pontos",
                 "idx": 3,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "testes": "<CASOS TESTE>"
             },
             {
-                "desafio": "<NOME> - <NUM PONTOS>",
+                "desafio": "Nome Sujo! - 3 pontos",
                 "idx": 4,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
