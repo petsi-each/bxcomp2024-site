@@ -124,8 +124,8 @@ interface OrganizadorCardProps {
 const OrganizadorCard: React.FC<OrganizadorCardProps> = ({ organizador }) => {
 	return (
 		<article className='w-full flex flex-col items-center justify-center gap-y-8 p-8'>
-			<figure className="size-52 rounded-full outline outline-offset-8 outline-4 outline-verdeBX relative">
-				<ImageG className="object-cover" src={organizador.imgSrc} alt={""} fill={true} />
+			<figure className="size-52 rounded-full outline outline-offset-8 outline-4 outline-verdeBX relative ">
+				<ImageG className="object-cover rounded-full" src={organizador.imgSrc} alt={""} fill={true} />
 				{organizador.dev && (
 					<ImageG
 						className="absolute right-6 bottom-4 transform translate-x-1/2 translate-y-1/2"
