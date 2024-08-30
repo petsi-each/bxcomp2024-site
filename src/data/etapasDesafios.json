@@ -1,7 +1,7 @@
 [
     {
         "etapaIndice": 0,
-        "estado": false,
+        "estado": true,
         "tema": "Nickelodeon",
         "icon": "/EtapasDesafios/E0-Nickelodeon.png",
         "altIcon": "Bob Esponja e Patrick Estrela",
@@ -11,36 +11,41 @@
                 "idx": 0,
                 "enunciado": "Etapa 0/Enunciados/Desejo nao ser idiota.pdf",
                 "resolucao": "Etapa 0/Resolucao/desejo nao ser idiota.c",
-                "testes": "<CASOS TESTE>"
+                "entrada": "Etapa 0/Entradas/desejo nao ser idiota.in",
+                "saida": "Etapa 0/saidas/desejo nao ser idiota.out"
             },
             {
                 "desafio": "Os 4 elementos - 4 pontos",
                 "idx": 1,
                 "enunciado": "Etapa 0/Enunciados/Os 4 elementos.pdf",
                 "resolucao": "Etapa 0/Resolucao/os 4 elementos.c",
-                "testes": "<CASOS TESTE>"
+                "entrada": "Etapa 0/Entradas/os 4 elementos.in",
+                "saida": "Etapa 0/saidas/os 4 elementos.out"
             },
             {
                 "desafio": "ROUBO DO HAMBURGUER DE SIRI - 3 pontos",
                 "idx": 2,
                 "enunciado": "Etapa 0/Enunciados/ROUBO DO HAMBURGUER DE SIRI.pdf",
                 "resolucao": "Etapa 0/Resolucao/roubo do hamburguer de siri.c",
-                "testes": "<CASOS TESTE>"
+                "entrada": "Etapa 0/Entradas/roubo do hamburguer de siri.in",
+                "saida": "Etapa 0/saidas/roubo do hamburguer de siri.out"
             },
             {
                 "desafio": "A porta espiritual - 3 pontos",
                 "idx": 3,
                 "enunciado": "Etapa 0/Enunciados/A Porta Espiritual.pdf",
                 "resolucao": "Etapa 0/Resolucao/a porta espiritual.c",
-                "testes": "<CASOS TESTE>"
+                "entrada": "Etapa 0/Entradas/a porta espiritual.in",
+                "saida": "Etapa 0/saidas/a porta espiritual.out"
             },
             {
                 "desafio": "Os robôs de Jimmy - 6 pontos",
                 "idx": 4,
                 "enunciado": "Etapa 0/Enunciados/Os robos de Jimmy.pdf",
                 "resolucao": "Etapa 0/Resolucao/os robos de jimmy.c",
-                "testes": "<CASOS TESTE>"
-            } 
+                "entrada": "Etapa 0/Entradas/os robos de jimmy.in",
+                "saida": "Etapa 0/saidas/os robos de jimmy.out"
+            }  
         ]
     },
     {
@@ -55,35 +60,40 @@
                 "idx": 0,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
-                "testes": "<CASOS TESTE>"
+                "entrada": "<ENTRADA>",
+                "saida": "<SAÍDA>"
             },
             {
                 "desafio": "Perdidinhos no pagode - 3 pontos",
                 "idx": 1,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
-                "testes": "<CASOS TESTE>"
+                "entrada": "<ENTRADA>",
+                "saida": "<SAÍDA>"
             },
             {
                 "desafio": "Equilíbrio das Galinhas - 6 pontos",
                 "idx": 2,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
-                "testes": "<CASOS TESTE>"
+                "entrada": "<ENTRADA>",
+                "saida": "<SAÍDA>"
             },
             {
                 "desafio": "Rinha de Dragões - 2 pontos",
                 "idx": 3,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
-                "testes": "<CASOS TESTE>"
+                "entrada": "<ENTRADA>",
+                "saida": "<SAÍDA>"
             },
             {
                 "desafio": "FAZ O URRO - 4 pontos",
                 "idx": 4,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
-                "testes": "<CASOS TESTE>"
+                "entrada": "<ENTRADA>",
+                "saida": "<SAÍDA>"
             }
         ]
     },
@@ -99,35 +109,40 @@
                 "idx": 0,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
-                "testes": "<CASOS TESTE>"
+                "entrada": "<ENTRADA>",
+                "saida": "<SAÍDA>"
             },
             {
                 "desafio": "a - 2 pontos",
                 "idx": 1,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
-                "testes": "<CASOS TESTE>"
+                "entrada": "<ENTRADA>",
+                "saida": "<SAÍDA>"
             },
             {
                 "desafio": "Explodindo planetas - 2 pontos",
                 "idx": 2,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
-                "testes": "<CASOS TESTE>"
+                "entrada": "<ENTRADA>",
+                "saida": "<SAÍDA>"
             },
             {
                 "desafio": "Açúcar, tempero e ...? - 4 pontos",
                 "idx": 3,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
-                "testes": "<CASOS TESTE>"
+                "entrada": "<ENTRADA>",
+                "saida": "<SAÍDA>"
             },
             {
                 "desafio": "1234554321 - 3 pontos",
                 "idx": 4,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
-                "testes": "<CASOS TESTE>"
+                "entrada": "<ENTRADA>",
+                "saida": "<SAÍDA>"
             }
         ]
     },
@@ -143,35 +158,40 @@
                 "idx": 0,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
-                "testes": "<CASOS TESTE>"
+                "entrada": "<ENTRADA>",
+                "saida": "<SAÍDA>"
             },
             {
                 "desafio": "Tá no taPETe! - 3 pontos",
                 "idx": 1,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
-                "testes": "<CASOS TESTE>"
+                "entrada": "<ENTRADA>",
+                "saida": "<SAÍDA>"
             },
             {
                 "desafio": "Mente PETurbada - 4 pontos",
                 "idx": 2,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
-                "testes": "<CASOS TESTE>"
+                "entrada": "<ENTRADA>",
+                "saida": "<SAÍDA>"
             },
             {
                 "desafio": "Estudo Estranho - 2 pontos",
                 "idx": 3,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
-                "testes": "<CASOS TESTE>"
+                "entrada": "<ENTRADA>",
+                "saida": "<SAÍDA>"
             },
             {
                 "desafio": "Livro de Feitiços da Star - 3 pontos",
                 "idx": 4,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
-                "testes": "<CASOS TESTE>"
+                "entrada": "<ENTRADA>",
+                "saida": "<SAÍDA>"
             }
         ]
     },
@@ -187,35 +207,40 @@
                 "idx": 0,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
-                "testes": "<CASOS TESTE>"
+                "entrada": "<ENTRADA>",
+                "saida": "<SAÍDA>"
             },
             {
                 "desafio": "Castelo de Diamantes - 3 pontos",
                 "idx": 1,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
-                "testes": "<CASOS TESTE>"
+                "entrada": "<ENTRADA>",
+                "saida": "<SAÍDA>"
             },
             {
                 "desafio": "Não quero ser um desafio do BxComp - 4 pontos",
                 "idx": 2,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
-                "testes": "<CASOS TESTE>"
+                "entrada": "<ENTRADA>",
+                "saida": "<SAÍDA>"
             },
             {
                 "desafio": "Entraram na mente do Ciborgue - 2 pontos",
                 "idx": 3,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
-                "testes": "<CASOS TESTE>"
+                "entrada": "<ENTRADA>",
+                "saida": "<SAÍDA>"
             },
             {
                 "desafio": "Nome Sujo! - 3 pontos",
                 "idx": 4,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
-                "testes": "<CASOS TESTE>"
+                "entrada": "<ENTRADA>",
+                "saida": "<SAÍDA>"
             }
         ]
     }
