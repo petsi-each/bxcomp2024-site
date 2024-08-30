@@ -11,13 +11,23 @@ export default function o_que_eh_BXComp() {
 
 		<main className="pt-36 sm:pt-40 sm:pb-20 px-8 md:px-20">
 			<Descricao />
+			<Organizadores />
 		</main>
 	);
 }
 
+function Organizadores(){
+	return(
+		<section>
+			
+		</section>
+	);
+}
+
+
 function Descricao() {
 	return (
-		<div>
+		<section>
 			<div className="lg:px-32">
 				<h1 className="text-5xl sm:text-6xl py-4 sm:py-8">
 					O que é o <span className="text-laranjaBX">BXComp</span>?
@@ -98,7 +108,7 @@ function Descricao() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }
 
