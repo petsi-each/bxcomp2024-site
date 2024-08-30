@@ -19,28 +19,63 @@ export default function o_que_eh_BXComp() {
 	);
 }
 
+interface Organizador {
+	nome: string;
+	linkedinUrl: string;
+	imgSrc: string;
+	dev: boolean;
+}
 
-function Organizador(){
+interface OrganizadorCardProps {
+	organizador: Organizador
+}
+
+const OrganizadorCard: React.FC<OrganizadorCardProps> = ({organizador}) => {
 	return(
-	
-	<div className='w-full flex flex-col items-center justify-center gap-y-6 p-8'>
-		
-		<div className="size-52 rounded-full bg-blue-500 outline outline-offset-4 outline-4 outline-verdeBX relative">
-			<ImageG className="object-cover" src={'/o-que-e-bxcomp/tom-jerry.png'} alt={'Tom e Jerry'} fill={true} />
+		<div className='w-full flex flex-col items-center justify-center gap-y-4 p-8'>
+			
+			<div className="size-52 rounded-full bg-blue-500 outline outline-offset-4 outline-4 outline-verdeBX relative">
+				<ImageG className="object-cover" src={organizador.imgSrc} alt={""} fill={true} />
+			</div>
+			<ImageG className={`self-end object-cover -mt-24 z-40 ${organizador.dev ? "" : "invisible"} `} src={'/o-que-e-bxcomp/seloDev.png'} alt={'Desenvolvedor'} width={100} height={98} />
+
+			<div className={` w-full bg-brancoBX rounded-full text-black flex items-center gap-x-2 ${poppins.className} justify-center py-4`}>
+				<p>{"<"+ organizador.nome +">"}</p>
+				<a href="organizador.linkedinUrl" target='_blank'><ImLinkedin /></a>
+			</div>
+
 		</div>
-		<ImageG className="self-end object-cover -mt-24 z-40" src={'/o-que-e-bxcomp/seloDev.png'} alt={'Desenvolvedor'} width={100} height={98} />
-
-		<div className={` w-full bg-brancoBX rounded-full text-black flex items-center gap-x-2 ${poppins.className} justify-center py-4`}>
-			<p>{`<Lizandro Raposo>`}</p>
-			<a href="#"><ImLinkedin /></a>
-		</div>
-
-	</div>
-
 	)
 }
 
 function Organizadores(){
+	const organizadores = [
+		{
+			nome: "AA",
+			linkedinUrl: "etc",
+			imgSrc: "/o-que-e-bxcomp/tom-jerry.png",
+			dev: true
+		},
+		{
+			nome: "BB",
+			linkedinUrl: "etc",
+			imgSrc: "/o-que-e-bxcomp/tom-jerry.png",
+			dev: false
+		},
+		{
+			nome: "CC",
+			linkedinUrl: "etc",
+			imgSrc: "/o-que-e-bxcomp/tom-jerry.png",
+			dev: true
+		},
+		{
+			nome: "DD",
+			linkedinUrl: "etc",
+			imgSrc: "/o-que-e-bxcomp/tom-jerry.png",
+			dev: false
+		}
+	]
+
 	return(
 		<section className="flex flex-col items-center justify-center">
 			<h1 className="text-5xl text-laranjaBX sm:text-6xl py-4 sm:py-8 text-center">
@@ -50,10 +85,13 @@ function Organizadores(){
 			<p className={`${poppins.className}`}>Conheça as <b>pessoas</b> por trás do BXCOMP</p>
 
 			<div className="grid grid-cols-4 gap-8 py-12 w-full px-24">
-				<Organizador />
-				<Organizador />
-				<Organizador />
-				<Organizador />
+				
+				{
+					organizadores.map((organizador,idx) => (
+						<OrganizadorCard key={idx} organizador={organizador} />
+					  ))
+				}
+
 			</div>
 
 			<p className={`${poppins.className}`}>Confira o repositório deste site no <a href="https://github.com/Anemaygi/bxcomp2024-site" className={`text-laranjaBX text-xl ${bubblegum.className}`}>GitHub</a></p>
