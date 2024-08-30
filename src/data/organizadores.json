@@ -1,0 +1,26 @@
+[
+    {
+        "nome": "AA",
+        "linkedinUrl": "etc",
+        "imgSrc": "/o-que-e-bxcomp/tom-jerry.png",
+        "dev": true
+    },
+    {
+        "nome": "BB",
+        "linkedinUrl": "etc",
+        "imgSrc": "/o-que-e-bxcomp/tom-jerry.png",
+        "dev": false
+    },
+    {
+        "nome": "CC",
+        "linkedinUrl": "etc",
+        "imgSrc": "/o-que-e-bxcomp/tom-jerry.png",
+        "dev": true
+    },
+    {
+        "nome": "DD",
+        "linkedinUrl": "etc",
+        "imgSrc": "/o-que-e-bxcomp/tom-jerry.png",
+        "dev": false
+    }
+]

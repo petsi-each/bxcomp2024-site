@@ -6,6 +6,8 @@ import PrimaryButton from '@/components/PrimaryButton';
 
 import ImageG from '@/components/ImageG';
 
+import organizadores from '../../data/organizadores.json';
+
 const poppins = Poppins({ weight: '400', subsets: ['latin'] })
 const bubblegum = Bubblegum_Sans({subsets: ["latin"], weight: "400"})
 
@@ -47,33 +49,6 @@ const OrganizadorCard: React.FC<OrganizadorCardProps> = ({organizador}) => {
 }
 
 function Organizadores(){
-	const organizadores = [
-		{
-			nome: "AA",
-			linkedinUrl: "etc",
-			imgSrc: "/o-que-e-bxcomp/tom-jerry.png",
-			dev: true
-		},
-		{
-			nome: "BB",
-			linkedinUrl: "etc",
-			imgSrc: "/o-que-e-bxcomp/tom-jerry.png",
-			dev: false
-		},
-		{
-			nome: "CC",
-			linkedinUrl: "etc",
-			imgSrc: "/o-que-e-bxcomp/tom-jerry.png",
-			dev: true
-		},
-		{
-			nome: "DD",
-			linkedinUrl: "etc",
-			imgSrc: "/o-que-e-bxcomp/tom-jerry.png",
-			dev: false
-		}
-	]
-
 	return(
 		<section className="flex flex-col items-center justify-center">
 			<h1 className="text-5xl text-laranjaBX sm:text-6xl py-4 sm:py-8 text-center">
