@@ -28,6 +28,7 @@ function Organizador(){
 		<div className="size-52 rounded-full bg-blue-500 outline outline-offset-4 outline-4 outline-verdeBX relative">
 			<ImageG className="object-cover" src={'/o-que-e-bxcomp/tom-jerry.png'} alt={'Tom e Jerry'} fill={true} />
 		</div>
+		<ImageG className="self-end object-cover -mt-24 z-40" src={'/o-que-e-bxcomp/seloDev.png'} alt={'Desenvolvedor'} width={100} height={98} />
 
 		<div className={` w-full bg-brancoBX rounded-full text-black flex items-center gap-x-2 ${poppins.className} justify-center py-4`}>
 			<p>{`<Lizandro Raposo>`}</p>
