@@ -1,7 +1,9 @@
 'use client'
 
 import { Poppins, Bubblegum_Sans } from 'next/font/google'
+import { ImLinkedin } from "react-icons/im";
 import PrimaryButton from '@/components/PrimaryButton';
+
 import ImageG from '@/components/ImageG';
 
 const poppins = Poppins({ weight: '400', subsets: ['latin'] })
@@ -17,6 +19,26 @@ export default function o_que_eh_BXComp() {
 	);
 }
 
+
+function Organizador(){
+	return(
+	
+	<div className='w-full flex flex-col items-center justify-center gap-y-6 p-8'>
+		
+		<div className="size-52 rounded-full bg-blue-500 outline outline-offset-4 outline-4 outline-verdeBX relative">
+			<ImageG className="object-cover" src={'/o-que-e-bxcomp/tom-jerry.png'} alt={'Tom e Jerry'} fill={true} />
+		</div>
+
+		<div className={` w-full bg-brancoBX rounded-full text-black flex items-center gap-x-2 ${poppins.className} justify-center py-4`}>
+			<p>{`<Lizandro Raposo>`}</p>
+			<a href="#"><ImLinkedin /></a>
+		</div>
+
+	</div>
+
+	)
+}
+
 function Organizadores(){
 	return(
 		<section className="flex flex-col items-center justify-center">
@@ -26,7 +48,12 @@ function Organizadores(){
 			
 			<p className={`${poppins.className}`}>Conheça as <b>pessoas</b> por trás do BXCOMP</p>
 
-		
+			<div className="grid grid-cols-4 gap-8 py-12 w-full px-24">
+				<Organizador />
+				<Organizador />
+				<Organizador />
+				<Organizador />
+			</div>
 
 			<p className={`${poppins.className}`}>Confira o repositório deste site no <a href="https://github.com/Anemaygi/bxcomp2024-site" className={`text-laranjaBX text-xl ${bubblegum.className}`}>GitHub</a></p>
 			
