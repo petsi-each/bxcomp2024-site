@@ -12,6 +12,7 @@ const poppins = Poppins({ weight: '400', subsets: ['latin'] })
 const bubblegum = Bubblegum_Sans({ subsets: ["latin"], weight: "400" })
 
 export default function o_que_eh_BXComp() {
+	return(
 		<main className="pt-8 sm:pb-20 px-8 md:px-20">
 			<Descricao />
 			<Organizadores />
