@@ -3,7 +3,7 @@
     {
       "numero": 0,
       "tema": "Nickelodeon",
-      "visivel": false,
+      "visivel": true,
       "imagem": "/EtapasDesafios/E0-Nickelodeon.png",
       "link": "/etapas-e-desafios"
     },

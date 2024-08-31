@@ -139,7 +139,7 @@ const OrganizadorCard: React.FC<OrganizadorCardProps> = ({ organizador }) => {
 			<section className={` w-full bg-brancoBX rounded-full text-black flex items-center  ${poppins.className} justify-center py-4 px-2`}>
 				{
 					organizador.linkedinUrl != "#" ?
-						<a href="organizador.linkedinUrl" target='_blank' className='flex items-center justify-center gap-x-2'>
+						<a href={organizador.linkedinUrl} target='_blank' className='flex items-center justify-center gap-x-2'>
 							<p className="truncate max-w-[calc(100%-1rem)] ">{"<" + organizador.nome + ">"}</p>
 							<ImLinkedin/>
 						</a>
