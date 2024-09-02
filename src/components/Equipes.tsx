@@ -18,11 +18,11 @@ export default function Equipes(){
     const totalPontos = equipes_data.equipes[idSelecionado].pontos.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
     
     return (
-    <section className="pb-8 pt-16 sm:px-16 bg-brancoBX grid grid-cols-1 lg:grid-cols-2 justify-center padding">
+    <section className="pb-8 pt-16 sm:px-24 bg-brancoBX grid grid-cols-1 lg:grid-cols-2 justify-center padding">
     
     {/* parte que mostra os botões de todas as equipes */}
-        <section className="order-2 lg:order-1 my-4 md:my-2 px-4 py-2 flex flex-wrap items-center justify-center">
-            <section className="grid grid-cols-2 gap-2 sm:grid-flow-col sm:flex sm:h-fit sm:flex-wrap sm:justify-center">
+        <section className="order-2 lg:order-1 my-4 md:my-2 md:px-8 py-2 flex flex-wrap items-center justify-center">
+            <section className="gap-2 sm:grid-flow-col flex sm:h-fit flex-wrap sm:justify-center">
                 { equipes_data.equipes.map((equipe, idx) => {
                     return <BotaoEquipe key={idx} equipe={equipe} selecionado={idSelecionado==idx} onClick={()=> setIdSelecionado(idx)} />  
                 })
