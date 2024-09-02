@@ -54,7 +54,10 @@ function EtapaCard(props: Etapa) {
                 <div className="w-full max-w-xs flex justify-center items-center">
                     <PrimaryButton
                         title={cond_props.texto_botao}
-                        onClick={() => { router.push(cond_props.link) }}
+                        onClick={() => { 
+                            cond_props.link == "#" ?
+                            false :
+                            router.push(cond_props.link) }}
                     />
                 </div>
             </div>
