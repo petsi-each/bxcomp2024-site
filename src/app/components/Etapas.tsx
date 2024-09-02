@@ -36,7 +36,7 @@ function EtapaCard(props: Etapa) {
     return (
         <article className="flex flex-col sm:flex-row justify-between rounded-3xl w-full bg-azulBX">
             <div className="flex items-center justify-center pt-8 sm:pt-4 sm:p-4">
-                <figure className="w-32 h-32 flex justify-center items-center relative">
+                <figure className="size-20 flex justify-center items-center relative">
                     <ImageG
                         className="rounded-lg"
                         src={cond_props.img}
@@ -47,8 +47,8 @@ function EtapaCard(props: Etapa) {
                 </figure>
             </div>
             <header className="flex flex-col justify-center items-center grow p-4">
-                <h1 className="text-lg md:text-2xl md:mb-4">Etapa {props.numero}</h1>
-                <h2 className={`text-xl md:text-3xl text-center ${poppins.className}`}>{cond_props.tema}</h2>
+                <h1 className="text-lg md:text-xl md:mb-4">Etapa {props.numero}</h1>
+                <h2 className={`text-xl md:text-xl text-center ${poppins.className}`}>{cond_props.tema}</h2>
             </header>
             <div className="flex justify-center items-center pb-4 md:pb-0 px-4">
                 <div className="w-full max-w-xs flex justify-center items-center">
@@ -65,7 +65,7 @@ function EtapaCard(props: Etapa) {
 export default function Etapas() {
 
     return (
-        <section className="flex flex-col md:flex-row justify-center bg-brancoBX">
+        <section className="grid grid-cols-1 lg:grid-cols-2 md:flex-row justify-center bg-brancoBX py-8">
             <header className="m-16">
                 <h1 className="text-verdeBX text-6xl mb-4">Etapas</h1>
                 <h2 className={`${poppins.className} text-black text-thin`}>Estude ao rever os temas, desafios e resoluções já apresentadas nesta edição do BXCOMP!</h2>
@@ -79,7 +79,7 @@ export default function Etapas() {
                     />
                 </figure>
             </header>
-            <aside className="flex flex-col justify-center mx-auto w-fit md:w-full gap-4 my-4 md:mx-4">
+            <aside className="flex flex-col justify-center mx-auto w-fit md:w-full gap-4 my-4 md:px-4">
                 {etapas_data.etapas.map((etapa, index) => {
                     return (
                         <EtapaCard
