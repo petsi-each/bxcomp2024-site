@@ -47,11 +47,7 @@ export default function Equipes(){
             </section>
             
             {/* Onda laranja de baixo do circulo que apresenta equipe e membros da equipe */}
-            <div className="relative z-20 mb-8 -mt-16 pt-2 pb-6 sm:pb-4 drop-shadow-md bg-laranjaBX w-64 h-fit sm:w-80 sm:h-fit rounded-tl-[84px] rounded-br-[84px] sm:rounded-tl-[96px] sm:rounded-br-[96px] flex flex-col items-center justify-center">
-                {/* <div className="z-30 text-center right-0 -top-4 px-6 rounded-l-full block absolute sm:hidden  bg-verdeBX text-white py-2 drop-shadow-md"> {totalPontos} {totalPontos == 1 ? " ponto " : "pontos" } </div>  */}
-                {/* //opção 2// <div className="z-30 text-center -bottom-8 px-6 rounded-l-full rounded-r-full block absolute sm:hidden  bg-verdeBX text-white py-2 drop-shadow-md"> {totalPontos} {totalPontos == 1 ? " ponto " : "pontos" } </div> */}
-                {/* //opção 3// <div className="z-30 text-center -top-6 left-0 px-6 rounded-l-full rounded-r-full block absolute sm:hidden  bg-verdeBX text-white py-2 drop-shadow-md">{totalPontos} {totalPontos == 1 ? " ponto " : "pontos" }</div> */}
-
+            <div className="relative z-20 mb-8 -mt-16 pt-2 pb-6 sm:pb-4 drop-shadow-md bg-laranjaBX h-52 w-80 rounded-tl-[96px] rounded-br-[96px] flex flex-col items-center justify-center">
                 <h3 className={`${lilita.className} text-center break-words w-48 sm:w-60 my-1 mt-3 sm:my-2 text-md tracking-wide drop-shadow-md text-2xl font-bold`}> {equipes_data.equipes[idSelecionado].nome} </h3>
                 <div className={`${poppins.className} text-center w-full max-w-[12rem] flex flex-col items-center justify-center text-xs text-white`}>
                     {equipes_data.equipes[idSelecionado].membros.map((membro, idx) => {
