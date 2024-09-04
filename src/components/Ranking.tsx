@@ -61,7 +61,10 @@ const PointBar: React.FC<PointBarProps> = ({ equipe, topScores }) => {
     
     const percentage = (totalPontos / topScores[0]) * 100
 
-    const size = percentage < 8 ? 'fit-content' :  percentage + '%'
+    
+    const barWidth = percentage < 8 ? 'fit-content' :  percentage + '%'
+    const remainingNameWidth = Math.max(0, 100 - percentage) + '%';
+    // const minNameWidth = 150; // pixel size
 
     return (
 
@@ -74,7 +77,7 @@ const PointBar: React.FC<PointBarProps> = ({ equipe, topScores }) => {
             </div>
 
             <div className="w-full px-8 mb-6 md:mb-0 flex items-center">
-            <div style={{ width: size }} className={`flex items-center`}>
+            <div style={{ width: barWidth }} className={`flex items-center`}>
 
                 <div className="flex flex-grow h-10 drop-shadow-lg bg-white rounded-full">
                     <div className="w-full drop-shadow-lg rounded-full m-2 h-6 bg-laranjaBX"></div>
@@ -90,7 +93,7 @@ const PointBar: React.FC<PointBarProps> = ({ equipe, topScores }) => {
                 {/* Descrição da equipe no desktop */}
                 
             </div>
-                <div className="px-4 max-w-10 min-w-10 md:max-w-28 md:min-w-28 hidden md:block">
+                <div style={{ width: remainingNameWidth }} className="min-w-24 lg:min-w-48 px-4 hidden md:block"> 
                     <h2 className="text-2xl w-full truncate">{equipe.nome}</h2>
                     <p className="text-md w-full">{totalPontos} pontos</p>
                 </div>

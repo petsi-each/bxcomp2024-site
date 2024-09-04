@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
 
-    <main>   
+    <main className="overflow-x-hidden">   
       <Hero />
       <Oqueeobxcomp />
       
@@ -53,7 +53,7 @@ export default function Home() {
           <PrimaryButton title="Ranking completo" onClick={() => location.replace("/equipes-e-ranking#ranking")} />
         </div>
       </section>
-
+      <ImageG className="hidden md:block absolute left-12 -bottom-[175px]" src="/home/bobesponja.png" alt="" width="240" height="26" /> 
     </main>
   );
 }

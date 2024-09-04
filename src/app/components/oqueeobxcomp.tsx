@@ -26,7 +26,7 @@ export default function oqueeobxcomp() {
                     O <span className="font-bold">BXComp</span> é o Campeonato de Programação para Calouros do Curso de Sistemas de Informação organizado pelo PET-SI. Seu objetivo é criar um ambiente divertido e desafiador, composto por atividades de resolução de problemas usando programação.
                 </p>
                 <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">                   
-                    <PrimaryButton title="Saiba mais" onClick={() => location.replace("/saibamais")} />
+                    <PrimaryButton title="Saiba mais" onClick={() => location.replace("/o-que-e-bxcomp")} />
                     <SecondaryButton title="Regulamento" onClick={() => location.replace("/regulamento")} />
                 </div>
             </article>

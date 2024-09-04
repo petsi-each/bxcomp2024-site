@@ -36,7 +36,7 @@ function Descricao() {
 				</p>
 
 				<p className={`${poppins.className} text-white py-4`}>
-					Neste ano, o BXCOMP está em sua 14ª edição com o <b>tema</b> de <b>Desenhos animados</b>!
+					Neste ano, o BXCOMP está em sua 14ª edição com o <b>tema</b> de <b>Desenhos e Animações</b>!
 				</p>
 			</div>
 

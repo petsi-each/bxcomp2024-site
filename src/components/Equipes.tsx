@@ -18,11 +18,11 @@ export default function Equipes(){
     const totalPontos = equipes_data.equipes[idSelecionado].pontos.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
     
     return (
-    <section className="pb-8 pt-16 sm:px-16 bg-brancoBX grid grid-cols-1 lg:grid-cols-2 justify-center padding">
+    <section className="pb-8 pt-16 sm:px-24 bg-brancoBX grid grid-cols-1 lg:grid-cols-2 justify-center padding">
     
     {/* parte que mostra os botões de todas as equipes */}
-        <section className="order-2 lg:order-1 my-4 md:my-2 px-4 py-2 flex flex-wrap items-center justify-center">
-            <section className="grid grid-cols-2 gap-2 sm:grid-flow-col sm:flex sm:h-fit sm:flex-wrap sm:justify-center">
+        <section className="order-2 lg:order-1 my-4 md:my-2 md:px-8 py-2 flex flex-wrap items-center justify-center">
+            <section className="gap-2 sm:grid-flow-col flex sm:h-fit flex-wrap items-center justify-center">
                 { equipes_data.equipes.map((equipe, idx) => {
                     return <BotaoEquipe key={idx} equipe={equipe} selecionado={idSelecionado==idx} onClick={()=> setIdSelecionado(idx)} />  
                 })
@@ -39,7 +39,7 @@ export default function Equipes(){
             {/* circulo, imagem da equipe selecionada e folhinha que indica pontos da equipe modo desktop */}
             <section className="flex justify-center relative mx-4 my-2 h-60 w-60 sm:h-auto sm:w-auto">
     
-                <div className="z-10 w-56 h-56 flex justify-center items-center relative border-laranjaBX border-8 p-2 rounded-full bg-white sm:w-72 sm:h-72 drop-shadow-lg"> 
+                <div className="z-10 w-56 p-8 h-56 flex justify-center items-center relative border-laranjaBX border-8 p-2 rounded-full bg-white sm:w-72 sm:h-72 drop-shadow-lg"> 
                 <ImageG className="z-0 w-fit h-fit" alt="" width={130} height={130} src={equipes_data.equipes[idSelecionado].iconPath} />
                 </div>
                 <div className="z-30 text-center -top-4 px-6 rounded-full block absolute sm:hidden  bg-verdeBX text-white py-2 drop-shadow-md"> {totalPontos} {totalPontos == 1 ? " ponto " : "pontos" } </div>
@@ -47,16 +47,12 @@ export default function Equipes(){
             </section>
             
             {/* Onda laranja de baixo do circulo que apresenta equipe e membros da equipe */}
-            <div className="relative z-20 mb-8 -mt-16 pt-2 pb-6 sm:pb-4 drop-shadow-md bg-laranjaBX w-64 h-fit sm:w-80 sm:h-fit rounded-tl-[84px] rounded-br-[84px] sm:rounded-tl-[96px] sm:rounded-br-[96px] flex flex-col items-center justify-center">
-                {/* <div className="z-30 text-center right-0 -top-4 px-6 rounded-l-full block absolute sm:hidden  bg-verdeBX text-white py-2 drop-shadow-md"> {totalPontos} {totalPontos == 1 ? " ponto " : "pontos" } </div>  */}
-                {/* //opção 2// <div className="z-30 text-center -bottom-8 px-6 rounded-l-full rounded-r-full block absolute sm:hidden  bg-verdeBX text-white py-2 drop-shadow-md"> {totalPontos} {totalPontos == 1 ? " ponto " : "pontos" } </div> */}
-                {/* //opção 3// <div className="z-30 text-center -top-6 left-0 px-6 rounded-l-full rounded-r-full block absolute sm:hidden  bg-verdeBX text-white py-2 drop-shadow-md">{totalPontos} {totalPontos == 1 ? " ponto " : "pontos" }</div> */}
-
-                <h3 className={`${lilita.className} text-center break-words w-48 sm:w-60 my-1 mt-3 sm:my-2 text-md tracking-wide drop-shadow-md text-2xl font-bold`}> {equipes_data.equipes[idSelecionado].nome} </h3>
+            <div className="relative z-20 mb-8 -mt-16 pt-2 pb-6 sm:pb-4 drop-shadow-md bg-laranjaBX w-full max-w-80 h-fit md:h-52 md:w-80 rounded-tl-[96px] rounded-br-[96px] flex flex-col items-center justify-center">
+                <h3 className={`${lilita.className} text-center px-2 break-words w-48 sm:w-60 my-1 mt-3 sm:my-2 text-md tracking-wide drop-shadow-md text-2xl font-bold`}> {equipes_data.equipes[idSelecionado].nome} </h3>
                 <div className={`${poppins.className} text-center w-full max-w-[12rem] flex flex-col items-center justify-center text-xs text-white`}>
                     {equipes_data.equipes[idSelecionado].membros.map((membro, idx) => {
                         return (
-                        <p key={idx} className="truncate w-full text-center">{membro}</p>); })}
+                        <p key={idx} className="truncate w-full px-4  text-center">{membro}</p>); })}
                 </div>
             </div>
         
