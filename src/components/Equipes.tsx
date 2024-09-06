@@ -50,7 +50,7 @@ export default function Equipes(){
             {/* circulo, imagem da equipe selecionada e folhinha que indica pontos da equipe modo desktop */}
             <section className="flex justify-center relative mx-4 my-2 h-60 w-60 sm:h-auto sm:w-auto">
     
-                <div className="z-10 w-56 p-8 h-56 flex justify-center items-center relative border-laranjaBX border-8 p-2 rounded-full bg-white sm:w-72 sm:h-72 drop-shadow-lg"> 
+                <div className="z-10 w-56 h-56 flex justify-center items-center relative border-laranjaBX border-8 p-2 rounded-full bg-white sm:w-72 sm:h-72 drop-shadow-lg"> 
                 <ImageG className="z-0 w-fit h-fit" alt="" width={130} height={130} src={equipes_data.equipes[idSelecionado].iconPath} />
                 </div>
                 <div className="z-30 text-center -top-4 px-6 rounded-full block absolute sm:hidden  bg-verdeBX text-white py-2 drop-shadow-md"> {totalPontos} {totalPontos == 1 ? " ponto " : "pontos" } </div>
