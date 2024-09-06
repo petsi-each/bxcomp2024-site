@@ -17,6 +17,13 @@ export default function Equipes(){
     const [idSelecionado, setIdSelecionado] = useState(0)
     const totalPontos = equipes_data.equipes[idSelecionado].pontos.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
     
+    const scrolltodisplayer = () => {
+        const displayer = document.getElementById('display');
+        if (displayer && window.innerWidth < 768) {
+            displayer.scrollIntoView({behavior:'smooth', block: 'start',});
+        }
+    }
+    
     return (
     <section className="pb-8 pt-16 sm:px-24 bg-brancoBX grid grid-cols-1 lg:grid-cols-2 justify-center padding">
     
@@ -24,7 +31,11 @@ export default function Equipes(){
         <section className="order-2 lg:order-1 my-4 md:my-2 md:px-8 py-2 flex flex-wrap items-center justify-center">
             <section className="gap-2 sm:grid-flow-col flex sm:h-fit flex-wrap items-center justify-center">
                 { equipes_data.equipes.map((equipe, idx) => {
-                    return <BotaoEquipe key={idx} equipe={equipe} selecionado={idSelecionado==idx} onClick={()=> setIdSelecionado(idx)} />  
+                    return <BotaoEquipe 
+                            key={idx} 
+                            equipe={equipe} 
+                            selecionado={idSelecionado==idx} 
+                            onClick={()=> {setIdSelecionado(idx); scrolltodisplayer();}} />  
                 })
                 }
 
@@ -33,7 +44,7 @@ export default function Equipes(){
 
         <section className="order-1 lg:order-2 px-4 flex flex-col items-center justify-center">
             {/* titulo do componente e descrição da seção  */}       
-            <h2 className="text-verdeBX text-6xl"> Equipes </h2>
+            <h2 id="display" className="text-verdeBX text-6xl"> Equipes </h2>
             <p className= {`${poppins.className} p-4 text-sm text-center text-pretoBX`}> Conheça os competidores deste ano! </p>
         
             {/* circulo, imagem da equipe selecionada e folhinha que indica pontos da equipe modo desktop */}
