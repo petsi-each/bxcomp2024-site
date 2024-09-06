@@ -27,7 +27,7 @@ export default function Equipes(){
     return (
     <section className="pb-8 pt-16 sm:px-24 bg-brancoBX grid grid-cols-1 lg:grid-cols-2 justify-center padding">
     
-    {/* parte que mostra os botões de todas as equipes */}
+        {/* parte que mostra os botões de todas as equipes */}
         <section className="order-2 lg:order-1 my-4 md:my-2 py-2 md:px-8 lg:px-0 flex flex-wrap items-center justify-center">
             <section className="gap-2 sm:grid-flow-col flex sm:h-fit flex-wrap items-center justify-center">
                 { equipes_data.equipes.map((equipe, idx) => {
@@ -60,10 +60,10 @@ export default function Equipes(){
             {/* Onda laranja de baixo do circulo que apresenta equipe e membros da equipe */}
             <div className="relative z-20 mb-8 -mt-16 pt-2 pb-6 sm:pb-4 drop-shadow-md bg-laranjaBX w-full max-w-80 h-fit md:h-52 md:w-80 rounded-tl-[96px] rounded-br-[96px] flex flex-col items-center justify-center">
                 <h3 className={`${lilita.className} text-center px-2 break-words w-48 sm:w-60 my-1 mt-3 sm:my-2 text-md tracking-wide drop-shadow-md text-2xl font-bold`}> {equipes_data.equipes[idSelecionado].nome} </h3>
-                <div className={`${poppins.className} text-center w-full max-w-[12rem] flex flex-col items-center justify-center text-xs text-white`}>
+                <div className={`${poppins.className} text-center w-full max-w-[18rem] flex flex-col items-center justify-center text-sm text-white`}>
                     {equipes_data.equipes[idSelecionado].membros.map((membro, idx) => {
                         return (
-                        <p key={idx} className="truncate w-full px-4  text-center">{membro}</p>); })}
+                        <p key={idx} className="truncate w-full px-4 sm:px-0 text-center">{membro}</p>); })}
                 </div>
             </div>
         
