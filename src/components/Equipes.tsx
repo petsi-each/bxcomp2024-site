@@ -28,7 +28,7 @@ export default function Equipes(){
     <section className="pb-8 pt-16 sm:px-24 bg-brancoBX grid grid-cols-1 lg:grid-cols-2 justify-center padding">
     
     {/* parte que mostra os botões de todas as equipes */}
-        <section className="order-2 lg:order-1 my-4 md:my-2 md:px-8 py-2 flex flex-wrap items-center justify-center">
+        <section className="order-2 lg:order-1 my-4 md:my-2 py-2 md:px-8 lg:px-0 flex flex-wrap items-center justify-center">
             <section className="gap-2 sm:grid-flow-col flex sm:h-fit flex-wrap items-center justify-center">
                 { equipes_data.equipes.map((equipe, idx) => {
                     return <BotaoEquipe 
