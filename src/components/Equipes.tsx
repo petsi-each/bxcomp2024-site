@@ -6,7 +6,6 @@ import { Lilita_One } from 'next/font/google'
 import equipes_data from '@/data/landingpage.json'
 import BotaoEquipe from "./BotaoEquipe"
 import { useState } from "react"
-import { IoDocumentText } from "react-icons/io5"
 
 const poppins = Poppins({weight: "300", subsets: ['latin']})
 const lilita = Lilita_One({weight: "400", subsets: ['latin']})
