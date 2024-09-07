@@ -1,6 +1,6 @@
 'use client'
 
-import ImageG from "@/components/ImageG"
+import Image from 'next/image'
 import { Poppins } from 'next/font/google'
 import { Lilita_One } from 'next/font/google'
 import equipes_data from '@/data/landingpage.json'
@@ -51,7 +51,7 @@ export default function Equipes(){
             <section className="flex justify-center relative mx-4 my-2 h-60 w-60 sm:h-auto sm:w-auto">
     
                 <div className="z-10 w-56 p-8 h-56 flex justify-center items-center relative border-laranjaBX border-8 p-2 rounded-full bg-white sm:w-72 sm:h-72 drop-shadow-lg"> 
-                <ImageG className="z-0 w-fit h-fit" alt="" width={130} height={130} src={equipes_data.equipes[idSelecionado].iconPath} />
+                <Image className="z-0 w-fit h-fit" alt="" width={130} height={130} src={equipes_data.equipes[idSelecionado].iconPath} />
                 </div>
                 <div className="z-30 text-center -top-4 px-6 rounded-full block absolute sm:hidden  bg-verdeBX text-white py-2 drop-shadow-md"> {totalPontos} {totalPontos == 1 ? " ponto " : "pontos" } </div>
                 <div className=" hidden w-28 z-0 absolute sm:block bottom-20 -right-20 bg-verdeBX text-white sm:rounded-full pl-10 spr-2 py-2 drop-shadow-md"> {totalPontos} {totalPontos == 1 ? " ponto " : "pontos" } </div>

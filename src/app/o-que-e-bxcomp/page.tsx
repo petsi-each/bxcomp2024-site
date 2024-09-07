@@ -4,7 +4,7 @@ import { Poppins, Bubblegum_Sans } from 'next/font/google'
 import { ImLinkedin } from "react-icons/im";
 import PrimaryButton from '@/components/PrimaryButton';
 
-import ImageG from '@/components/ImageG';
+import Image from 'next/image';
 
 import organizadores from '../../data/organizadores.json';
 
@@ -57,7 +57,7 @@ function Descricao() {
 
 				<div className="order-1 flex justify-center items-center">
 					<div className='size-80 relative'>
-						<ImageG className="object-contain" src={'/o-que-e-bxcomp/tom-jerry.png'} alt={'Tom e Jerry'} fill={true} />
+						<Image className="object-contain" src={'/o-que-e-bxcomp/tom-jerry.png'} alt={'Tom e Jerry'} fill={true} />
 					</div>
 				</div>
 
@@ -71,7 +71,7 @@ function Descricao() {
 
 				<div className="order-4 flex justify-center items-center">
 					<div className='size-80 relative'>
-						<ImageG className="object-contain" src={'/o-que-e-bxcomp/phineas.png'} alt={'Phineas'} fill={true} />
+						<Image className="object-contain" src={'/o-que-e-bxcomp/phineas.png'} alt={'Phineas'} fill={true} />
 					</div>
 				</div>
 
@@ -84,7 +84,7 @@ function Descricao() {
 
 				<div className="order-5 flex justify-center items-center">
 					<div className='size-80 relative'>
-						<ImageG className="object-contain" src={'/o-que-e-bxcomp/padrinhos.png'} alt={'Padrinhos mágicos'} fill={true} />
+						<Image className="object-contain" src={'/o-que-e-bxcomp/padrinhos.png'} alt={'Padrinhos mágicos'} fill={true} />
 					</div>
 				</div>
 
@@ -100,7 +100,7 @@ function Descricao() {
 
 				<div className="order-8 flex justify-center items-center">
 					<div className='size-80 relative'>
-						<ImageG className="object-contain" src={'/o-que-e-bxcomp/meninas-superpoderosas.png'} alt={'Meninas Superpoderoas'} fill={true} />
+						<Image className="object-contain" src={'/o-que-e-bxcomp/meninas-superpoderosas.png'} alt={'Meninas Superpoderoas'} fill={true} />
 					</div>
 				</div>
 			</div>
@@ -124,9 +124,9 @@ const OrganizadorCard: React.FC<OrganizadorCardProps> = ({ organizador }) => {
 	return (
 		<article className='w-full flex flex-col items-center justify-center gap-y-8 p-8'>
 			<figure className="size-52 rounded-full outline outline-offset-8 outline-4 outline-verdeBX relative ">
-				<ImageG className="object-cover rounded-full" src={organizador.imgSrc} alt={""} fill={true} />
+				<Image className="object-cover rounded-full" src={organizador.imgSrc} alt={""} fill={true} />
 				{organizador.dev && (
-					<ImageG
+					<Image
 						className="absolute right-6 bottom-4 transform translate-x-1/2 translate-y-1/2"
 						src={'/o-que-e-bxcomp/seloDev.png'}
 						alt={'Desenvolvedor'}

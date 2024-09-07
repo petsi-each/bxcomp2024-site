@@ -1,6 +1,6 @@
 import React from 'react';
 import { BiLogoFacebookSquare, BiSolidEnvelope, BiLogoLinkedinSquare, BiLogoInstagramAlt } from 'react-icons/bi';
-import ImageG from './ImageG';
+import Image from 'next/image'; 
 import { IconType } from 'react-icons';
 
 interface SocialButtonProps {
@@ -42,7 +42,7 @@ const SocialButton: React.FC<SocialButtonProps> = ({ href, icon: Icon, size, mdS
   
         {/* Logo PET e BX Desktop */}
         <div className="flex relative items-center justify-center w-24 h-8 m-2 order-first md:h-14 md:w-44 md:m-10 md:mb-6">
-          <ImageG src="/logoCoruja.png" alt="Logo PET" fill={true} />
+          <Image src="/logoCoruja.png" alt="Logo PET" fill={true} />
         </div>
         
         {/* Botões interativos */}
