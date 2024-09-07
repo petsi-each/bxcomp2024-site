@@ -11,7 +11,7 @@ const poppins = Poppins({
 });
 
 
-export default function oqueeobxcomp() {
+export default function Oqueeobxcomp() {
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden py-72 md:py-60">
             {/* Background Image Container */}
