@@ -31,17 +31,17 @@ const CoroaImage: React.FC<CoroaImageProps> = ({ scorePosition }) => {
     if (scorePosition == -1) return null;    
     if (scorePosition == 0) return (
         <div className="absolute -mt-40">
-            <ImageG src="/coroaReiGelado.png" alt="" width={88} height={132} />
+            <ImageG src="/home/coroaReiGelado.png" alt="" width={88} height={132} />
         </div>
     )
     if (scorePosition == 1) return(
         <div className="absolute -mt-24 -ml-12">
-            <ImageG src="/coroaPrata.png" alt="" width={85} height={65} />
+            <ImageG src="/home/coroaPrata.png" alt="" width={85} height={65} />
         </div>
     )
     if (scorePosition == 2) return(
         <div className="absolute -mt-24 -ml-12">
-            <ImageG src="/coroaBronze.png" alt="" width={85} height={65} />
+            <ImageG src="/home/coroaBronze.png" alt="" width={85} height={65} />
         </div>
     )
         
