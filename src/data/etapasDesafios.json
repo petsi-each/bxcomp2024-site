@@ -9,42 +9,42 @@
             {
                 "desafio": "Desejo não ser idiota - 2 pontos",
                 "idx": 0,
-                "enunciado": "Etapa 0/Enunciados/Desejo nao ser idiota.pdf",
-                "resolucao": "Etapa 0/Resolucao/desejo nao ser idiota.c",
-                "entrada": "Etapa 0/Entradas/desejo nao ser idiota.in",
-                "saida": "Etapa 0/saidas/desejo nao ser idiota.out"
+                "enunciado": "EtapasDesafios/Etapa0/Enunciados/Desejo nao ser idiota.pdf",
+                "resolucao": "EtapasDesafios/Etapa0/Resolucao/desejo nao ser idiota.c",
+                "entrada": "EtapasDesafios/Etapa0/Entradas/desejo nao ser idiota.in",
+                "saida": "EtapasDesafios/Etapa0/saidas/desejo nao ser idiota.out"
             },
             {
                 "desafio": "Os 4 elementos - 4 pontos",
                 "idx": 1,
-                "enunciado": "Etapa 0/Enunciados/Os 4 elementos.pdf",
-                "resolucao": "Etapa 0/Resolucao/os 4 elementos.c",
-                "entrada": "Etapa 0/Entradas/os 4 elementos.in",
-                "saida": "Etapa 0/saidas/os 4 elementos.out"
+                "enunciado": "EtapasDesafios/Etapa0/Enunciados/Os 4 elementos.pdf",
+                "resolucao": "EtapasDesafios/Etapa0/Resolucao/os 4 elementos.c",
+                "entrada": "EtapasDesafios/Etapa0/Entradas/os 4 elementos.in",
+                "saida": "EtapasDesafios/Etapa0/saidas/os 4 elementos.out"
             },
             {
                 "desafio": "ROUBO DO HAMBURGUER DE SIRI - 3 pontos",
                 "idx": 2,
-                "enunciado": "Etapa 0/Enunciados/ROUBO DO HAMBURGUER DE SIRI.pdf",
-                "resolucao": "Etapa 0/Resolucao/roubo do hamburguer de siri.c",
-                "entrada": "Etapa 0/Entradas/roubo do hamburguer de siri.in",
-                "saida": "Etapa 0/saidas/roubo do hamburguer de siri.out"
+                "enunciado": "EtapasDesafios/Etapa0/Enunciados/ROUBO DO HAMBURGUER DE SIRI.pdf",
+                "resolucao": "EtapasDesafios/Etapa0/Resolucao/roubo do hamburguer de siri.c",
+                "entrada": "EtapasDesafios/Etapa0/Entradas/roubo do hamburguer de siri.in",
+                "saida": "EtapasDesafios/Etapa0/saidas/roubo do hamburguer de siri.out"
             },
             {
                 "desafio": "A porta espiritual - 3 pontos",
                 "idx": 3,
-                "enunciado": "Etapa 0/Enunciados/A Porta Espiritual.pdf",
-                "resolucao": "Etapa 0/Resolucao/a porta espiritual.c",
-                "entrada": "Etapa 0/Entradas/a porta espiritual.in",
-                "saida": "Etapa 0/saidas/a porta espiritual.out"
+                "enunciado": "EtapasDesafios/Etapa0/Enunciados/A Porta Espiritual.pdf",
+                "resolucao": "EtapasDesafios/Etapa0/Resolucao/a porta espiritual.c",
+                "entrada": "EtapasDesafios/Etapa0/Entradas/a porta espiritual.in",
+                "saida": "EtapasDesafios/Etapa0/saidas/a porta espiritual.out"
             },
             {
                 "desafio": "Os robôs de Jimmy - 6 pontos",
                 "idx": 4,
-                "enunciado": "Etapa 0/Enunciados/Os robos de Jimmy.pdf",
-                "resolucao": "Etapa 0/Resolucao/os robos de jimmy.c",
-                "entrada": "Etapa 0/Entradas/os robos de jimmy.in",
-                "saida": "Etapa 0/saidas/os robos de jimmy.out"
+                "enunciado": "EtapasDesafios/Etapa0/Enunciados/Os robos de Jimmy.pdf",
+                "resolucao": "EtapasDesafios/Etapa0/Resolucao/os robos de jimmy.c",
+                "entrada": "EtapasDesafios/Etapa0/Entradas/os robos de jimmy.in",
+                "saida": "EtapasDesafios/Etapa0/saidas/os robos de jimmy.out"
             }  
         ]
     },
