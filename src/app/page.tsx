@@ -6,7 +6,8 @@ import Etapas from "./components/Etapas";
 import Equipes from "../components/Equipes";
 import Ranking from "@/components/Ranking";
 import PrimaryButton from "@/components/PrimaryButton";
-import data from '../data/landingpage.json';
+import equipesData from '../data/equipes.json';
+import etapasData from '../data/etapas.json';
 import ImageG from "@/components/ImageG";
 
 export default function Home() {
@@ -27,12 +28,12 @@ export default function Home() {
             height="99"
           />
         </figure>
-        <Etapas />
+          <Etapas etapas={etapasData}/>
       </section>
 
       {/* Equipes section using equipes component*/}
       <section>
-      <Equipes />
+      <Equipes equipes={equipesData}/>
 
         <figure className="relative w-full bg-pretoBX pointer-events-none">
           <ImageG className="hidden md:block absolute right-12 -bottom-8" src="/home/gravityfalls.png" alt="" width="281" height="312" /> 
@@ -48,7 +49,7 @@ export default function Home() {
       {/* Ranking section using ranking component */}
       <section className="flex flex-col my-12 lg:px-16 gap-12">
         <h1 className="text-7xl px-8">Ranking</h1>
-        <Ranking equipes={data.equipes} displayQuantity={5} />
+        <Ranking equipes={equipesData} displayQuantity={5} />
         <div className="flex justify-center w-full">
           <PrimaryButton title="Ranking completo" onClick={() => location.replace("/equipes-e-ranking#ranking")} />
         </div>

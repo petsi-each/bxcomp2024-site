@@ -4,7 +4,6 @@
         "estado": true,
         "tema": "Nickelodeon",
         "icon": "/EtapasDesafios/E0-Nickelodeon.png",
-        "altIcon": "Bob Esponja e Patrick Estrela",
         "desafios": [
             {
                 "desafio": "Desejo não ser idiota - 2 pontos",
@@ -53,7 +52,6 @@
         "estado": false,
         "tema": "DreamWorks",
         "icon": "/EtapasDesafios/E1-DreamWorks.png",
-        "altIcon": "Shrek",
         "desafios": [
             {
                 "desafio": "Fuga dos Linux - 2 pontos",
@@ -102,7 +100,6 @@
         "estado": false,
         "tema": "Warner Bros",
         "icon": "/EtapasDesafios/E2-WarnerBros.png",
-        "altIcon": "Frajola salgando Piu-Piu",
         "desafios": [
             {
                 "desafio": "Tá com você Puro Osso - 6 pontos",
@@ -151,7 +148,6 @@
         "estado": false,
         "tema": "Disney",
         "icon": "/EtapasDesafios/E3-Disney.png",
-        "altIcon": "Mike Wazowski",
         "desafios": [
             {
                 "desafio": "MANHÊ!!! - 4 pontos",
@@ -200,7 +196,6 @@
         "estado": false,
         "tema": "Estúdio PET",
         "icon": "/EtapasDesafios/E4-EstudioPET.png",
-        "altIcon": "Coruja-logo PET-SI",
         "desafios": [
             {
                 "desafio": "O Frango tá voando - 4 pontos",

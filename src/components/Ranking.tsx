@@ -1,11 +1,5 @@
 import ImageG from "./ImageG"
-
-interface Equipe {
-    nome: string,
-    membros: string[],
-    pontos: number[],
-    iconPath: string
-}
+import { Equipe } from "./Equipes"
 
 interface RankingProps {
     equipes: Equipe[],
