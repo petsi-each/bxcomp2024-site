@@ -7,7 +7,6 @@
         "desafios": [
             {
                 "desafio": "Desejo não ser idiota - 2 pontos",
-                "idx": 0,
                 "enunciado": "Etapa 0/Enunciados/Desejo nao ser idiota.pdf",
                 "resolucao": "Etapa 0/Resolucao/desejo nao ser idiota.c",
                 "entrada": "Etapa 0/Entradas/desejo nao ser idiota.in",
@@ -15,7 +14,6 @@
             },
             {
                 "desafio": "Os 4 elementos - 4 pontos",
-                "idx": 1,
                 "enunciado": "Etapa 0/Enunciados/Os 4 elementos.pdf",
                 "resolucao": "Etapa 0/Resolucao/os 4 elementos.c",
                 "entrada": "Etapa 0/Entradas/os 4 elementos.in",
@@ -23,7 +21,6 @@
             },
             {
                 "desafio": "ROUBO DO HAMBURGUER DE SIRI - 3 pontos",
-                "idx": 2,
                 "enunciado": "Etapa 0/Enunciados/ROUBO DO HAMBURGUER DE SIRI.pdf",
                 "resolucao": "Etapa 0/Resolucao/roubo do hamburguer de siri.c",
                 "entrada": "Etapa 0/Entradas/roubo do hamburguer de siri.in",
@@ -31,7 +28,6 @@
             },
             {
                 "desafio": "A porta espiritual - 3 pontos",
-                "idx": 3,
                 "enunciado": "Etapa 0/Enunciados/A Porta Espiritual.pdf",
                 "resolucao": "Etapa 0/Resolucao/a porta espiritual.c",
                 "entrada": "Etapa 0/Entradas/a porta espiritual.in",
@@ -39,7 +35,6 @@
             },
             {
                 "desafio": "Os robôs de Jimmy - 6 pontos",
-                "idx": 4,
                 "enunciado": "Etapa 0/Enunciados/Os robos de Jimmy.pdf",
                 "resolucao": "Etapa 0/Resolucao/os robos de jimmy.c",
                 "entrada": "Etapa 0/Entradas/os robos de jimmy.in",
@@ -55,7 +50,6 @@
         "desafios": [
             {
                 "desafio": "Fuga dos Linux - 2 pontos",
-                "idx": 0,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "entrada": "<ENTRADA>",
@@ -63,7 +57,6 @@
             },
             {
                 "desafio": "Perdidinhos no pagode - 3 pontos",
-                "idx": 1,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "entrada": "<ENTRADA>",
@@ -71,7 +64,6 @@
             },
             {
                 "desafio": "Equilíbrio das Galinhas - 6 pontos",
-                "idx": 2,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "entrada": "<ENTRADA>",
@@ -79,7 +71,6 @@
             },
             {
                 "desafio": "Rinha de Dragões - 2 pontos",
-                "idx": 3,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "entrada": "<ENTRADA>",
@@ -87,7 +78,6 @@
             },
             {
                 "desafio": "FAZ O URRO - 4 pontos",
-                "idx": 4,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "entrada": "<ENTRADA>",
@@ -103,7 +93,6 @@
         "desafios": [
             {
                 "desafio": "Tá com você Puro Osso - 6 pontos",
-                "idx": 0,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "entrada": "<ENTRADA>",
@@ -111,7 +100,6 @@
             },
             {
                 "desafio": "a - 2 pontos",
-                "idx": 1,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "entrada": "<ENTRADA>",
@@ -119,7 +107,6 @@
             },
             {
                 "desafio": "Explodindo planetas - 2 pontos",
-                "idx": 2,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "entrada": "<ENTRADA>",
@@ -127,7 +114,6 @@
             },
             {
                 "desafio": "Açúcar, tempero e ...? - 4 pontos",
-                "idx": 3,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "entrada": "<ENTRADA>",
@@ -135,7 +121,6 @@
             },
             {
                 "desafio": "1234554321 - 3 pontos",
-                "idx": 4,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "entrada": "<ENTRADA>",
@@ -151,7 +136,6 @@
         "desafios": [
             {
                 "desafio": "MANHÊ!!! - 4 pontos",
-                "idx": 0,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "entrada": "<ENTRADA>",
@@ -159,7 +143,6 @@
             },
             {
                 "desafio": "Tá no taPETe! - 3 pontos",
-                "idx": 1,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "entrada": "<ENTRADA>",
@@ -167,7 +150,6 @@
             },
             {
                 "desafio": "Mente PETurbada - 4 pontos",
-                "idx": 2,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "entrada": "<ENTRADA>",
@@ -175,7 +157,6 @@
             },
             {
                 "desafio": "Estudo Estranho - 2 pontos",
-                "idx": 3,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "entrada": "<ENTRADA>",
@@ -183,7 +164,6 @@
             },
             {
                 "desafio": "Livro de Feitiços da Star - 3 pontos",
-                "idx": 4,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "entrada": "<ENTRADA>",
@@ -199,7 +179,6 @@
         "desafios": [
             {
                 "desafio": "O Frango tá voando - 4 pontos",
-                "idx": 0,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "entrada": "<ENTRADA>",
@@ -207,7 +186,6 @@
             },
             {
                 "desafio": "Castelo de Diamantes - 3 pontos",
-                "idx": 1,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "entrada": "<ENTRADA>",
@@ -215,7 +193,6 @@
             },
             {
                 "desafio": "Não quero ser um desafio do BxComp - 4 pontos",
-                "idx": 2,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "entrada": "<ENTRADA>",
@@ -223,7 +200,6 @@
             },
             {
                 "desafio": "Entraram na mente do Ciborgue - 2 pontos",
-                "idx": 3,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "entrada": "<ENTRADA>",
@@ -231,7 +207,6 @@
             },
             {
                 "desafio": "Nome Sujo! - 3 pontos",
-                "idx": 4,
                 "enunciado": "<ENUNCIADO>",
                 "resolucao": "<RESOLUÇÃO>",
                 "entrada": "<ENTRADA>",
