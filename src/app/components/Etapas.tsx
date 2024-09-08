@@ -83,7 +83,7 @@ const Etapas: React.FC<EtapasProps> = ({ etapas }) =>{
             <aside className="flex flex-col justify-center mx-auto w-fit md:w-full gap-4 my-4 md:px-4">
                 {etapas.map(etapa => {
                     return (
-                        <EtapaCard {...etapa}/>
+                        <EtapaCard key={etapa.etapaIndice} {...etapa}/>
                     )
                 })}
             </aside>
