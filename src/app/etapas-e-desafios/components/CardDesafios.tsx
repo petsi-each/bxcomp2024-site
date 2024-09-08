@@ -22,7 +22,7 @@ export default function CardDesafios(props: desafioList) {
     return (
         <div className="grid grid-cols-1 gap-y-5">
             {
-                props.desafios.map((desafio, idx) => (
+                props.desafios.map(desafio => (
                     <article key={desafio.idx} className="px-16 py-2 max-w-[600px] min-h-32 h-fit bg-[#FF9C46] rounded-full text-center text-pretoBX hover:transition-all hover:duration-150 hover:ring-8 hover:ring-azulBX hover:ring-opacity-20">
                         <h3 className="text-2xl">{desafio.desafio}</h3>
                         <p className={`flex items-center flex-col ${poppins.className} text-base underline`}>
