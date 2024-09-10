@@ -54,8 +54,8 @@ Todas as informações relativas aos times estão armazenadas em arquivos JSON e
 
     Além disso, cada desafio referencia o ```path``` para quatro arquivos: enunciado, resolução, entrada e saida. Esses arquivos devem ser armazenados em ```public/etapas/<n da etapa>/<nome da pasta do desafio>``` (criar pastas para cada Enunciado, Entradas, Resolucao, Saidas).
 
-    :alert: O NOME DA PASTA DO DESAFIO DEVE ESTAR EM KABEL CASE (ou seja, letras minusculas com - no lugar do espaco, sem caracteres especiais.)
-    
+    :alert: O NOME DA PASTA DO DESAFIO DEVE ESTAR EM KABEB CASE (ou seja, letras minusculas com - no lugar do espaco, sem caracteres especiais.)
+
     O arquivo de entrada deve ser ```public/etapas/<n da etapa>/<nome da pasta do desafio>/entrada.in```
     O arquivo de saida deve ser ```public/etapas/<n da etapa>/<nome da pasta do desafio>/saida.out```
     O arquivo de resolucao deve ser ```public/etapas/<n da etapa>/<nome da pasta do desafio>/resolucao.c```
