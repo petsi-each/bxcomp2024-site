@@ -4,35 +4,35 @@
       "numero": 0,
       "tema": "Nickelodeon",
       "visivel": true,
-      "imagem": "/EtapasDesafios/E0-Nickelodeon.png",
+      "imagem": "/etapas/E0-Nickelodeon.png",
       "link": "/etapas-e-desafios"
     },
     {
       "numero": 1,
       "tema": "DreamWorks",
       "visivel": false,
-      "imagem": "/EtapasDesafios/E1-DreamWorks.png",
+      "imagem": "/etapas/E1-DreamWorks.png",
       "link": "/etapas-e-desafios"
     },
     {
       "numero": 2,
       "tema": "Warner Bros.",
       "visivel": false,
-      "imagem": "/EtapasDesafios/E2-WarnerBros.png",
+      "imagem": "/etapas/E2-WarnerBros.png",
       "link": "/etapas-e-desafios"
     },
     {
       "numero": 3,
       "tema": "Disney",
       "visivel": false,
-      "imagem": "/EtapasDesafios/E3-Disney.png",
+      "imagem": "/etapas/E3-Disney.png",
       "link": "/etapas-e-desafios"
     },
     {
       "numero": 4,
       "tema": "Estudios PET",
       "visivel": false,
-      "imagem": "/EtapasDesafios/E4-EstudioPET.png",
+      "imagem": "/etapas/E4-EstudioPET.png",
       "link": "/etapas-e-desafios"
     }
   ],
@@ -46,7 +46,7 @@
         "Gabriel Trigueiro de Melo"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/anonimious.png"
+      "iconPath": "/equipes/anonimious.png"
     },
     {
       "nome": "Caxaxeiros Viajantes",
@@ -57,7 +57,7 @@
         "Davi Oliveira Medina"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/Caxaxeiros Viajantes.png"
+      "iconPath": "/equipes/caxaxeiros-viajantes.png"
     },
     {
       "nome": "Os pipoqueiros",
@@ -68,7 +68,7 @@
         "Guilherme Samuel Lemos Segura"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/Os Pipoqueiros.png"
+      "iconPath": "/equipes/os-pipoqueiros.png"
     },
     {
       "nome": "cptEmos",
@@ -79,7 +79,7 @@
         "Felipe Ferreira de Souza"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/cptEmos.png"
+      "iconPath": "/equipes/cptemos.png"
     },
     {
       "nome": "Flezus",
@@ -90,7 +90,7 @@
         "Gustavo dos Santos Silva"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/Flezus.png"
+      "iconPath": "/equipes/flezus.png"
     },
     {
       "nome": "GELADEIRA ELECTROLUX DFX41 FROST FREE COM TURBO",
@@ -101,7 +101,7 @@
         "Victor Yodono"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/GELADEIRA ELECTROLUX DFX41 FROST FREE COM TURBO.png"
+      "iconPath": "/equipes/geladeira.png"
     },
     {
       "nome": "BRAT",
@@ -112,7 +112,7 @@
         "Gilberto Serafim Dias de Araújo"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/BRAT.png"
+      "iconPath": "/equipes/brat.png"
     },
     {
       "nome": "Patolinux: Quac-Quac",
@@ -123,7 +123,7 @@
         "Rayssa Buarque Malheiros"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/patolinux _cuack-cuack.png"
+      "iconPath": "/equipes/patolinux.png"
     },
     {
       "nome": "Pandeirinho",
@@ -134,7 +134,7 @@
         "Luísa Karen Yanai"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/Pandeirinho.png"
+      "iconPath": "/equipes/pandeirinho.png"
     },
     {
       "nome": "Português Desestruturado",
@@ -144,7 +144,7 @@
         "João Gabriel Bruni Santeiro"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/português desestruturado.png"
+      "iconPath": "/equipes/portugues-desestruturado.png"
     },
     {
       "nome": "Cobras Caubóis Tomadoras de Suco (CCTS)",
@@ -155,7 +155,7 @@
         "Gustavo Santos El Dib"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/Cobras Caubóis Tomadoras de Suco (CCTS).png"
+      "iconPath": "/equipes/cobras-caubois-tomadoras-de-suco.png"
     },
     {
       "nome": "CompilouRodou",
@@ -166,7 +166,7 @@
         "Renan Biruel Uema"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/Compilou Rodou.png"
+      "iconPath": "/equipes/compilou-rodou.png"
     },
     {
       "nome": "medo do panelas",
@@ -177,7 +177,7 @@
         "Gabriel Castellar"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/medo do panelas.png"
+      "iconPath": "/equipes/medo-do-panelas.png"
     },
     {
       "nome": "O ROCK NÃO É BRINCADEIRA",
@@ -188,7 +188,7 @@
         "Alisson Santos Silva"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/O ROCK NÃO É BRINCADEIRA.png"
+      "iconPath": "/equipes/o-rock-nao-e-brincadeira.png"
     },
     {
       "nome": "Trivial",
@@ -199,7 +199,7 @@
         "João Henrique Kuroki Cominato"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/Trivial.png"
+      "iconPath": "/equipes/trivial.png"
     },
     {
       "nome": "moondevs",
@@ -209,7 +209,7 @@
         "Thales Iamamura"
       ],
       "pontos": [0,0,0],
-      "iconPath": "/equipe_icons/moondevs.png"
+      "iconPath": "/equipes/moondevs.png"
     }
   ]
 }

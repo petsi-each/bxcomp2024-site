@@ -1,4 +1,3 @@
-'use client'
 import ImageG from "@/components/ImageG";
 
 export default function Hero() {

@@ -1,7 +1,7 @@
 'use client'
 
-import Hero from "./components/hero";
-import Oqueeobxcomp from "./components/oqueeobxcomp";
+import Hero from "./components/Hero";
+import Oqueeobxcomp from "./components/Oqueeobxcomp";
 import Etapas from "./components/Etapas";
 import Equipes from "../components/Equipes";
 import Ranking from "@/components/Ranking";
