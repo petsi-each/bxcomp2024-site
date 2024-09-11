@@ -4,11 +4,12 @@
 
 <h1> Site do BXCOMP 2024 </h1>
 
-[![GitHub stars](https://img.shields.io/github/stars/petsi-each/bxcomp2024-site?color=yellow)]()
-[![GitHub forks](https://img.shields.io/github/forks/petsi-each/bxcomp2024-site?color=orange)]()
+[![Website](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)](https://bxcomp.petsieach.com.br/)
+[![PET-SI](https://img.shields.io/badge/Instagram-PET%20SI-darkred)](https://www.instagram.com/petsieach/)
 
 
-O **BXComp** é o tradicional Campeonato de Programação para Calouros do Curso de Sistemas de Informação da EACH-USP organizado pelo **PET-SI** (Programa de Educação Tutorial). Em 2024, o BXCOMP está em sua 14ª edição com o tema de Desenhos e Animações!
+O **BXComp** é o tradicional Campeonato de Programação para Calouros do Curso de Sistemas de Informação da EACH-USP organizado pelo **PET-SI** (Programa de Educação Tutorial). Em 2024, o BXCOMP está em sua 14ª edição com o tema de **Desenhos e Animações!**
+
 
 
 </div>
@@ -44,7 +45,7 @@ O **BXComp** é o tradicional Campeonato de Programação para Calouros do Curso
 
 <div align="center">
     
-[![View on Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/file/Bn1XePEk91ujLn8tDD1Am1?embed_host=share&kind=file&node-id=962-78&t=luFv4tCfbkNMMZ8i-1&viewer=1)
+[![Veja no Figma](https://img.shields.io/badge/Figma-Ver%20design-darkred?logo=figma&logoColor=f5f5f5)](https://www.figma.com/file/Bn1XePEk91ujLn8tDD1Am1?embed_host=share&kind=file&node-id=962-78&t=luFv4tCfbkNMMZ8i-1&viewer=1)
 
 </div>
 
@@ -54,63 +55,39 @@ O **BXComp** é o tradicional Campeonato de Programação para Calouros do Curso
 
 ### 📦 Instalação
 
-### ⚙️ Rodar
+Requisitos: 
+- Node.js 18.18 ou versões mais atuais
+- Git
 
-### 📓 Gerenciar informações
+```bash
+git clone git@github.com:petsi-each/bxcomp2024-site.git
+cd bxcomp2024-site
+npm i
+```
 
+<br/>
+
+### ⚙️ Execução
+
+- Modo de producao:
+```
+npm run build
+```
+
+
+- Modo de desenvolvimento:
+```
+npm run dev
+```
+O projeto estará rodando localmente no link que aparece no terminal. Geralmente, será http://localhost:3000
 
 <br/><br/>
 
-## 🫂 Contribuidores
+### 📓 Gerenciar informações
 
-<a href = "https://github.com/petsi-each/bxcomp2024-site/contributors">
-  <img src = "https://contrib.rocks/image?repo=petsi-each/bxcomp2024-site"/>
-</a>
+Todas as informações dinâmicas do site estão armazenadas em arquivos JSON em ```src/data```. As atualizações nos arquivos JSON se propagam para o resto do site.
 
-
-<!--
-
-# Site do BXCOMP 2024
-
-## Como rodar
-
-1) Tenha as seguintes dependências:
-
-* Node.js
-* npm
-* Next.js
-* git (instalado e configurado com uma conta com acesso à organização do PET)
-
-2) Clone o repositório
-    ```
-    git clone git@github.com:petsi-each/bxcomp2024.git
-    ```
-
-3) Vá para a raíz do repositório
-
-    ```
-    cd bxcomp2024/
-    ```
-
-4) Instale as dependências do projeto (só é necessário uma vez ou quando adicionarem um pacote novo)
-
-    ```
-    npm i
-    ```
-
-5) Rode o projeto next
-
-    ```
-    npm run dev
-    ```
-
-6) Entre no link mencionado no output, geralmente será http://localhost:3000/
-
-## Como gerenciar e atualizar informações
-
-Todas as informações relativas aos times estão armazenadas em arquivos JSON em ```src/data``` que, por sua vez, são consumidos pelos respectivos componentes. Em outras palavras, atualizaões no JSON se propagam para o resto do site.
-
-### Informações armazenadas
+#### ℹ️ Armazenamento de informações
 
 * **Etapas**
 
@@ -124,15 +101,19 @@ Todas as informações relativas aos times estão armazenadas em arquivos JSON e
 
     Em ```etapasDesafios.json```, há um array que determina quais desafios pertencem a qual etapa e as suas informações.
 
-    Além disso, cada desafio referencia o ```path``` para três arquivos: enunciado, resolução e casos de testes. Esses arquivos devem ser armazenados em ```public/{etapa}/{desafio}``` (criar pastas para cada etapa e desafio).
+    Além disso, cada desafio referencia o ```path``` para três arquivos: enunciado, resolução e casos de testes. Esses arquivos devem ser referenciados e armazenados em ```public/etapas/{n da etapa}/{pasta com nome do desafio}``` como "entrada.in", "resolucao.c", "enunciado.pdf" e "saida.out"
+
+    > ⚠️ A pasta com o nome do desafio deve seguir o padrão kebab-case (sem caracteres especiais, com letras minúsculas e usando "-" no lugar de espaços).
+
+
 
 * **Regulamento**
 
     Por fim, o regulamento e o suas última atualizações são armazenadas em ```regulamento.json```.
 
-### Durante o campeonato
+<br/>
 
-Entre as etapas, as seguintes atualizações são necessárias:
+#### 🥇 Durante o campeonato
 
 * **Liberar a etapa:**
 
@@ -149,4 +130,13 @@ Entre as etapas, as seguintes atualizações são necessárias:
     **Ex.:** Essa equipe fez 1 ponto na etapa 0, 6 na etapa 1 e 2 na etapa 2.
   
     ![image](https://github.com/user-attachments/assets/3defdba2-b556-4635-b118-41c5c13ee43d)
--->
+
+
+<br/><br/>
+
+## 🫂 Contribuidores
+
+<a href = "https://github.com/petsi-each/bxcomp2024-site/contributors">
+  <img src = "https://contrib.rocks/image?repo=petsi-each/bxcomp2024-site"/>
+</a>
+
