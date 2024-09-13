@@ -71,7 +71,7 @@ Entre as etapas, as seguintes atualizações são necessárias:
 
 * **Liberar a etapa:**
 
-    Em ```etapa.json```, alterar o campo ```estado``` da etapa concluída de ```false``` para ```true```.
+    Em ```etapa.json```, alterar o campo ```estaLiberada``` da etapa concluída de ```false``` para ```true```.
 
 * **Contabilizar a pontuação:**
 
