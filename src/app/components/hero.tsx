@@ -6,7 +6,7 @@ export default function Hero() {
         <section className="flex -mt-24 items-center justify-center relative h-screen">
 
                 <ImageG 
-                    className="" 
+                    className="object-scale-down" 
                     src="/logoBxcomp.svg" 
                     alt="Logo do BXCOMP"
                     fill={true}
