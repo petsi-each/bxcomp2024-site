@@ -36,21 +36,21 @@
 
 ## Como gerenciar e atualizar informações
 
-Todas as informações relativas aos times estão armazenadas em arquivos JSON em ```src/data``` que, por sua vez, são consumidos pelos respectivos componentes. Em outras palavras, atualizaões no JSON se propagam para o resto do site.
+Todas as informações relativas aos times estão armazenadas em arquivos JSON em ```src/data``` que, por sua vez, são consumidos pelos respectivos componentes. Em outras palavras, atualizações no JSON se propagam para o resto do site.
 
 ### Informações armazenadas
 
 * **Etapas**
 
-    As etapas são armazenadas em um vetor chamado ```etapas``` em ```landingpage.json```.
+    As etapas são armazenadas em ```etapas.json```.
 
 * **Equipes**
 
-    Também em uma array homônimo em ```landingpage.json```.
+    As equipes são armazenadas em ```equipes.json```.
 
 * **Desafios**
 
-    Em ```etapasDesafios.json```, há um array que determina quais desafios pertencem a qual etapa e as suas informações.
+    Em ```etapas.json```, há um array que determina quais desafios pertencem a qual etapa e as suas informações.
 
     Além disso, cada desafio referencia o ```path``` para quatro arquivos: enunciado, resolução, entrada e saida. Esses arquivos devem ser armazenados em ```public/etapas/<n da etapa>/<nome da pasta do desafio>``` (criar pastas para cada Enunciado, Entradas, Resolucao, Saidas).
 
@@ -71,15 +71,13 @@ Entre as etapas, as seguintes atualizações são necessárias:
 
 * **Liberar a etapa:**
 
-    Tanto em ```landingpage.json``` quando em ```etapaDesafios.json```, alterar o campo ```visivel``` da etapa concluída de ```false``` para ```true```.
-
-    **OBS:** No primeiro, conferir se o ```link``` para a página da etapa foi atribuído corretamente.
+    Em ```etapa.json```, alterar o campo ```estado``` da etapa concluída de ```false``` para ```true```.
 
 * **Contabilizar a pontuação:**
 
     Os pontos das equipes são armazenados em um array ```pontos``` onde o índice é o número da etapa.
 
-    Em ```landingpage.json```, colocar a quantidade de pontos da equipe na respectiva posição do seu array de pontos. Não esquecer de adicionar ```0``` para as equipes que tiveram menos que 2 (dois) dos membros chegando antes do horário limite.
+    Em ```etapas.json```, colocar a quantidade de pontos da equipe na respectiva posição do seu array de pontos. Não esquecer de adicionar ```0``` para as equipes que tiveram menos que 2 (dois) dos membros chegando antes do horário limite.
 
     **Ex.:** Essa equipe fez 1 ponto na etapa 0, 6 na etapa 1 e 2 na etapa 2.
   
