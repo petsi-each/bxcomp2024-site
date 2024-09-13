@@ -1,7 +1,7 @@
 [
     {
         "etapaIndice": 0,
-        "estado": true,
+        "estaLiberada": true,
         "tema": "Nickelodeon",
         "icon": "/EtapasDesafios/E0-Nickelodeon.png",
         "desafios": [
@@ -44,7 +44,7 @@
     },
     {
         "etapaIndice": 1,
-        "estado": false,
+        "estaLiberada": false,
         "tema": "DreamWorks",
         "icon": "/EtapasDesafios/E1-DreamWorks.png",
         "desafios": [
@@ -87,7 +87,7 @@
     },
     {
         "etapaIndice": 2,
-        "estado": false,
+        "estaLiberada": false,
         "tema": "Warner Bros",
         "icon": "/EtapasDesafios/E2-WarnerBros.png",
         "desafios": [
@@ -130,7 +130,7 @@
     },
     {
         "etapaIndice": 3,
-        "estado": false,
+        "estaLiberada": false,
         "tema": "Disney",
         "icon": "/EtapasDesafios/E3-Disney.png",
         "desafios": [
@@ -173,7 +173,7 @@
     },
     {
         "etapaIndice": 4,
-        "estado": false,
+        "estaLiberada": false,
         "tema": "Estúdio PET",
         "icon": "/EtapasDesafios/E4-EstudioPET.png",
         "desafios": [

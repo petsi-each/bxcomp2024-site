@@ -10,7 +10,7 @@ const poppins = Poppins({ weight: '400', subsets: ['latin'] })
 export interface Etapa {
     etapaIndice: number;
     tema: string;
-    estado: boolean;
+    estaLiberada: boolean;
     icon: string;
 }
 
@@ -20,7 +20,7 @@ function EtapaCard(props: Etapa) {
     let link = '/etapas-e-desafios/';
     let textoBotao = "Ver detalhes";
 
-    if (!props.estado) {
+    if (!props.estaLiberada) {
         props = {...props, tema: "Em breve...", icon: "/home/staticTV.gif"};
         textoBotao = "Em breve..."
         link = "#"

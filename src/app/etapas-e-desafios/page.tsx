@@ -34,13 +34,13 @@ export default function EtapasDesafios() {
                     {
                         etapas.map(etapa => (
                             //o clique só é viável para as etapas liberadas, com isso os hovers, etc, também só devem ser aplicados aos Cards cujas etapas já foram liberadas, em caso contrário nada deve ser feito
-                            <button key={etapa.etapaIndice} onClick={() => handleOnClick(etapa.etapaIndice)} disabled={etapa.estado == false} title={`Etapa ${etapa.etapaIndice}`} className={`relative size-44 rounded-3xl ${etapa.estado == true ? 'hover:transition-all hover:duration-100 hover:[text-shadow:_0_2.5px_0_var(--tw-shadow-color)] hover:shadow-slate-800 hover:ring-8 hover:ring-azulBX hover:ring-opacity-20 hover:bg-blue-600 hover:bg-opacity-20 active:ring-8 active:ring-laranjaBX active:ring-opacity-70' : ''}  ${indice == etapa.etapaIndice ? 'scale-[1.13] shadow-sky-900 shadow-lg ' : ''}`}>
+                            <button key={etapa.etapaIndice} onClick={() => handleOnClick(etapa.etapaIndice)} disabled={etapa.estaLiberada == false} title={`Etapa ${etapa.etapaIndice}`} className={`relative size-44 rounded-3xl ${etapa.estaLiberada == true ? 'hover:transition-all hover:duration-100 hover:[text-shadow:_0_2.5px_0_var(--tw-shadow-color)] hover:shadow-slate-800 hover:ring-8 hover:ring-azulBX hover:ring-opacity-20 hover:bg-blue-600 hover:bg-opacity-20 active:ring-8 active:ring-laranjaBX active:ring-opacity-70' : ''}  ${indice == etapa.etapaIndice ? 'scale-[1.13] shadow-sky-900 shadow-lg ' : ''}`}>
                                 {
-                                    etapa.estado == false ? //caso a etapa ainda não tenha ocorrido:
+                                    etapa.estaLiberada == false ? //caso a etapa ainda não tenha ocorrido:
                                         <div> 
                                             <ImageG className="rounded-3xl" src="/home/staticTV.gif" alt="TV estática" fill={true} /> 
                                         </div>
-                                        : //caso contrário (etapa.estado==true):
+                                        : //caso contrário (etapa.estaLiberada==true):
                                         <div>
                                             <ImageG className="-z-10 rounded-3xl opacity-[0.95]" src={etapa.icon} alt="" fill={true} />
                                             <h2 className={`mt-24 ${poppins.className} text-white text-2xl drop-shadow-lg underline underline-offset-4 decoration-verdeBX decoration-[3px]`}><b>Etapa {etapa.etapaIndice}</b></h2>
