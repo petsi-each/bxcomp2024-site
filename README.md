@@ -52,7 +52,14 @@ Todas as informações relativas aos times estão armazenadas em arquivos JSON e
 
     Em ```etapasDesafios.json```, há um array que determina quais desafios pertencem a qual etapa e as suas informações.
 
-    Além disso, cada desafio referencia o ```path``` para três arquivos: enunciado, resolução e casos de testes. Esses arquivos devem ser armazenados em ```public/{etapa}/{desafio}``` (criar pastas para cada etapa e desafio).
+    Além disso, cada desafio referencia o ```path``` para quatro arquivos: enunciado, resolução, entrada e saida. Esses arquivos devem ser armazenados em ```public/etapas/<n da etapa>/<nome da pasta do desafio>``` (criar pastas para cada Enunciado, Entradas, Resolucao, Saidas).
+
+    :alert: O NOME DA PASTA DO DESAFIO DEVE ESTAR EM KABEB CASE (ou seja, letras minusculas com - no lugar do espaco, sem caracteres especiais.)
+
+    O arquivo de entrada deve ser ```public/etapas/<n da etapa>/<nome da pasta do desafio>/entrada.in```
+    O arquivo de saida deve ser ```public/etapas/<n da etapa>/<nome da pasta do desafio>/saida.out```
+    O arquivo de resolucao deve ser ```public/etapas/<n da etapa>/<nome da pasta do desafio>/resolucao.c```
+    O arquivo de enunciado deve ser ```public/etapas/<n da etapa>/<nome da pasta do desafio>/enunciado.pdf```
 
 * **Regulamento**
 
