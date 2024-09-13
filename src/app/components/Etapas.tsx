@@ -1,6 +1,6 @@
 "use client"
 
-import ImageG from "@/components/ImageG"
+import Image from 'next/image';
 import { Poppins } from 'next/font/google'
 import etapas_data from '@/data/landingpage.json'
 import PrimaryButton from "@/components/PrimaryButton";
@@ -37,7 +37,7 @@ function EtapaCard(props: Etapa) {
         <article className="flex flex-col sm:flex-row justify-between rounded-3xl w-full bg-azulBX">
             <div className="flex items-center justify-center pt-8 sm:pt-4 sm:p-4">
                 <figure className="size-20 flex justify-center items-center relative">
-                    <ImageG
+                    <Image
                         className="rounded-lg"
                         src={cond_props.img}
                         unoptimized={cond_props.img.split('.')[1] == 'gif'}
@@ -73,7 +73,7 @@ export default function Etapas() {
                 <h1 className="text-verdeBX text-6xl mb-4">Etapas</h1>
                 <h2 className={`${poppins.className} text-black text-thin`}>Estude ao rever os temas, desafios e resoluções já apresentadas nesta edição do BXCOMP!</h2>
                 <figure className="flex justify-center min-w-24">
-                    <ImageG
+                    <Image
                         src="/home/jhonny_bravo_dancando.gif"
                         unoptimized={true}
                         alt="Jhonny Bravo"

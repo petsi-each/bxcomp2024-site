@@ -1,4 +1,4 @@
-import ImageG from "./ImageG"
+import Image from 'next/image'
 
 interface Equipe {
     nome: string,
@@ -31,17 +31,17 @@ const CoroaImage: React.FC<CoroaImageProps> = ({ scorePosition }) => {
     if (scorePosition == -1) return null;    
     if (scorePosition == 0) return (
         <div className="absolute -mt-40">
-            <ImageG src="/ranking/coroaReiGelado.png" alt="" width={88} height={132} />
+            <Image src="/ranking/coroaReiGelado.png" alt="" width={88} height={132} />
         </div>
     )
     if (scorePosition == 1) return(
         <div className="absolute -mt-24 -ml-12">
-            <ImageG src="/ranking/coroaPrata.png" alt="" width={85} height={65} />
+            <Image src="/ranking/coroaPrata.png" alt="" width={85} height={65} />
         </div>
     )
     if (scorePosition == 2) return(
         <div className="absolute -mt-24 -ml-12">
-            <ImageG src="/ranking/coroaBronze.png" alt="" width={85} height={65} />
+            <Image src="/ranking/coroaBronze.png" alt="" width={85} height={65} />
         </div>
     )
         
@@ -85,7 +85,7 @@ const PointBar: React.FC<PointBarProps> = ({ equipe, topScores }) => {
 
                 <div>
                     <figure className="-ml-8 h-20 w-20 relative flex items-center justify-center drop-shadow-xl rounded-full bg-white">
-                        <ImageG className="absolute" src={equipe.iconPath} fill={true} alt={""} />
+                        <Image className="absolute" src={equipe.iconPath} fill={true} alt={""} />
                         <CoroaImage scorePosition={topScores.indexOf(totalPontos)}/>                 
                     </figure>
                 </div>

@@ -1,11 +1,11 @@
 'use client'
-import ImageG from "@/components/ImageG";
+import Image from 'next/image';
 import { VscArrowCircleDown } from "react-icons/vsc";
 export default function Hero() {
     return (
         <section className="flex -mt-24 items-center justify-center relative h-screen">
 
-                <ImageG 
+                <Image 
                     className="object-scale-down" 
                     src="/logoBxcomp.svg" 
                     alt="Logo do BXCOMP"

@@ -7,7 +7,7 @@ import Equipes from "../components/Equipes";
 import Ranking from "@/components/Ranking";
 import PrimaryButton from "@/components/PrimaryButton";
 import data from '../data/landingpage.json';
-import ImageG from "@/components/ImageG";
+import Image from 'next/image';
 
 export default function Home() {
 
@@ -20,7 +20,7 @@ export default function Home() {
       {/* Etapas section using etapas component */}
       <section>
         <figure className="w-full bg-brancoBX pointer-events-none">
-          <ImageG
+          <Image
             src="/home/onda_azul.svg"
             alt="Onda azul"
             width="9999"
@@ -35,13 +35,13 @@ export default function Home() {
       <Equipes />
 
         <figure className="relative w-full bg-pretoBX pointer-events-none">
-          <ImageG className="hidden md:block absolute right-12 -bottom-8" src="/home/gravityfalls.png" alt="" width="281" height="312" /> 
-          <ImageG
+          <Image className="hidden md:block absolute right-12 -bottom-8" src="/home/gravityfalls.png" alt="" width="281" height="312" /> 
+          <Image
             src="/home/onda_branca.svg"
             alt="Onda branca"
             width="9999"
             height="99">
-          </ImageG>           
+          </Image>           
         </figure>
       </section>
 
@@ -53,7 +53,7 @@ export default function Home() {
           <PrimaryButton title="Ranking completo" onClick={() => location.replace("/equipes-e-ranking#ranking")} />
         </div>
       </section>
-      <ImageG className="hidden md:block absolute left-12 -bottom-[175px]" src="/home/bobesponja.png" alt="" width="240" height="26" /> 
+      <Image className="hidden md:block absolute left-12 -bottom-[175px]" src="/home/bobesponja.png" alt="" width="240" height="26" /> 
     </main>
   );
 }
