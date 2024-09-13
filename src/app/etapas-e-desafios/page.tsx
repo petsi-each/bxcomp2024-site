@@ -1,6 +1,6 @@
 'use client'
 import etapas from '@/data/etapas.json';
-import ImageG from '@/components/ImageG';
+import Image from 'next/image';
 import CardDesafios from './components/CardDesafios';
 import { useState } from "react";
 import { Poppins } from 'next/font/google'
@@ -38,11 +38,11 @@ export default function EtapasDesafios() {
                                 {
                                     etapa.estaLiberada == false ? //caso a etapa ainda não tenha ocorrido:
                                         <div> 
-                                            <ImageG className="rounded-3xl" src="/home/staticTV.gif" alt="TV estática" fill={true} /> 
+                                            <Image className="rounded-3xl" src="/home/staticTV.gif" alt="TV estática" fill={true} /> 
                                         </div>
                                         : //caso contrário (etapa.estaLiberada==true):
                                         <div>
-                                            <ImageG className="-z-10 rounded-3xl opacity-[0.95]" src={etapa.icon} alt="" fill={true} />
+                                            <Image className="-z-10 rounded-3xl opacity-[0.95]" src={etapa.icon} alt="" fill={true} />
                                             <h2 className={`mt-24 ${poppins.className} text-white text-2xl drop-shadow-lg underline underline-offset-4 decoration-verdeBX decoration-[3px]`}><b>Etapa {etapa.etapaIndice}</b></h2>
                                             <h3 className={`-mt-1.5 ${poppins.className} text-white text-lg drop-shadow-lg`}>{etapa.tema}</h3>
                                         </div>
