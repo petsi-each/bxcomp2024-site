@@ -1,0 +1,217 @@
+[
+    {
+        "etapaIndice": 0,
+        "estaLiberada": true,
+        "tema": "Nickelodeon",
+        "icon": "/etapas/e0-nickelodeon.png",
+        "desafios": [
+            {
+                "desafio": "Desejo não ser idiota - 2 pontos",
+                "enunciado": "etapas/0/desejo-nao-ser-idiota/enunciado.pdf",
+                "resolucao": "etapas/0/desejo-nao-ser-idiota/resolucao.c",
+                "entrada": "etapas/0/desejo-nao-ser-idiota/entrada.in",
+                "saida": "etapas/0/desejo-nao-ser-idiota/saida.out"
+            },
+            {
+                "desafio": "Os 4 elementos - 4 pontos",
+                "enunciado": "etapas/0/os-4-elementos/enunciado.pdf",
+                "resolucao": "etapas/0/os-4-elementos/resolucao.c",
+                "entrada": "etapas/0/os-4-elementos/entrada.in",
+                "saida": "etapas/0/os-4-elementos/saida.out"
+            },
+            {
+                "desafio": "ROUBO DO HAMBURGUER DE SIRI - 3 pontos",
+                "enunciado": "etapas/0/roubo-do-hamburguer-de-siri/enunciado.pdf",
+                "resolucao": "etapas/0/roubo-do-hamburguer-de-siri/resolucao.c",
+                "entrada": "etapas/0/roubo-do-hamburguer-de-siri/entrada.in",
+                "saida": "etapas/0/roubo-do-hamburguer-de-siri/saida.out"
+            },
+            {
+                "desafio": "A porta espiritual - 3 pontos",
+                "enunciado": "etapas/0/a-porta-espiritual/enunciado.pdf",
+                "resolucao": "etapas/0/a-porta-espiritual/resolucao.c",
+                "entrada": "etapas/0/a-porta-espiritual/entrada.in",
+                "saida": "etapas/0/a-porta-espiritual/saida.out"
+            },
+            {
+                "desafio": "Os robôs de Jimmy - 6 pontos",
+                "enunciado": "etapas/0/os-robos-de-jimmy/enunciado.pdf",
+                "resolucao": "etapas/0/os-robos-de-jimmy/resolucao.c",
+                "entrada": "etapas/0/os-robos-de-jimmy/entrada.in",
+                "saida": "etapas/0/os-robos-de-jimmy/saida.out"
+            }  
+        ]
+    },
+    {
+        "etapaIndice": 1,
+        "estaLiberada": false,
+        "tema": "DreamWorks",
+        "icon": "/etapas/e1-dreamworks.png",
+        "desafios": [
+            {
+                "desafio": "Fuga dos Linux - 2 pontos",
+                "enunciado": "etapas/1/fuga-dos-linux/enunciado.pdf",
+                "resolucao": "etapas/1/fuga-dos-linux/resolucao.c",
+                "entrada": "etapas/1/fuga-dos-linux/entrada.in",
+                "saida": "etapas/1/fuga-dos-linux/saida.out"
+            },
+            {
+                "desafio": "Perdidinhos no pagode - 3 pontos",
+                "enunciado": "etapas/1/perdidinhos-no-pagode/enunciado.pdf",
+                "resolucao": "etapas/1/perdidinhos-no-pagode/resolucao.c",
+                "entrada": "etapas/1/perdidinhos-no-pagode/entrada.in",
+                "saida": "etapas/1/perdidinhos-no-pagode/saida.out"
+            },
+            {
+                "desafio": "Equilíbrio das Galinhas - 6 pontos",
+                "enunciado": "etapas/1/equilibrio-das-galinhas/enunciado.pdf",
+                "resolucao": "etapas/1/equilibrio-das-galinhas/resolucao.c",
+                "entrada": "etapas/1/equilibrio-das-galinhas/entrada.in",
+                "saida": "etapas/1/equilibrio-das-galinhas/saida.out"
+            },
+            {
+                "desafio": "Rinha de Dragões - 2 pontos",
+                "enunciado": "etapas/1/rinha-de-dragoes/enunciado.pdf",
+                "resolucao": "etapas/1/rinha-de-dragoes/resolucao.c",
+                "entrada": "etapas/1/rinha-de-dragoes/entrada.in",
+                "saida": "etapas/1/rinha-de-dragoes/saida.out"
+            },
+            {
+                "desafio": "FAZ O URRO - 4 pontos",
+                "enunciado": "etapas/1/faz-o-urro/enunciado.pdf",
+                "resolucao": "etapas/1/faz-o-urro/resolucao.c",
+                "entrada": "etapas/1/faz-o-urro/entrada.in",
+                "saida": "etapas/1/faz-o-urro/saida.out"
+            }
+        ]
+    },
+    {
+        "etapaIndice": 2,
+        "estaLiberada": false,
+        "tema": "Warner Bros",
+        "icon": "/etapas/e2-warnerbros.png",
+        "desafios": [
+            {
+                "desafio": "Tá com você Puro Osso - 6 pontos",
+                "enunciado": "etapas/2/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
+                "resolucao": "etapas/2/<NOME DA PASTA DO DESAFIO>/resolucao.c",
+                "entrada": "etapas/2/<NOME DA PASTA DO DESAFIO>/entrada.in",
+                "saida": "etapas/2/<NOME DA PASTA DO DESAFIO>/saida.out"
+            },
+            {
+                "desafio": "a - 2 pontos",
+                "enunciado": "etapas/2/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
+                "resolucao": "etapas/2/<NOME DA PASTA DO DESAFIO>/resolucao.c",
+                "entrada": "etapas/2/<NOME DA PASTA DO DESAFIO>/entrada.in",
+                "saida": "etapas/2/<NOME DA PASTA DO DESAFIO>/saida.out"
+            },
+            {
+                "desafio": "Explodindo planetas - 2 pontos",
+                "enunciado": "etapas/2/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
+                "resolucao": "etapas/2/<NOME DA PASTA DO DESAFIO>/resolucao.c",
+                "entrada": "etapas/2/<NOME DA PASTA DO DESAFIO>/entrada.in",
+                "saida": "etapas/2/<NOME DA PASTA DO DESAFIO>/saida.out"
+            },
+            {
+                "desafio": "Açúcar, tempero e ...? - 4 pontos",
+                "enunciado": "etapas/2/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
+                "resolucao": "etapas/2/<NOME DA PASTA DO DESAFIO>/resolucao.c",
+                "entrada": "etapas/2/<NOME DA PASTA DO DESAFIO>/entrada.in",
+                "saida": "etapas/2/<NOME DA PASTA DO DESAFIO>/saida.out"
+            },
+            {
+                "desafio": "1234554321 - 3 pontos",
+                "enunciado": "etapas/2/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
+                "resolucao": "etapas/2/<NOME DA PASTA DO DESAFIO>/resolucao.c",
+                "entrada": "etapas/2/<NOME DA PASTA DO DESAFIO>/entrada.in",
+                "saida": "etapas/2/<NOME DA PASTA DO DESAFIO>/saida.out"
+            }
+        ]
+    },
+    {
+        "etapaIndice": 3,
+        "estaLiberada": false,
+        "tema": "Disney",
+        "icon": "/etapas/e3-disney.png",
+        "desafios": [
+            {
+                "desafio": "MANHÊ!!! - 4 pontos",
+                "enunciado": "etapas/3/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
+                "resolucao": "etapas/3/<NOME DA PASTA DO DESAFIO>/resolucao.c",
+                "entrada": "etapas/3/<NOME DA PASTA DO DESAFIO>/entrada.in",
+                "saida": "etapas/3/<NOME DA PASTA DO DESAFIO>/saida.out"
+            },
+            {
+                "desafio": "Tá no taPETe! - 3 pontos",
+                "enunciado": "etapas/3/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
+                "resolucao": "etapas/3/<NOME DA PASTA DO DESAFIO>/resolucao.c",
+                "entrada": "etapas/3/<NOME DA PASTA DO DESAFIO>/entrada.in",
+                "saida": "etapas/3/<NOME DA PASTA DO DESAFIO>/saida.out"
+            },
+            {
+                "desafio": "Mente PETurbada - 4 pontos",
+                "enunciado": "etapas/3/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
+                "resolucao": "etapas/3/<NOME DA PASTA DO DESAFIO>/resolucao.c",
+                "entrada": "etapas/3/<NOME DA PASTA DO DESAFIO>/entrada.in",
+                "saida": "etapas/3/<NOME DA PASTA DO DESAFIO>/saida.out"
+            },
+            {
+                "desafio": "Estudo Estranho - 2 pontos",
+                "enunciado": "etapas/3/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
+                "resolucao": "etapas/3/<NOME DA PASTA DO DESAFIO>/resolucao.c",
+                "entrada": "etapas/3/<NOME DA PASTA DO DESAFIO>/entrada.in",
+                "saida": "etapas/3/<NOME DA PASTA DO DESAFIO>/saida.out"
+            },
+            {
+                "desafio": "Livro de Feitiços da Star - 3 pontos",
+                "enunciado": "etapas/3/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
+                "resolucao": "etapas/3/<NOME DA PASTA DO DESAFIO>/resolucao.c",
+                "entrada": "etapas/3/<NOME DA PASTA DO DESAFIO>/entrada.in",
+                "saida": "etapas/3/<NOME DA PASTA DO DESAFIO>/saida.out"
+            }
+        ]
+    },
+    {
+        "etapaIndice": 4,
+        "estaLiberada": false,
+        "tema": "Estúdio PET",
+        "icon": "/etapas/e4-estudio-pet.png",
+        "desafios": [
+            {
+                "desafio": "O Frango tá voando - 4 pontos",
+                "enunciado": "etapas/4/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
+                "resolucao": "etapas/4/<NOME DA PASTA DO DESAFIO>/resolucao.c",
+                "entrada": "etapas/4/<NOME DA PASTA DO DESAFIO>/entrada.in",
+                "saida": "etapas/4/<NOME DA PASTA DO DESAFIO>/saida.out"
+            },
+            {
+                "desafio": "Castelo de Diamantes - 3 pontos",
+                "enunciado": "etapas/4/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
+                "resolucao": "etapas/4/<NOME DA PASTA DO DESAFIO>/resolucao.c",
+                "entrada": "etapas/4/<NOME DA PASTA DO DESAFIO>/entrada.in",
+                "saida": "etapas/4/<NOME DA PASTA DO DESAFIO>/saida.out"
+            },
+            {
+                "desafio": "Não quero ser um desafio do BxComp - 4 pontos",
+                "enunciado": "etapas/4/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
+                "resolucao": "etapas/4/<NOME DA PASTA DO DESAFIO>/resolucao.c",
+                "entrada": "etapas/4/<NOME DA PASTA DO DESAFIO>/entrada.in",
+                "saida": "etapas/4/<NOME DA PASTA DO DESAFIO>/saida.out"
+            },
+            {
+                "desafio": "Entraram na mente do Ciborgue - 2 pontos",
+                "enunciado": "etapas/4/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
+                "resolucao": "etapas/4/<NOME DA PASTA DO DESAFIO>/resolucao.c",
+                "entrada": "etapas/4/<NOME DA PASTA DO DESAFIO>/entrada.in",
+                "saida": "etapas/4/<NOME DA PASTA DO DESAFIO>/saida.out"
+            },
+            {
+                "desafio": "Nome Sujo! - 3 pontos",
+                "enunciado": "etapas/4/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
+                "resolucao": "etapas/4/<NOME DA PASTA DO DESAFIO>/resolucao.c",
+                "entrada": "etapas/4/<NOME DA PASTA DO DESAFIO>/entrada.in",
+                "saida": "etapas/4/<NOME DA PASTA DO DESAFIO>/saida.out"
+            }
+        ]
+    }
+]

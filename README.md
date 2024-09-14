@@ -26,6 +26,7 @@ O **BXComp** é o tradicional Campeonato de Programação para Calouros do Curso
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
+
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
@@ -91,21 +92,26 @@ Todas as informações dinâmicas do site estão armazenadas em arquivos JSON em
 
 * **Etapas**
 
-    As etapas são armazenadas em um vetor chamado ```etapas``` em ```landingpage.json```.
+    As etapas são armazenadas em ```etapas.json```.
 
 * **Equipes**
 
-    Também em uma array homônimo em ```landingpage.json```.
+    As equipes são armazenadas em ```equipes.json```.
 
 * **Desafios**
 
-    Em ```etapasDesafios.json```, há um array que determina quais desafios pertencem a qual etapa e as suas informações.
+    Em ```etapas.json```, há um array que determina quais desafios pertencem a qual etapa e as suas informações.
 
-    Além disso, cada desafio referencia o ```path``` para três arquivos: enunciado, resolução e casos de testes. Esses arquivos devem ser referenciados e armazenados em ```public/etapas/{n da etapa}/{pasta com nome do desafio}``` como "entrada.in", "resolucao.c", "enunciado.pdf" e "saida.out"
+    Além disso, cada desafio referencia o ```path``` para quatro arquivos: enunciado, resolução, entrada e saida. Esses arquivos devem ser armazenados em ```public/etapas/<n da etapa>/<nome da pasta do desafio>``` 
 
-    > ⚠️ A pasta com o nome do desafio deve seguir o padrão kebab-case (sem caracteres especiais, com letras minúsculas e usando "-" no lugar de espaços).
+    > ⚠️ O NOME DA PASTA DO DESAFIO DEVE ESTAR EM KABEB CASE (ou seja, letras minusculas com - no lugar do espaco, sem caracteres especiais.)
 
-
+    O arquivo de entrada deve ser ```public/etapas/<n da etapa>/<nome da pasta do desafio>/entrada.in```
+    O arquivo de saida deve ser ```public/etapas/<n da etapa>/<nome da pasta do desafio>/saida.out```
+    O arquivo de resolucao deve ser ```public/etapas/<n da etapa>/<nome da pasta do desafio>/resolucao.c```
+    O arquivo de enunciado deve ser ```public/etapas/<n da etapa>/<nome da pasta do desafio>/enunciado.pdf```
+    
+    **Ex.:** O desafio com nome "dESAFIO DE DESENHOooo" da etapa 2 deve armazenar seus arquivos em ```public/2/<n da etapa>/desafio-de-desenhoooo/``` .
 
 * **Regulamento**
 
@@ -117,15 +123,13 @@ Todas as informações dinâmicas do site estão armazenadas em arquivos JSON em
 
 * **Liberar a etapa:**
 
-    Tanto em ```landingpage.json``` quando em ```etapaDesafios.json```, alterar o campo ```visivel``` da etapa concluída de ```false``` para ```true```.
-
-    **OBS:** No primeiro, conferir se o ```link``` para a página da etapa foi atribuído corretamente.
+    Em ```etapa.json```, alterar o campo ```estaLiberada``` da etapa concluída de ```false``` para ```true```.
 
 * **Contabilizar a pontuação:**
 
     Os pontos das equipes são armazenados em um array ```pontos``` onde o índice é o número da etapa.
 
-    Em ```landingpage.json```, colocar a quantidade de pontos da equipe na respectiva posição do seu array de pontos. Não esquecer de adicionar ```0``` para as equipes que tiveram menos que 2 (dois) dos membros chegando antes do horário limite.
+    Em ```etapas.json```, colocar a quantidade de pontos da equipe na respectiva posição do seu array de pontos. Não esquecer de adicionar ```0``` para as equipes que tiveram menos que 2 (dois) dos membros chegando antes do horário limite.
 
     **Ex.:** Essa equipe fez 1 ponto na etapa 0, 6 na etapa 1 e 2 na etapa 2.
   

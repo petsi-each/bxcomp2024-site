@@ -2,7 +2,7 @@
 
 import PrimaryButton from "@/components/PrimaryButton";
 import SecondaryButton from "@/components/SecondaryButton";
-import ImageG from "@/components/ImageG";
+import Image from 'next/image';
 import { Poppins } from 'next/font/google';
 
 const poppins = Poppins({
@@ -11,12 +11,12 @@ const poppins = Poppins({
 });
 
 
-export default function oqueeobxcomp() {
+export default function Oqueeobxcomp() {
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden py-72 md:py-60">
             {/* Background Image Container */}
             <div className="absolute z-0 flex items-center justify-center w-[1154px] h-[875px] overflow-visible">
-                <ImageG src="/home/sobrebx.png" quality={100} fill ={true} className="object-cover sm:object-contain" alt={""}/>
+                <Image src="/home/sobrebx.png" quality={100} fill ={true} className="object-cover sm:object-contain" alt={""}/>
             </div>
 
             {/* Text Balloon */}
