@@ -70,7 +70,7 @@ npm i
 
 ### ⚙️ Execução
 
-- Modo de producao:
+- Modo de produção:
 ```
 npm run build
 ```
@@ -107,11 +107,14 @@ Todas as informações dinâmicas do site estão armazenadas em arquivos JSON em
     > ⚠️ O NOME DA PASTA DO DESAFIO DEVE ESTAR EM KABEB CASE (ou seja, letras minusculas com - no lugar do espaco, sem caracteres especiais.)
 
     O arquivo de entrada deve ser ```public/etapas/<n da etapa>/<nome da pasta do desafio>/entrada.in```
+
     O arquivo de saida deve ser ```public/etapas/<n da etapa>/<nome da pasta do desafio>/saida.out```
+
     O arquivo de resolucao deve ser ```public/etapas/<n da etapa>/<nome da pasta do desafio>/resolucao.c```
+
     O arquivo de enunciado deve ser ```public/etapas/<n da etapa>/<nome da pasta do desafio>/enunciado.pdf```
     
-    **Ex.:** O desafio com nome "dESAFIO DE DESENHOooo" da etapa 2 deve armazenar seus arquivos em ```public/2/<n da etapa>/desafio-de-desenhoooo/``` .
+    > **Ex.:** O desafio com nome "dESAFIO DE DESENHOooo" da etapa 2 deve armazenar seus arquivos em ```public/2/<n da etapa>/desafio-de-desenhoooo/``` .
 
 * **Regulamento**
 
