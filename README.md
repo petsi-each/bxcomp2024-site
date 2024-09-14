@@ -100,6 +100,10 @@ Todas as informações dinâmicas do site estão armazenadas em arquivos JSON em
 
 * **Desafios**
 
+    Para adicionar desafios, você deve:
+    1. armazenar os arquivos no path específicado abaixo
+    2. adicionar o path dos arquivos em ```etapas.json```
+
     Em ```etapas.json```, há um array que determina quais desafios pertencem a qual etapa e as suas informações.
 
     Além disso, cada desafio referencia o ```path``` para quatro arquivos: enunciado, resolução, entrada e saida. Esses arquivos devem ser armazenados em ```public/etapas/<n da etapa>/<nome da pasta do desafio>``` 
