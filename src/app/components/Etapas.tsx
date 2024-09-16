@@ -67,7 +67,7 @@ const Etapas: React.FC<EtapasProps> = ({ etapas }) =>{
 
     return (
         <section className="grid grid-cols-1 lg:grid-cols-2 md:flex-row justify-center bg-brancoBX py-8">
-            <header className="m-16">
+            <header className="m-4 md:m-16">
                 <h1 className="text-verdeBX text-6xl mb-4">Etapas</h1>
                 <h2 className={`${poppins.className} text-black text-thin`}>Estude ao rever os temas, desafios e resoluções já apresentadas nesta edição do BXCOMP!</h2>
                 <figure className="flex justify-center min-w-24">
