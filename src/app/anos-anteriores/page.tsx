@@ -12,7 +12,7 @@ const poppins = Poppins({
 export default function AnosAnterioresPage() {
   return (
     <main className='text-center m-4 lg:m-16 2xl:m-24'>
-      <h1 className='text-6xl text-laranjaBX m-8'>Edições Anteriores</h1>
+      <h1 className='text-6xl text-laranjaBX m-8'>Anos Anteriores</h1>
       <div className={`${poppins.className} flex flex-col items-center space-y-8`}>
         <div className='space-y-4'>
           <p>O <b>BXCOMP</b> teve sua primeira edição em <b>2011</b> com o objetivo de estimular e preparar os alunos do curso para atividades
