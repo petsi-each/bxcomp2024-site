@@ -11,7 +11,9 @@ export default function EquipesERanking() {
             <Image id="ranking" className='w-full -mt-1 pointer-events-none' src='home/onda_branca.svg' width="1280" height="186" alt='Onda branca' />
             <section className="flex flex-col my-12 lg:px-16 gap-12">
                 <h1 className="text-7xl px-8">Ranking</h1>
-                <Ranking equipes={equipesData} />
+                <div className="px-4 md:px-8 lg:p-0">
+                    <Ranking equipes={equipesData} />
+                </div>
             </section>
         </main>
     )
