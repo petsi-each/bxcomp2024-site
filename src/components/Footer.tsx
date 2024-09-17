@@ -10,14 +10,16 @@ interface SocialButtonProps {
     mdSize: number;
     color: string;
     className?: string;
+    ariaLabel?: string;
   }
 
-const SocialButton: React.FC<SocialButtonProps> = ({ href, icon: Icon, size, mdSize, color, className = '' }) => {
+const SocialButton: React.FC<SocialButtonProps> = ({ href, icon: Icon, size, mdSize, color, className = '', ariaLabel}) => {
     return (
       <a
         href={href}
         target="_blank"
         rel="noopener noreferrer"
+        aria-label={ariaLabel}
         className={`flex items-center ${className}`}
       >
         <div className="block md:hidden">
@@ -51,36 +53,40 @@ const SocialButton: React.FC<SocialButtonProps> = ({ href, icon: Icon, size, mdS
             <SocialButton
               href="https://www.facebook.com/petsieach"
               icon={BiLogoFacebookSquare}
-              size={20} // Tamanho para mobile
-              mdSize={26} // Tamanho para desktop
+              size={20}
+              mdSize={26}
               color="black"
+              ariaLabel="Acessar página do Facebook do PET-SI"
             />
           </li>
           <li>
             <SocialButton
               href="https://www.linkedin.com/company/pet-si-each-usp/"
               icon={BiLogoLinkedinSquare}
-              size={20} // Tamanho para mobile
-              mdSize={26} // Tamanho para desktop
+              size={20}
+              mdSize={26}
               color="black"
+              ariaLabel="Acessar página do LinkedIn do PET-SI"
             />
           </li>
           <li>
             <SocialButton
               href="mailto:pet.si.each@gmail.com"
               icon={BiSolidEnvelope}
-              size={20} // Tamanho para mobile
-              mdSize={26} // Tamanho para desktop
+              size={20}
+              mdSize={26}
               color="black"
+              ariaLabel="Enviar email para o PET-SI" 
             />
           </li>
           <li>
             <SocialButton
               href="https://www.instagram.com/petsieach/?hl=pt-br"
               icon={BiLogoInstagramAlt}
-              size={20} // Tamanho para mobile
-              mdSize={26} // Tamanho para desktop
+              size={20}
+              mdSize={26}
               color="black"
+              ariaLabel="Acessar página do Instagram do PET-SI"
             />
           </li>
         </ul>
