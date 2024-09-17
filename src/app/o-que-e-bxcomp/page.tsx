@@ -158,7 +158,7 @@ const OrganizadorCard: React.FC<OrganizadorCardProps> = ({ organizador }) => {
 function Organizadores() {
 	return (
 		<section className="flex flex-col items-center justify-center my-20">
-			<h1 className="text-5xl text-laranjaBX sm:text-6xl py-4 sm:py-8 text-center">
+			<h1 className="text-6xl text-laranjaBX sm:text-6xl py-4 sm:py-8 text-center">
 				Organizadores
 			</h1>
 

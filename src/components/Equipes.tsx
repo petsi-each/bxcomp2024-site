@@ -53,7 +53,7 @@ const Equipes: React.FC<EquipesProps> = ({equipes}) => {
 
         <section className="order-1 lg:order-2 px-4 flex flex-col items-center justify-center">
             {/* titulo do componente e descrição da seção  */}       
-            <h2 id="display" className="text-verdeBX text-6xl"> Equipes </h2>
+            <h1 id="display" className="text-verdeBX text-6xl"> Equipes </h1>
             <p className= {`${poppins.className} p-4 text-sm text-center text-pretoBX`}> Conheça os competidores deste ano! </p>
         
             {/* circulo, imagem da equipe selecionada e folhinha que indica pontos da equipe modo desktop */}
@@ -68,7 +68,7 @@ const Equipes: React.FC<EquipesProps> = ({equipes}) => {
             
             {/* Onda laranja de baixo do circulo que apresenta equipe e membros da equipe */}
             <div className="relative z-20 mb-8 -mt-16 pt-2 pb-6 sm:pb-4 drop-shadow-md bg-laranjaBX w-full max-w-80 h-fit md:h-52 md:w-80 rounded-tl-[96px] rounded-br-[96px] flex flex-col items-center justify-center">
-                <h3 className={`${lilita.className} text-center px-2 break-words w-48 sm:w-60 my-1 mt-3 sm:my-2 text-md tracking-wide drop-shadow-md text-2xl font-bold`}> {equipes[idSelecionado].nome} </h3>
+                <h2 className={`${lilita.className} text-center px-2 break-words w-48 sm:w-60 my-1 mt-3 sm:my-2 text-md tracking-wide drop-shadow-md text-2xl font-bold`}> {equipes[idSelecionado].nome} </h2>
                 <div className={`${poppins.className} text-center w-full max-w-[18rem] flex flex-col items-center justify-center text-sm text-white`}>
                     {equipes[idSelecionado].membros.map((membro, idx) => {
                         return (
