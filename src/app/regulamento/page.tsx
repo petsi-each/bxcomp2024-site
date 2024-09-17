@@ -18,7 +18,7 @@ export default function Regulamento() {
     return (
         <main className='text-center'>
 
-            <h1 className='text-laranjaBX text-6xl md:text-7xl py-12'>Regulamento</h1>
+            <h1 className='text-laranjaBX text-6xl md:text-6xl py-12'>Regulamento</h1>
 
             <p className={`${poppins.className}`}><b>Última atualização em:</b> {latestDate.toLocaleDateString('pt-BR')}</p>
 

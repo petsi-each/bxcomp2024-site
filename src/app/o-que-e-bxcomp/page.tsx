@@ -25,7 +25,7 @@ function Descricao() {
 	return (
 		<section>
 			<div className="lg:px-32">
-				<h1 className="text-5xl sm:text-6xl py-4 sm:py-8">
+				<h1 className="text-6xl sm:text-6xl py-4 sm:py-8">
 					O que é o <span className="text-laranjaBX">BXComp</span>?
 				</h1>
 

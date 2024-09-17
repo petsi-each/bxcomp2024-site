@@ -48,7 +48,7 @@ export default function Home() {
 
       {/* Ranking section using ranking component */}
       <section className="flex flex-col my-12 lg:px-16 gap-12">
-        <h1 className="text-7xl px-8">Ranking</h1>
+        <h1 className="text-6xl px-8">Ranking</h1>
         <div className="px-4 md:px-8 lg:p-0">
           <Ranking equipes={equipesData} displayQuantity={5} />
         </div>
