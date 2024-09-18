@@ -44,7 +44,7 @@
     },
     {
         "etapaIndice": 1,
-        "estaLiberada": false,
+        "estaLiberada": true,
         "tema": "DreamWorks",
         "icon": "/etapas/e1-dreamworks.png",
         "desafios": [
