@@ -7,7 +7,7 @@
       "Caio Augusto de Freitas Brito",
       "Gabriel Trigueiro de Melo"
     ],
-    "pontos": [ 0 ],
+    "pontos": [ 0, 8 ],
     "iconPath": "/equipes/anonimious.png"
   },
   {
@@ -18,7 +18,7 @@
       "Marianna Saltarelli Arvellos Pontes",
       "Davi Oliveira Medina"
     ],
-    "pontos": [ 0 ],
+    "pontos": [ 0, 7 ],
     "iconPath": "/equipes/caxaxeiros-viajantes.png"
   },
   {
@@ -29,7 +29,7 @@
       "Bruno Hideo Ioneda",
       "Guilherme Samuel Lemos Segura"
     ],
-    "pontos": [ 0 ],
+    "pontos": [ 0, 5 ],
     "iconPath": "/equipes/os-pipoqueiros.png"
   },
   {
@@ -40,7 +40,7 @@
       "isabella cremonezi morija",
       "Felipe Ferreira de Souza"
     ],
-    "pontos": [ 0 ],
+    "pontos": [ 0, 9 ],
     "iconPath": "/equipes/cptemos.png"
   },
   {
@@ -51,7 +51,7 @@
       "Yasmin Oliveira da Silva",
       "Gustavo dos Santos Silva"
     ],
-    "pontos": [ 0 ],
+    "pontos": [ 0, 0 ],
     "iconPath": "/equipes/flezus.png"
   },
   {
@@ -62,7 +62,7 @@
       "Hugo Cardoso Ferreira de Araújo",
       "Victor Yodono"
     ],
-    "pontos": [ 0 ],
+    "pontos": [ 0, 7 ],
     "iconPath": "/equipes/geladeira.png"
   },
   {
@@ -73,7 +73,7 @@
       "Rafael tolentino limberte",
       "Gilberto Serafim Dias de Araújo"
     ],
-    "pontos": [ 0 ],
+    "pontos": [ 0, 2 ],
     "iconPath": "/equipes/brat.png"
   },
   {
@@ -84,7 +84,7 @@
       "Luís Guilherme Hitoshi Kanazawa",
       "Rayssa Buarque Malheiros"
     ],
-    "pontos": [ 0 ],
+    "pontos": [ 0, 2 ],
     "iconPath": "/equipes/patolinux.png"
   },
   {
@@ -95,7 +95,7 @@
       "Letícia Namie Ono Honda",
       "Luísa Karen Yanai"
     ],
-    "pontos": [ 0 ],
+    "pontos": [ 0, 14 ],
     "iconPath": "/equipes/pandeirinho.png"
   },
   {
@@ -105,7 +105,7 @@
       "Lucas Neves Souza",
       "João Gabriel Bruni Santeiro"
     ],
-    "pontos": [ 0 ],
+    "pontos": [ 0, 15 ],
     "iconPath": "/equipes/portugues-desestruturado.png"
   },
   {
@@ -116,7 +116,7 @@
       "Tiago Silveira Almeida",
       "Gustavo Santos El Dib"
     ],
-    "pontos": [ 0 ],
+    "pontos": [ 0, 0 ],
     "iconPath": "/equipes/cobras-caubois-tomadoras-de-suco.png"
   },
   {
@@ -127,7 +127,7 @@
       "Luiz Vicente Neto",
       "Renan Biruel Uema"
     ],
-    "pontos": [ 0 ],
+    "pontos": [ 0, 2 ],
     "iconPath": "/equipes/compilou-rodou.png"
   },
   {
@@ -138,7 +138,7 @@
       "Tae jin chun",
       "Gabriel Castellar"
     ],
-    "pontos": [ 0 ],
+    "pontos": [ 0, 3 ],
     "iconPath": "/equipes/medo-do-panelas.png"
   },
   {
@@ -149,7 +149,7 @@
       "Carlos Henrique Camillo da Silva",
       "Alisson Santos Silva"
     ],
-    "pontos": [ 0 ],
+    "pontos": [ 0, 8 ],
     "iconPath": "/equipes/o-rock-nao-e-brincadeira.png"
   },
   {
@@ -160,7 +160,7 @@
       "Renan Rodrigues Moreira",
       "João Henrique Kuroki Cominato"
     ],
-    "pontos": [ 0 ],
+    "pontos": [ 0, 0 ],
     "iconPath": "/equipes/trivial.png"
   },
   {
@@ -170,7 +170,7 @@
       "Alexsandro de Souza Campos",
       "Thales Iamamura"
     ],
-    "pontos": [ 0 ],
+    "pontos": [ 0, 3 ],
     "iconPath": "/equipes/moondevs.png"
   }
 ]
