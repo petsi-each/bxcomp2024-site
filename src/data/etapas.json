@@ -49,7 +49,7 @@
         "icon": "/etapas/e1-dreamworks.png",
         "desafios": [
             {
-                "desafio": "Fuga dos Linux - 2 pontos",
+                "desafio": "Fuga dos Linux - 6 pontos",
                 "enunciado": "etapas/1/fuga-dos-linux/enunciado.pdf",
                 "resolucao": "etapas/1/fuga-dos-linux/resolucao.c",
                 "entrada": "etapas/1/fuga-dos-linux/entrada.in",
@@ -63,7 +63,7 @@
                 "saida": "etapas/1/perdidinhos-no-pagode/saida.out"
             },
             {
-                "desafio": "Equilíbrio das Galinhas - 6 pontos",
+                "desafio": "Equilíbrio das Galinhas - 4 pontos",
                 "enunciado": "etapas/1/equilibrio-das-galinhas/enunciado.pdf",
                 "resolucao": "etapas/1/equilibrio-das-galinhas/resolucao.c",
                 "entrada": "etapas/1/equilibrio-das-galinhas/entrada.in",
