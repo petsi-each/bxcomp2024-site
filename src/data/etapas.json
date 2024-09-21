@@ -99,11 +99,11 @@
                 "saida": "etapas/2/ta-com-voce-puro-osso/saida.out"
             },
             {
-                "desafio": "A bomba e o flash burro - 2 pontos",
-                "enunciado": "etapas/2/a-bomba-e-o-flash-burro/enunciado.pdf",
-                "resolucao": "etapas/2/a-bomba-e-o-flash-burro/resolucao.c",
-                "entrada": "etapas/2/a-bomba-e-o-flash-burro/entrada.in",
-                "saida": "etapas/2/a-bomba-e-o-flash-burro/saida.out"
+                "desafio": "A bomba - 2 pontos",
+                "enunciado": "etapas/2/a-bomba/enunciado.pdf",
+                "resolucao": "etapas/2/a-bombao/resolucao.c",
+                "entrada": "etapas/2/a-bomba/entrada.in",
+                "saida": "etapas/2/a-bomba/saida.out"
             },
             {
                 "desafio": "Explodindo planetas - 2 pontos",
@@ -120,11 +120,11 @@
                 "saida": "etapas/2/acucar-tempero/saida.out"
             },
             {
-                "desafio": "1234554321 - 3 pontos",
-                "enunciado": "etapas/2/1234554321/enunciado.pdf",
-                "resolucao": "etapas/2/1234554321/resolucao.c",
-                "entrada": "etapas/2/1234554321/entrada.in",
-                "saida": "etapas/2/1234554321/saida.out"
+                "desafio": "Missão Palíndromo do Setor V - 3 pontos",
+                "enunciado": "etapas/2/missao-palindromo-do-setor-v/enunciado.pdf",
+                "resolucao": "etapas/2/missao-palindromo-do-setor-v/resolucao.c",
+                "entrada": "etapas/2/missao-palindromo-do-setor-v/entrada.in",
+                "saida": "etapas/2/missao-palindromo-do-setor-v/saida.out"
             }
         ]
     },
