@@ -94,14 +94,14 @@
             {
                 "desafio": "Tá com você Puro Osso - 6 pontos",
                 "enunciado": "etapas/2/ta-com-voce-puro-osso/enunciado.pdf",
-                "resolucao": "etapas/2/ta-com-voce-puro-osso>/resolucao.c",
+                "resolucao": "etapas/2/ta-com-voce-puro-osso/resolucao.c",
                 "entrada": "etapas/2/ta-com-voce-puro-osso/entrada.in",
                 "saida": "etapas/2/ta-com-voce-puro-osso/saida.out"
             },
             {
                 "desafio": "A bomba - 3 pontos",
                 "enunciado": "etapas/2/a-bomba/enunciado.pdf",
-                "resolucao": "etapas/2/a-bombao/resolucao.c",
+                "resolucao": "etapas/2/a-bomba/resolucao.c",
                 "entrada": "etapas/2/a-bomba/entrada.in",
                 "saida": "etapas/2/a-bomba/saida.out"
             },
