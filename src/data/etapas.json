@@ -99,7 +99,7 @@
                 "saida": "etapas/2/ta-com-voce-puro-osso/saida.out"
             },
             {
-                "desafio": "A bomba - 2 pontos",
+                "desafio": "A bomba - 3 pontos",
                 "enunciado": "etapas/2/a-bomba/enunciado.pdf",
                 "resolucao": "etapas/2/a-bombao/resolucao.c",
                 "entrada": "etapas/2/a-bomba/entrada.in",
