@@ -87,44 +87,44 @@
     },
     {
         "etapaIndice": 2,
-        "estaLiberada": false,
+        "estaLiberada": true,
         "tema": "Warner Bros",
         "icon": "/etapas/e2-warnerbros.png",
         "desafios": [
             {
                 "desafio": "Tá com você Puro Osso - 6 pontos",
-                "enunciado": "etapas/2/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
-                "resolucao": "etapas/2/<NOME DA PASTA DO DESAFIO>/resolucao.c",
-                "entrada": "etapas/2/<NOME DA PASTA DO DESAFIO>/entrada.in",
-                "saida": "etapas/2/<NOME DA PASTA DO DESAFIO>/saida.out"
+                "enunciado": "etapas/2/ta-com-voce-puro-osso/enunciado.pdf",
+                "resolucao": "etapas/2/ta-com-voce-puro-osso>/resolucao.c",
+                "entrada": "etapas/2/ta-com-voce-puro-osso/entrada.in",
+                "saida": "etapas/2/ta-com-voce-puro-osso/saida.out"
             },
             {
-                "desafio": "a - 2 pontos",
-                "enunciado": "etapas/2/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
-                "resolucao": "etapas/2/<NOME DA PASTA DO DESAFIO>/resolucao.c",
-                "entrada": "etapas/2/<NOME DA PASTA DO DESAFIO>/entrada.in",
-                "saida": "etapas/2/<NOME DA PASTA DO DESAFIO>/saida.out"
+                "desafio": "A bomba - 3 pontos",
+                "enunciado": "etapas/2/a-bomba/enunciado.pdf",
+                "resolucao": "etapas/2/a-bombao/resolucao.c",
+                "entrada": "etapas/2/a-bomba/entrada.in",
+                "saida": "etapas/2/a-bomba/saida.out"
             },
             {
                 "desafio": "Explodindo planetas - 2 pontos",
-                "enunciado": "etapas/2/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
-                "resolucao": "etapas/2/<NOME DA PASTA DO DESAFIO>/resolucao.c",
-                "entrada": "etapas/2/<NOME DA PASTA DO DESAFIO>/entrada.in",
-                "saida": "etapas/2/<NOME DA PASTA DO DESAFIO>/saida.out"
+                "enunciado": "etapas/2/explodindo-planetas/enunciado.pdf",
+                "resolucao": "etapas/2/explodindo-planetas/resolucao.c",
+                "entrada": "etapas/2/explodindo-planetas/entrada.in",
+                "saida": "etapas/2/explodindo-planetas/saida.out"
             },
             {
                 "desafio": "Açúcar, tempero e ...? - 4 pontos",
-                "enunciado": "etapas/2/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
-                "resolucao": "etapas/2/<NOME DA PASTA DO DESAFIO>/resolucao.c",
-                "entrada": "etapas/2/<NOME DA PASTA DO DESAFIO>/entrada.in",
-                "saida": "etapas/2/<NOME DA PASTA DO DESAFIO>/saida.out"
+                "enunciado": "etapas/2/acucar-tempero/enunciado.pdf",
+                "resolucao": "etapas/2/acucar-tempero/resolucao.c",
+                "entrada": "etapas/2/acucar-tempero/entrada.in",
+                "saida": "etapas/2/acucar-tempero/saida.out"
             },
             {
-                "desafio": "1234554321 - 3 pontos",
-                "enunciado": "etapas/2/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
-                "resolucao": "etapas/2/<NOME DA PASTA DO DESAFIO>/resolucao.c",
-                "entrada": "etapas/2/<NOME DA PASTA DO DESAFIO>/entrada.in",
-                "saida": "etapas/2/<NOME DA PASTA DO DESAFIO>/saida.out"
+                "desafio": "Missão Palíndromo do Setor V - 3 pontos",
+                "enunciado": "etapas/2/missao-palindromo-do-setor-v/enunciado.pdf",
+                "resolucao": "etapas/2/missao-palindromo-do-setor-v/resolucao.c",
+                "entrada": "etapas/2/missao-palindromo-do-setor-v/entrada.in",
+                "saida": "etapas/2/missao-palindromo-do-setor-v/saida.out"
             }
         ]
     },
