@@ -47,9 +47,9 @@ export default function Home() {
       </section>
 
       {/* Ranking section using ranking component */}
-      <section className="flex flex-col my-12 lg:px-16 gap-12">
-        <h1 className="text-7xl px-8">Ranking</h1>
-        <Ranking equipes={equipesData} displayQuantity={5} />
+      <section className="flex flex-col my-12 lg:px-16 gap-12 px-4 md:px-8">
+        <h1 className="text-6xl px-4">Ranking</h1>
+          <Ranking equipes={equipesData} displayQuantity={5} />
         <div className="flex justify-center w-full">
           <PrimaryButton title="Ranking completo" onClick={() => location.replace("/equipes-e-ranking#ranking")} />
         </div>

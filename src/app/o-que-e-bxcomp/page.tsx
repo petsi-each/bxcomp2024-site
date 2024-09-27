@@ -25,7 +25,7 @@ function Descricao() {
 	return (
 		<section>
 			<div className="lg:px-32">
-				<h1 className="text-5xl sm:text-6xl py-4 sm:py-8">
+				<h1 className="text-6xl sm:text-6xl py-4 sm:py-8">
 					O que é o <span className="text-laranjaBX">BXComp</span>?
 				</h1>
 
@@ -158,7 +158,7 @@ const OrganizadorCard: React.FC<OrganizadorCardProps> = ({ organizador }) => {
 function Organizadores() {
 	return (
 		<section className="flex flex-col items-center justify-center my-20">
-			<h1 className="text-5xl text-laranjaBX sm:text-6xl py-4 sm:py-8 text-center">
+			<h1 className="text-6xl text-laranjaBX sm:text-6xl py-4 sm:py-8 text-center">
 				Organizadores
 			</h1>
 
@@ -174,7 +174,7 @@ function Organizadores() {
 
 			</section>
 
-			<p className={`${poppins.className}`}>Confira o repositório deste site no <em onClick={()=>alert("Disponível após a final do BXCOMP 2024!")}  className={`text-laranjaBX cursor-pointer text-xl ${bubblegum.className}`}>GitHub</em></p>
+			<p className={`${poppins.className} text-center`}>Confira o repositório deste site no <em onClick={()=>alert("Disponível após a final do BXCOMP 2024!")}  className={`text-laranjaBX cursor-pointer text-xl ${bubblegum.className}`}>GitHub</em></p>
 
 		</section>
 	);

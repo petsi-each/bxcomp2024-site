@@ -45,7 +45,7 @@ export default function Header() {
                 {navLinks.map(link => (
                     <a key={link.path} 
                         href={link.path} 
-                        className={`border-b border-brancoBX text-2xl hover:font-bold ${pathname == link.path ? 'text-brancoBX' : ''} lg:text-sm lg:border-none ${!openMenu ? 'hidden lg:inline-block' : ''}`}
+                        className={`border-b border-brancoBX text-2xl hover:font-bold ${pathname == link.path ? 'text-brancoBX' : ''} lg:text-sm xl:text-lg lg:border-none ${!openMenu ? 'hidden lg:inline-block' : ''}`}
                         >
                             {link.title}
                         </a>
