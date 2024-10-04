@@ -1,0 +1,104 @@
+103
+10 2 4 0 5 1 gnomo morcego gnomo pe morcego
+15 0 9 3 20 8 olhos morcego pe gnomo gnomo
+3 1 0 2 6 5 porco pe morcego
+22 7 5 8 1 0 pe gnomo olhos olhos gnomo porco
+30 12 0 15 3 9 gnomo
+45 8 9 7 2 11 morcego porco olhos morcego pe gnomo gnomo pe olhos
+5 0 3 9 12 14 morcego pe olhos gnomo porco
+18 6 7 1 2 4 gnomo olhos porco
+25 9 11 0 8 5 pe morcego pe gnomo gnomo
+35 15 13 10 6 0 porco olhos gnomo olhos morcego
+2 3 4 6 9 10 olhos morcego pe gnomo gnomo porco
+17 0 8 3 12 2 gnomo porco morcego olhos
+29 7 10 11 0 6 pe pe morcego olhos
+41 14 1 2 9 13 gnomo olhos
+52 4 5 3 8 0 porco olhos pe gnomo
+0 0 0 0 0 0 gnomo morcego gnomo olhos olhos morcego
+1 0 0 0 0 0 olhos pe morcego
+99 0 0 0 1 0 pe
+12 4 6 10 0 2 gnomo morcego olhos pe porco morcego gnomo
+3 20 15 8 2 0 gnomo porco olhos morcego
+0 13 7 6 9 5 morcego gnomo pe olhos olhos porco pe
+23 9 1 5 10 2 gnomo pe porco olhos gnomo
+4 8 16 2 9 3 olhos morcego gnomo
+12 11 5 6 3 0 porco olhos morcego
+15 6 20 14 8 12 gnomo morcego olhos
+50 13 10 17 5 9 morcego gnomo porco gnomo
+8 6 2 14 18 7 olhos pe morcego
+3 20 19 13 11 12 gnomo porco olhos morcego pe
+18 9 6 0 12 15 porco pe olhos gnomo
+4 3 10 8 2 14 olhos morcego gnomo olhos porco pe gnomo
+0 8 12 6 7 5 morcego porco olhos pe gnomo
+6 7 4 12 9 1 gnomo porco olhos pe morcego
+0 19 8 5 3 2 olhos morcego porco gnomo pe
+15 4 10 16 2 6 gnomo pe olhos morcego porco olhos
+0 5 12 3 10 9 gnomo morcego porco olhos pe gnomo
+9 7 15 4 11 0 olhos pe porco morcego gnomo
+20 0 1 4 18 9 pe gnomo olhos porco morcego
+7 6 8 15 3 10 gnomo olhos porco morcego pe gnomo
+9 2 11 12 14 5 olhos morcego gnomo
+16 19 13 6 4 3 gnomo porco olhos pe gnomo
+14 3 2 7 6 0 morcego olhos porco gnomo pe
+10 5 9 1 4 8 gnomo morcego olhos pe porco
+12 5 6 7 3 9
+15 8 2 1 10 4 gnomo olhos morcego pe
+9 4 7 5 3 2 morcego gnomo olhos porco
+0 8 12 6 11 5
+19 6 3 9 10 1 pe olhos porco gnomo
+14 7 3 2 1 9
+20 5 10 4 7 8
+11 9 15 6 12 0 gnomo morcego olhos pe porco gnomo
+4 8 3 6 7 2 pe porco gnomo
+13 19 17 10 16 14
+0 5 6 8 9 3 gnomo olhos porco pe
+15 4 7 12 6 2 morcego gnomo porco olhos
+0 3 2 4 6 1 morcego pe gnomo
+8 9 5 1 2 10 porco olhos pe gnomo
+12 6 7 11 8 5 gnomo morcego olhos
+0 1 5 9 3 7 olhos porco gnomo morcego
+0 4 3 8 2 9 olhos pe gnomo morcego porco
+7 9 1 3 5 8 gnomo morcego olhos porco
+0 5 2 6 1 4 porco olhos morcego gnomo
+10 7 9 4 3 2 morcego gnomo
+0 6 4 8 2 3 olhos gnomo porco pe
+0 5 3 9 1 7 morcego gnomo pe porco
+11 6 8 10 4 7 olhos pe gnomo
+8 1 5 2 5 5 gnomo olhos olhos pe
+12 9 7 7 9 2 olhos olhos porco gnomo morcego pe
+33 4 11 4 11 11 pe morcego gnomo olhos
+25 8 8 3 8 8 morcego gnomo olhos pe
+47 2 5 5 5 5 olhos porco gnomo
+14 6 6 2 6 6 gnomo pe porco morcego
+19 3 7 7 3 7 gnomo olhos porco
+29 10 4 10 10 4 morcego pe olhos gnomo
+16 8 12 12 8 12 olhos gnomo morcego
+22 6 6 6 3 6 gnomo porco pe
+18 9 4 9 4 9 olhos pe porco gnomo morcego
+20 0 5 3 0 2 gnomo olhos pe
+15 0 0 0 0 0 morcego gnomo porco
+8 4 0 0 6 0 gnomo porco olhos
+12 0 0 0 0 0 pe olhos gnomo
+22 7 3 0 0 9 morcego porco
+30 0 0 5 0 7 olhos pe gnomo
+25 0 0 0 0 0 morcego gnomo
+10 0 0 0 3 1 gnomo pe porco
+18 0 0 0 0 0 olhos gnomo morcego
+25 5 0 4 0 2 pe porco
+14 0 0 0 0 0 gnomo pe
+40 0 0 0 2 6 gnomo porco
+28 0 0 0 0 0 olhos pe
+33 1 0 0 7 0 gnomo morcego
+100 1 2 0 0 3 gnomo morcego olhos pe porco gnomo morcego olhos pe porco gnomo
+150 0 1 2 0 0 olhos gnomo pe porco morcego olhos pe gnomo porco morcego
+200 3 1 0 0 2 gnomo porco pe olhos pe gnomo olhos porco
+120 2 0 1 1 0 olhos gnomo porco pe morcego gnomo pe porco olhos pe
+180 1 0 2 0 1 porco gnomo pe olhos pe porco olhos gnomo
+220 0 1 1 0 2 pe olhos gnomo porco morcego
+300 0 0 1 2 0 pe porco olhos
+350 1 0 0 1 2 gnomo pe porco olhos pe gnomo porco
+400 2 1 0 0 1 olhos pe gnomo
+500 0 2 1 0 1 porco gnomo olhos pe pe porco
+250 1 1 0 2 0 pe olhos gnomo porco
+300 2 0 1 0 1 pe gnomo porco
+350 0 1 0 1 2 olhos 

@@ -130,44 +130,44 @@
     },
     {
         "etapaIndice": 3,
-        "estaLiberada": false,
+        "estaLiberada": true,
         "tema": "Disney",
         "icon": "/etapas/e3-disney.png",
         "desafios": [
             {
                 "desafio": "MANHÊ!!! - 4 pontos",
-                "enunciado": "etapas/3/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
-                "resolucao": "etapas/3/<NOME DA PASTA DO DESAFIO>/resolucao.c",
-                "entrada": "etapas/3/<NOME DA PASTA DO DESAFIO>/entrada.in",
-                "saida": "etapas/3/<NOME DA PASTA DO DESAFIO>/saida.out"
+                "enunciado": "etapas/3/manhe/enunciado.pdf",
+                "resolucao": "etapas/3/manhe/resolucao.c",
+                "entrada": "etapas/3/manhe/entrada.in",
+                "saida": "etapas/3/manhe/saida.out"
             },
             {
-                "desafio": "Tá no taPETe! - 3 pontos",
-                "enunciado": "etapas/3/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
-                "resolucao": "etapas/3/<NOME DA PASTA DO DESAFIO>/resolucao.c",
-                "entrada": "etapas/3/<NOME DA PASTA DO DESAFIO>/entrada.in",
-                "saida": "etapas/3/<NOME DA PASTA DO DESAFIO>/saida.out"
+                "desafio": "Tá no taPETe! - 6 pontos",
+                "enunciado": "etapas/3/ta-no-tapete/enunciado.pdf",
+                "resolucao": "etapas/3/ta-no-tapete/resolucao.c",
+                "entrada": "etapas/3/ta-no-tapete/entrada.in",
+                "saida": "etapas/3/ta-no-tapete/saida.out"
             },
             {
                 "desafio": "Mente PETurbada - 4 pontos",
-                "enunciado": "etapas/3/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
-                "resolucao": "etapas/3/<NOME DA PASTA DO DESAFIO>/resolucao.c",
-                "entrada": "etapas/3/<NOME DA PASTA DO DESAFIO>/entrada.in",
-                "saida": "etapas/3/<NOME DA PASTA DO DESAFIO>/saida.out"
+                "enunciado": "etapas/3/mente-peturbada/enunciado.pdf",
+                "resolucao": "etapas/3/mente´peturbada/resolucao.c",
+                "entrada": "etapas/3/mente-peturbada/entrada.in",
+                "saida": "etapas/3/mente-peturbada/saida.out"
             },
             {
-                "desafio": "Estudo Estranho - 2 pontos",
-                "enunciado": "etapas/3/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
-                "resolucao": "etapas/3/<NOME DA PASTA DO DESAFIO>/resolucao.c",
-                "entrada": "etapas/3/<NOME DA PASTA DO DESAFIO>/entrada.in",
-                "saida": "etapas/3/<NOME DA PASTA DO DESAFIO>/saida.out"
+                "desafio": "Estudo Estranho - 3 pontos",
+                "enunciado": "etapas/3/estudo-estranho/enunciado.pdf",
+                "resolucao": "etapas/3/estudo-estranho/resolucao.c",
+                "entrada": "etapas/3/estudo-estranho/entrada.in",
+                "saida": "etapas/3/estudo-estranho/saida.out"
             },
             {
-                "desafio": "Livro de Feitiços da Star - 3 pontos",
-                "enunciado": "etapas/3/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
-                "resolucao": "etapas/3/<NOME DA PASTA DO DESAFIO>/resolucao.c",
-                "entrada": "etapas/3/<NOME DA PASTA DO DESAFIO>/entrada.in",
-                "saida": "etapas/3/<NOME DA PASTA DO DESAFIO>/saida.out"
+                "desafio": "Livro de Feitiços da Star - 2 pontos",
+                "enunciado": "etapas/3/bingo-de-feiticos-da-star/enunciado.pdf",
+                "resolucao": "etapas/3/bingo-de-feiticos-da-star/resolucao.c",
+                "entrada": "etapas/3/bingo-de-feiticos-da-star/entrada.in",
+                "saida": "etapas/3/bingo-de-feiticos-da-star/saida.out"
             }
         ]
     },
@@ -179,38 +179,38 @@
         "desafios": [
             {
                 "desafio": "O Frango tá voando - 4 pontos",
-                "enunciado": "etapas/4/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
-                "resolucao": "etapas/4/<NOME DA PASTA DO DESAFIO>/resolucao.c",
-                "entrada": "etapas/4/<NOME DA PASTA DO DESAFIO>/entrada.in",
-                "saida": "etapas/4/<NOME DA PASTA DO DESAFIO>/saida.out"
+                "enunciado": "etapas/4/o-frango-ta-voando/enunciado.pdf",
+                "resolucao": "etapas/4/o-frango-ta-voando/resolucao.c",
+                "entrada": "etapas/4/o-frango-ta-voando/entrada.in",
+                "saida": "etapas/4/o-frango-ta-voando/saida.out"
             },
             {
-                "desafio": "Castelo de Diamantes - 3 pontos",
-                "enunciado": "etapas/4/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
-                "resolucao": "etapas/4/<NOME DA PASTA DO DESAFIO>/resolucao.c",
-                "entrada": "etapas/4/<NOME DA PASTA DO DESAFIO>/entrada.in",
-                "saida": "etapas/4/<NOME DA PASTA DO DESAFIO>/saida.out"
+                "desafio": "Castelo de Diamantes - 4 pontos",
+                "enunciado": "etapas/4/castelo-de-diamantes/enunciado.pdf",
+                "resolucao": "etapas/4/castelo-de-diamantes/resolucao.c",
+                "entrada": "etapas/4/castelo-de-diamantes/entrada.in",
+                "saida": "etapas/4/castelo-de-diamantes/saida.out"
             },
             {
-                "desafio": "Não quero ser um desafio do BxComp - 4 pontos",
-                "enunciado": "etapas/4/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
-                "resolucao": "etapas/4/<NOME DA PASTA DO DESAFIO>/resolucao.c",
-                "entrada": "etapas/4/<NOME DA PASTA DO DESAFIO>/entrada.in",
-                "saida": "etapas/4/<NOME DA PASTA DO DESAFIO>/saida.out"
+                "desafio": "Não quero ser um desafio do BxComp - 3 pontos",
+                "enunciado": "etapas/4/nao-quero-ser-um-desafio-do-bxcomp/enunciado.pdf",
+                "resolucao": "etapas/4/nao-quero-ser-um-desafio-do-bxcomp/resolucao.c",
+                "entrada": "etapas/4/nao-quero-ser-um-desafio-do-bxcomp/entrada.in",
+                "saida": "etapas/4/nao-quero-ser-um-desafio-do-bxcomp/saida.out"
             },
             {
                 "desafio": "Entraram na mente do Ciborgue - 2 pontos",
-                "enunciado": "etapas/4/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
-                "resolucao": "etapas/4/<NOME DA PASTA DO DESAFIO>/resolucao.c",
-                "entrada": "etapas/4/<NOME DA PASTA DO DESAFIO>/entrada.in",
-                "saida": "etapas/4/<NOME DA PASTA DO DESAFIO>/saida.out"
+                "enunciado": "etapas/4/entraram-na-mente-do-ciborgue/enunciado.pdf",
+                "resolucao": "etapas/4/entraram-na-mente-do-ciborgue/resolucao.c",
+                "entrada": "etapas/4/entraram-na-mente-do-ciborgue/entrada.in",
+                "saida": "etapas/4/entraram-na-mente-do-ciborgue/saida.out"
             },
             {
-                "desafio": "Nome Sujo! - 3 pontos",
-                "enunciado": "etapas/4/<NOME DA PASTA DO DESAFIO>/enunciado.pdf",
-                "resolucao": "etapas/4/<NOME DA PASTA DO DESAFIO>/resolucao.c",
-                "entrada": "etapas/4/<NOME DA PASTA DO DESAFIO>/entrada.in",
-                "saida": "etapas/4/<NOME DA PASTA DO DESAFIO>/saida.out"
+                "desafio": "Nome Sujo! - 4 pontos",
+                "enunciado": "etapas/4/nome-sujo/enunciado.pdf",
+                "resolucao": "etapas/4/nome-sujo/resolucao.c",
+                "entrada": "etapas/4/nome-sujo/entrada.in",
+                "saida": "etapas/4/nome-sujo/saida.out"
             }
         ]
     }
