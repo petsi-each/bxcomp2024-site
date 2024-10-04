@@ -58,27 +58,35 @@ int main() {
         
         int monstro_qtd[MAX_TYPES] = {0}; 
 
-       
-        char monstro[MAX_NAME_LENGTH];
-        while (scanf("%s", monstro) == 1) {
-            
-            int achou = 0;
-            for (int j = 0; j < MAX_TYPES; j++) {
-                if (strcmp(monstro, monstro_nomes[j]) == 0) {
-                    monstro_qtd[j]++;
-                    achou = 1;
+        char ch = getchar();
+        
+        char n = '\n';
+
+        if(ch == n){
+            printf("%d\n",0);
+        }else{
+            char monstro[MAX_NAME_LENGTH];
+            while (scanf("%s", monstro) == 1) {
+
+                int achou = 0;
+                for (int j = 0; j < MAX_TYPES; j++) {
+                    if (strcmp(monstro, monstro_nomes[j]) == 0) {
+                        monstro_qtd[j]++;
+                        achou = 1;
+                        break;
+                    }
+                }
+
+                if (getchar() == '\n') {
                     break;
                 }
             }
 
-            if (getchar() == '\n') {
-                break;
-            }
-        }
 
+            int result = guloso(tempo_disp, conhecimento, montro_temp, monstro_qtd);
+            printf("%d\n", result);
+        }
     
-        int result = guloso(tempo_disp, conhecimento, montro_temp, monstro_qtd);
-        printf("%d\n", result);
     }
 
     return 0;

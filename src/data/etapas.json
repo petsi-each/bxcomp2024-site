@@ -151,7 +151,7 @@
             {
                 "desafio": "Mente PETurbada - 4 pontos",
                 "enunciado": "etapas/3/mente-peturbada/enunciado.pdf",
-                "resolucao": "etapas/3/mente´peturbada/resolucao.c",
+                "resolucao": "etapas/3/mente-peturbada/resolucao.c",
                 "entrada": "etapas/3/mente-peturbada/entrada.in",
                 "saida": "etapas/3/mente-peturbada/saida.out"
             },
