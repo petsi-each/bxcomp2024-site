@@ -38,9 +38,9 @@ int main() {
     double divida_total = total_dividas + valor_seu_barriga;
 
     if (valor_arrecadado >= total_dividas + valor_seu_barriga) {
-      printf("SEU MADRUGA, O SENHOR TÁ LIMPOOOOO!!!\n");
+      printf("SEU MADRUGA, O SENHOR TA LIMPOOOOO!!!\n");
     } else {
-      printf("Tá faltando dinheiro, Seu Madruga.... entra pro PET que tem "
+      printf("Ta faltando dinheiro, Seu Madruga.... entra pro PET que tem "
              "bolsa!\n");
     }
   }

@@ -173,7 +173,7 @@
     },
     {
         "etapaIndice": 4,
-        "estaLiberada": false,
+        "estaLiberada": true,
         "tema": "Estúdio PET",
         "icon": "/etapas/e4-estudio-pet.png",
         "desafios": [
