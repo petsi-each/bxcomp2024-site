@@ -25,7 +25,7 @@ function Descricao() {
 	return (
 		<section>
 			<div className="lg:px-32">
-				<h1 className="text-6xl sm:text-6xl py-4 sm:py-8">
+				<h1 className="mt-12 mb-8 text-6xl">
 					O que é o <span className="text-laranjaBX">BXComp</span>?
 				</h1>
 
@@ -158,7 +158,7 @@ const OrganizadorCard: React.FC<OrganizadorCardProps> = ({ organizador }) => {
 function Organizadores() {
 	return (
 		<section className="flex flex-col items-center justify-center my-20">
-			<h1 className="text-6xl text-laranjaBX sm:text-6xl py-4 sm:py-8 text-center">
+			<h1 className="text-6xl text-laranjaBX sm:text-6xl pb-4 sm:pb-8 text-center">
 				Organizadores
 			</h1>
 
