@@ -36,7 +36,7 @@ export default function Home() {
       <Equipes equipes={equipesData}/>
 
         <figure className="relative w-full bg-pretoBX pointer-events-none">
-          <Image className="hidden md:block absolute right-12 -bottom-8" src="/home/gravityfalls.png" alt="" width="281" height="312" /> 
+          <Image className="hidden md:block absolute right-12 -bottom-12" src="/home/gravityfalls.png" alt="" width="281" height="312" /> 
           <Image
             src="/home/onda_branca.svg"
             alt="Onda branca"
